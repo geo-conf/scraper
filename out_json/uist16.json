@@ -2,16 +2,28 @@
   "proceedings": "uist16",
   "papers": [
     {
-      "author": ["Takeo Kanade"],
-      "institution": ["Carnegie Mellon University, Pittsburgh, PA, USA"],
-      "country": ["USA"],
+      "author": [
+        "Takeo Kanade"
+      ],
+      "institution": [
+        "Carnegie Mellon University, Pittsburgh, PA, USA"
+      ],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984594",
       "title": "Smart Headlight: An Application of Projector-Camera Vision"
     },
     {
-      "author": ["Stefanie Mueller"],
-      "institution": ["Massachusetts Institute of Technology"],
-      "country": ["Massachusetts Institute of Technology"],
+      "author": [
+        "Stefanie Mueller"
+      ],
+      "institution": [
+        "Massachusetts Institute of Technology"
+      ],
+      "country": [
+        "Massachusetts Institute of Technology"
+      ],
       "url": "https://doi.org/10.1145/3252738",
       "title": "Session Details: Session 1A: Fabrication"
     },
@@ -30,7 +42,9 @@
         "Hasso Plattner Institute, Potsdam, Germany",
         "Hasso Plattner Institute, Potsdam, Germany"
       ],
-      "country": ["Germany"],
+      "country": [
+        "Germany"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984586",
       "title": "Mobile Fabrication"
     },
@@ -45,20 +59,7 @@
         "Lauren Vasey",
         "Evan Atherton",
         "Nicholas Beirne",
-        "Marcelo H. Coelho",
-        "Nicholas Cote",
-        "Steven Li",
-        "Andy Nogueira",
-        "Long Nguyen",
-        "Tobias Schwinn",
-        "James Stoddart",
-        "David Thomasson",
-        "Ray Wang",
-        "Thomas White",
-        "David Benjamin",
-        "Maurice Conti",
-        "Achim Menges",
-        "George Fitzmaurice"
+        "Marcelo H. Coelho"
       ],
       "institution": [
         "Autodesk Research, Toronto, ON, Canada",
@@ -70,22 +71,13 @@
         "University of Stuttgart, Stuttgart, Germany",
         "Autodesk Applied Research Lab, San Francisco, CA, USA",
         "Autodesk Research, Toronto, ON, Canada",
-        "Marcelo Coelho Studio, Cambridge, MA, USA",
-        "Autodesk Applied Research Lab, San Francisco, CA, USA",
-        "Autodesk Research, Toronto, ON, Canada",
-        "Autodesk Research, Toronto, ON, Canada",
-        "University of Stuttgart, Stuttgart, Germany",
-        "University of Stuttgart, Stuttgart, Germany",
-        "The Living, Brooklyn, NY, USA",
-        "Autodesk Applied Research Lab, San Francisco, CA, USA",
-        "The Living, Brooklyn, NY, USA",
-        "Autodesk Research, Toronto, ON, Canada",
-        "The Living, Brooklyn, NY, USA",
-        "Autodesk Applied Research Lab, San Francisco, CA, USA",
-        "University of Stuttgart, Stuttgart, Germany",
-        "Autodesk Research, Toronto, ON, Canada"
+        "Marcelo Coelho Studio, Cambridge, MA, USA"
       ],
-      "country": ["Canada", "USA", "Germany"],
+      "country": [
+        "Canada",
+        "USA",
+        "Germany"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984553",
       "title": "Crowdsourced Fabrication"
     },
@@ -106,7 +98,10 @@
         "Carnegie Mellon University, Pittsburgh, PA, USA",
         "Carnegie Mellon, Pittsburgh, PA, USA"
       ],
-      "country": ["USA", "Canada"],
+      "country": [
+        "USA",
+        "Canada"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984512",
       "title": "Reprise: A Design Tool for Specifying, Generating, and Customizing 3D Printable Adaptations on Everyday Objects"
     },
@@ -131,14 +126,23 @@
         "Microsoft Research & University of Washington, Seattle, WA, USA",
         "Microsoft Research, Cambridge, United Kingdom"
       ],
-      "country": ["United Kingdom", "USA"],
+      "country": [
+        "United Kingdom",
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984513",
       "title": "Exploring the Design Space for Energy-Harvesting Situated Displays"
     },
     {
-      "author": ["Xiaojun Bi"],
-      "institution": ["Google Research"],
-      "country": ["Google Research"],
+      "author": [
+        "Xiaojun Bi"
+      ],
+      "institution": [
+        "Google Research"
+      ],
+      "country": [
+        "Google Research"
+      ],
       "url": "https://doi.org/10.1145/3252739",
       "title": "Session Details: Session 1B: Touch and Beyond"
     },
@@ -157,18 +161,26 @@
         "Ulm University, Ulm, Germany",
         "Institute of Media Informatics, Ulm University, Germany"
       ],
-      "country": ["Germany"],
+      "country": [
+        "Germany"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984576",
       "title": "FaceTouch: Enabling Touch Interaction in Display Fixed UIs for Mobile Virtual Reality"
     },
     {
-      "author": ["Joseph Chee Chang", "Nathan Hahn", "Aniket Kittur"],
+      "author": [
+        "Joseph Chee Chang",
+        "Nathan Hahn",
+        "Aniket Kittur"
+      ],
       "institution": [
         "Carnegie Mellon University, Pittsburgh, PA, USA",
         "Carnegie Mellon University, Pittsburgh, PA, USA",
         "Carnegie Mellon University, Pittsburgh, PA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984538",
       "title": "Supporting Mobile Sensemaking Through Intentionally Uncertain Highlighting"
     },
@@ -185,26 +197,41 @@
         "Queen's University, Kingston, ON, Canada",
         "Human Media Lab, Queen's University., Kingston, ON, Canada"
       ],
-      "country": ["Canada"],
+      "country": [
+        "Canada"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984524",
       "title": "HoloFlex: A Flexible Light-Field Smartphone with a Microlens Array and a P-OLED Touchscreen"
     },
     {
-      "author": ["Junhan Zhou", "Yang Zhang", "Gierad Laput", "Chris Harrison"],
+      "author": [
+        "Junhan Zhou",
+        "Yang Zhang",
+        "Gierad Laput",
+        "Chris Harrison"
+      ],
       "institution": [
         "Carnegie Mellon University, Pittsburgh, PA, USA",
         "Carnegie Mellon University, Pittsburgh, PA, USA",
         "Carnegie Mellon University, Pittsburgh, PA, USA",
         "Carnegie Mellon University, Pittsburgh, PA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984568",
       "title": "AuraSense: Enabling Expressive Around-Smartwatch Interactions with Electric Field Sensing"
     },
     {
-      "author": ["Daniel Avrahami"],
-      "institution": ["FXPAL"],
-      "country": ["FXPAL"],
+      "author": [
+        "Daniel Avrahami"
+      ],
+      "institution": [
+        "FXPAL"
+      ],
+      "country": [
+        "FXPAL"
+      ],
       "url": "https://doi.org/10.1145/3252740",
       "title": "Session Details: Session 2A: TUI"
     },
@@ -223,7 +250,9 @@
         "Massachusetts Institute of Technology, Cambridge, MA, USA",
         "Massachusetts Institute of Technology, Cambridge, MA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984587",
       "title": "ChainFORM: A Linear Integrated Modular Hardware System for Shape Changing Interfaces"
     },
@@ -244,7 +273,10 @@
         "Inria & Université Paris-Saclay, Saclay, France",
         "Stanford University, Stanford, CA, USA"
       ],
-      "country": ["France", "USA"],
+      "country": [
+        "France",
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984547",
       "title": "Zooids: Building Blocks for Swarm User Interfaces"
     },
@@ -269,7 +301,9 @@
         "Massachusetts Institute of Technology, Cambridge, MA, USA",
         "Stanford University, Stanford, CA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984531",
       "title": "Rovables: Miniature On-Body Robots as Mobile Wearables"
     },
@@ -292,14 +326,22 @@
         "Massachusetts Institute of Technology, Cambridge, MA, USA",
         "Massachusetts Institute of Technology, Cambridge, MA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984520",
       "title": "AeroMorph - Heat-Sealing Inflatable Shape-Change Materials for Interaction Design"
     },
     {
-      "author": ["Jacob O. Wobbrock"],
-      "institution": [],
-      "country": [],
+      "author": [
+        "Jacob O. Wobbrock"
+      ],
+      "institution": [
+        "University of Washington"
+      ],
+      "country": [
+        "University of Washington"
+      ],
       "url": "https://doi.org/10.1145/3252741",
       "title": "Session Details: Session 2B: Interaction Techniques"
     },
@@ -316,57 +358,88 @@
         "Inria & Université Paris-Saclay, Orsay, France",
         "Université Paris-Saclay & Inria, Orsay, France"
       ],
-      "country": ["France"],
+      "country": [
+        "France"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984577",
       "title": "Beyond Snapping: Persistent, Tweakable Alignment and Distribution with StickyLines"
     },
     {
-      "author": ["Aakar Gupta", "Muhammed Anwar", "Ravin Balakrishnan"],
+      "author": [
+        "Aakar Gupta",
+        "Muhammed Anwar",
+        "Ravin Balakrishnan"
+      ],
       "institution": [
         "University of Toronto, Toronto, ON, Canada",
         "University of Toronto, Toronto, ON, Canada",
         "University of Toronto, Toronto, ON, Canada"
       ],
-      "country": ["Canada"],
+      "country": [
+        "Canada"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984557",
       "title": "Porous Interfaces for Small Screen Multitasking Using Finger Identification"
     },
     {
-      "author": ["Brian A. Smith", "Shree K. Nayar"],
+      "author": [
+        "Brian A. Smith",
+        "Shree K. Nayar"
+      ],
       "institution": [
         "Columbia University, New York City, NY, USA",
         "Columbia University, New York City, NY, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984543",
       "title": "Mining Controller Inputs to Understand Gameplay"
     },
     {
-      "author": ["Sang Ho Yoon", "Yunbo Zhang", "Ke Huo", "Karthik Ramani"],
+      "author": [
+        "Sang Ho Yoon",
+        "Yunbo Zhang",
+        "Ke Huo",
+        "Karthik Ramani"
+      ],
       "institution": [
         "Purdue University, West Lafayette, IN, USA",
         "Purdue University, West Lafayette, IN, USA",
         "Purdue University, West Lafayette, IN, USA",
         "Purdue University, West Lafayette, IN, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984529",
       "title": "TRing: Instant and Customizable Interactions with Objects Using an Embedded Magnet and a Finger-Worn Device"
     },
     {
-      "author": ["Hrvoje Benko"],
-      "institution": ["Microsoft Research"],
-      "country": ["Microsoft Research"],
+      "author": [
+        "Hrvoje Benko"
+      ],
+      "institution": [
+        "Microsoft Research"
+      ],
+      "country": [
+        "Microsoft Research"
+      ],
       "url": "https://doi.org/10.1145/3252742",
       "title": "Session Details: Session 3A: Touch It, Feel It"
     },
     {
-      "author": ["Jaeyeon Lee", "Geehyuk Lee"],
+      "author": [
+        "Jaeyeon Lee",
+        "Geehyuk Lee"
+      ],
       "institution": [
         "Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea",
         "Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea"
       ],
-      "country": ["Republic of Korea"],
+      "country": [
+        "Republic of Korea"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984583",
       "title": "Designing a Non-Contact Wearable Tactile Display Using Airflows"
     },
@@ -383,7 +456,10 @@
         "University College London, London, United Kingdom",
         "University College London, London, United Kingdom"
       ],
-      "country": ["United Kingdom", "Republic of Korea"],
+      "country": [
+        "United Kingdom",
+        "Republic of Korea"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984550",
       "title": "RealPen: Providing Realism in Handwriting Tasks on Touch Surfaces Using Auditory-Tactile Feedback"
     },
@@ -400,7 +476,10 @@
         "Cornell University, Ithaca, NY, USA",
         "Hasso Plattner Institute, Potsdam, Germany"
       ],
-      "country": ["Germany", "USA"],
+      "country": [
+        "Germany",
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984530",
       "title": "Muscle-Plotter: An Interactive System Based on Electrical Muscle Stimulation That Produces Spatial Output"
     },
@@ -421,7 +500,9 @@
         "University of Toronto, Toronto, ON, Canada",
         "University of Toronto, Toronto, ON, Canada"
       ],
-      "country": ["Canada"],
+      "country": [
+        "Canada"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984558",
       "title": "Haptic Learning of Semaphoric Finger Gestures"
     },
@@ -440,24 +521,39 @@
         "Massachusetts Institute of Technology, Cambridge, MA, USA",
         "Ulm University, Ulm, Germany"
       ],
-      "country": ["Germany", "Denmark", "USA"],
+      "country": [
+        "Germany",
+        "Denmark",
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984535",
       "title": "GyroVR: Simulating Inertia in Virtual Reality Using Head Worn Flywheels"
     },
     {
-      "author": ["Ranjitha Kumar"],
-      "institution": ["University of Illinois-Urbana Champaign"],
-      "country": ["University of Illinois-Urbana Champaign"],
+      "author": [
+        "Ranjitha Kumar"
+      ],
+      "institution": [
+        "University of Illinois-Urbana Champaign"
+      ],
+      "country": [
+        "University of Illinois-Urbana Champaign"
+      ],
       "url": "https://doi.org/10.1145/3252743",
       "title": "Session Details: Session 3B: Dev Tools"
     },
     {
-      "author": ["Joshua Hibschman", "Haoqi Zhang"],
+      "author": [
+        "Joshua Hibschman",
+        "Haoqi Zhang"
+      ],
       "institution": [
         "Northwestern University, Evanston, IL, USA",
         "Northwestern University, Evanston, IL, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984570",
       "title": "Telescope: Fine-Tuned Discovery of Interactive Web UI Feature Implementation"
     },
@@ -476,24 +572,37 @@
         "Adobe Research, San Francisco, CA, USA",
         "University of Michigan, Ann Arbor, MI, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984544",
       "title": "CodeMend: Assisting Interactive Programming with Bimodal Embedding"
     },
     {
-      "author": ["Ethan Fast", "Michael S. Bernstein"],
+      "author": [
+        "Ethan Fast",
+        "Michael S. Bernstein"
+      ],
       "institution": [
         "Stanford University, Stanford, CA, USA",
         "Stanford University, Palo Alto, CA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984532",
       "title": "Meta: Enabling Programming Languages to Learn from the Crowd"
     },
     {
-      "author": ["Seok-Hyung Bae"],
-      "institution": ["KAIST"],
-      "country": ["KAIST"],
+      "author": [
+        "Seok-Hyung Bae"
+      ],
+      "institution": [
+        "KAIST"
+      ],
+      "country": [
+        "KAIST"
+      ],
       "url": "https://doi.org/10.1145/3252744",
       "title": "Session Details: Session 4A: Touch"
     },
@@ -512,7 +621,10 @@
         "Tactual Labs, Toronto, ON, Canada",
         "Université de Lille, Lille, France"
       ],
-      "country": ["Canada", "France"],
+      "country": [
+        "Canada",
+        "France"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984590",
       "title": "Next-Point Prediction Metrics for Perceived Spatial Errors"
     },
@@ -529,45 +641,69 @@
         "Microsoft Research, Redmond, WA, USA",
         "Microsoft Research, Redmond, WA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984564",
       "title": "Wearables as Context for Guiard-Abiding Bimanual Touch"
     },
     {
-      "author": ["Ken Pfeuffer", "Hans Gellersen"],
+      "author": [
+        "Ken Pfeuffer",
+        "Hans Gellersen"
+      ],
       "institution": [
         "Lancaster University, Lancaster, United Kingdom",
         "Lancaster University, Lancaster, United Kingdom"
       ],
-      "country": ["United Kingdom"],
+      "country": [
+        "United Kingdom"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984514",
       "title": "Gaze and Touch Interaction on Tablets"
     },
     {
-      "author": ["Xiaojun Bi", "Shumin Zhai"],
+      "author": [
+        "Xiaojun Bi",
+        "Shumin Zhai"
+      ],
       "institution": [
         "Inc., Mountain View, CA, USA",
         "Google, Inc., Mountain View, CA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984546",
       "title": "Predicting Finger-Touch Accuracy Based on the Dual Gaussian Distribution Model"
     },
     {
-      "author": ["Aaron Quigley"],
-      "institution": ["University of St. Andrews"],
-      "country": ["University of St. Andrews"],
+      "author": [
+        "Aaron Quigley"
+      ],
+      "institution": [
+        "University of St. Andrews"
+      ],
+      "country": [
+        "University of St. Andrews"
+      ],
       "url": "https://doi.org/10.1145/3252745",
       "title": "Session Details: Session 4B: Sensing"
     },
     {
-      "author": ["Gierad Laput", "Robert Xiao", "Chris Harrison"],
+      "author": [
+        "Gierad Laput",
+        "Robert Xiao",
+        "Chris Harrison"
+      ],
       "institution": [
         "Carnegie Mellon University, Pittsburgh, PA, USA",
         "Carnegie Mellon University, Pittsburgh, PA, USA",
         "Carnegie Mellon University, Pittsburgh, PA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984582",
       "title": "ViBand: High-Fidelity Bio-Acoustic Sensing Using Commodity Smartwatch Accelerometers"
     },
@@ -594,7 +730,10 @@
         "Google, Inc., Mountain View, CA, USA",
         "University of Applied Sciences Upper Austria, Hagenberg, Austria"
       ],
-      "country": ["Austria", "USA"],
+      "country": [
+        "Austria",
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984572",
       "title": "ProCover: Sensory Augmentation of Prosthetic Limbs Using Smart Textile Covers"
     },
@@ -617,24 +756,37 @@
         "Providence VA Medical Center & Brown University, Providence, RI, USA",
         "Brown University, Providence, RI, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984534",
       "title": "SleepCoacher: A Personalized Automated Self-Experimentation System for Sleep Recommendations"
     },
     {
-      "author": ["Xiang 'Anthony' Chen", "Yang Li"],
+      "author": [
+        "Xiang 'Anthony' Chen",
+        "Yang Li"
+      ],
       "institution": [
         "Carnegie Mellon University & Google Research, Pittsburgh, PA, USA",
         "Google Research, Mountain View, CA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984541",
       "title": "Bootstrapping User-Defined Body Tapping Recognition with Offline-Learned Probabilistic Representation"
     },
     {
-      "author": ["Fanny Chevalier"],
-      "institution": ["INRIA"],
-      "country": ["INRIA"],
+      "author": [
+        "Fanny Chevalier"
+      ],
+      "institution": [
+        "INRIA"
+      ],
+      "country": [
+        "INRIA"
+      ],
       "url": "https://doi.org/10.1145/3252746",
       "title": "Session Details: Session 5A: Viz"
     },
@@ -653,69 +805,108 @@
         "Tableau Software, Palo Alto, CA, USA",
         "Tableau Software, Palo Alto, CA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984588",
       "title": "Eviza: A Natural Language Interface for Visual Analysis"
     },
     {
-      "author": ["Brian Hempel", "Ravi Chugh"],
+      "author": [
+        "Brian Hempel",
+        "Ravi Chugh"
+      ],
       "institution": [
         "University of Chicago, Chicago, IL, USA",
         "University of Chicago, Chicago, IL, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984575",
       "title": "Semi-Automated SVG Programming via Direct Manipulation"
     },
     {
-      "author": ["Danielle Bragg", "Shiri Azenkot", "Adam Tauman Kalai"],
+      "author": [
+        "Danielle Bragg",
+        "Shiri Azenkot",
+        "Adam Tauman Kalai"
+      ],
       "institution": [
         "University of Washington, Seattle, WA, USA",
         "Cornell Tech, New York, NY, USA",
         "Microsoft Research, Cambridge, MA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984554",
       "title": "Reading and Learning Smartfonts"
     },
     {
-      "author": ["Takeo Igarashi", "Naoyuki Shono", "Taichi Kin", "Toki Saito"],
+      "author": [
+        "Takeo Igarashi",
+        "Naoyuki Shono",
+        "Taichi Kin",
+        "Toki Saito"
+      ],
       "institution": [
         "The University of Tokyo, Bunkyo-ku, Tokyo, Japan",
         "The University of Tokyo, Bunkyo-ku, Tokyo, Japan",
         "The University of Tokyo, Bunkyo-ku, Tokyo, Japan",
         "The University of Tokyo, Bunkyo-ku, Tokyo, Japan"
       ],
-      "country": ["Japan"],
+      "country": [
+        "Japan"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984537",
       "title": "Interactive Volume Segmentation with Threshold Field Painting"
     },
     {
-      "author": ["Nicholas Chen"],
-      "institution": ["Microsoft Research"],
-      "country": ["Microsoft Research"],
+      "author": [
+        "Nicholas Chen"
+      ],
+      "institution": [
+        "Microsoft Research"
+      ],
+      "country": [
+        "Microsoft Research"
+      ],
       "url": "https://doi.org/10.1145/3252747",
       "title": "Session Details: Session 5B: Physical Displays"
     },
     {
-      "author": ["Hajime Kajita", "Naoya Koizumi", "Takeshi Naemura"],
+      "author": [
+        "Hajime Kajita",
+        "Naoya Koizumi",
+        "Takeshi Naemura"
+      ],
       "institution": [
         "The University of Tokyo, Tokyo, Japan",
         "The University of Electro-Communications, Tokyo, Japan",
         "The University of Tokyo, Tokyo, Japan"
       ],
-      "country": ["Japan"],
+      "country": [
+        "Japan"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984589",
       "title": "SkyAnchor: Optical Design for Anchoring Mid-Air Images onto Physical Objects"
     },
     {
-      "author": ["David Lindlbauer", "Joerg Mueller", "Marc Alexa"],
+      "author": [
+        "David Lindlbauer",
+        "Joerg Mueller",
+        "Marc Alexa"
+      ],
       "institution": [
         "TU Berlin, Berlin, Germany",
         "Aarhus University, Aarhus, Denmark",
         "TU Berlin, Berlin, Germany"
       ],
-      "country": ["Germany", "Denmark"],
+      "country": [
+        "Germany",
+        "Denmark"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984556",
       "title": "Changing the Appearance of Physical Interfaces Through Controlled Transparency"
     },
@@ -736,19 +927,29 @@
         "University of Sussex, Brighton, United Kingdom",
         "University of Sussex, Brighton, United Kingdom"
       ],
-      "country": ["United Kingdom", "Japan"],
+      "country": [
+        "United Kingdom",
+        "Japan"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984549",
       "title": "JOLED: A Mid-Air Display Based on Electrostatic Rotation of Levitated Janus Objects"
     },
     {
-      "author": ["Qiuyu Lu", "Chengpeng Mao", "Liyuan Wang", "Haipeng Mi"],
+      "author": [
+        "Qiuyu Lu",
+        "Chengpeng Mao",
+        "Liyuan Wang",
+        "Haipeng Mi"
+      ],
       "institution": [
         "Tsinghua University, Beijing, China",
         "Tsinghua University, Beijing, China",
         "Tsinghua University, Beijing, China",
         "Tsinghua University, Beijing, China"
       ],
-      "country": ["China"],
+      "country": [
+        "China"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984562",
       "title": "LIME: LIquid MEtal Interfaces for Non-Rigid Interaction"
     },
@@ -763,14 +964,22 @@
         "The University of Tokyo, Tokyo, Japan",
         "The University of Tokyo, Tokyo, Japan"
       ],
-      "country": ["Japan"],
+      "country": [
+        "Japan"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984548",
       "title": "Phyxel: Realistic Display of Shape and Appearance Using Physical Objects with High-Speed Pixelated Lighting"
     },
     {
-      "author": ["Parmit K. Chilana"],
-      "institution": ["Simon Frasier University"],
-      "country": ["Simon Frasier University"],
+      "author": [
+        "Parmit K. Chilana"
+      ],
+      "institution": [
+        "Simon Frasier University"
+      ],
+      "country": [
+        "Simon Frasier University"
+      ],
       "url": "https://doi.org/10.1145/3252748",
       "title": "Session Details: Session 6A: Information &amp; Obfusc**ion"
     },
@@ -789,7 +998,9 @@
         "Brigham Young University, Provo, UT, USA",
         "Brigham Young University, Provo, UT, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984580",
       "title": "Private Webmail 2.0: Simple and Easy-to-Use Secure Email"
     },
@@ -808,25 +1019,39 @@
         "Hankuk University of Foreign Studies, Yongin-si, Gyeonggi-do, Republic of Korea",
         "Seoul National University, Seoul, Republic of Korea"
       ],
-      "country": ["Republic of Korea"],
+      "country": [
+        "Republic of Korea"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984571",
       "title": "CloakingNote: A Novel Desktop Interface for Subtle Writing Using Decoy Texts"
     },
     {
-      "author": ["Lea Verou", "Amy X. Zhang", "David R. Karger"],
+      "author": [
+        "Lea Verou",
+        "Amy X. Zhang",
+        "David R. Karger"
+      ],
       "institution": [
         "Massachusetts Institute of Technology, Cambridge, MA, USA",
         "Massachusetts Institute of Technology, Cambridge, MA, USA",
         "Massachusetts Institute of Technology, Cambridge, MA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984551",
       "title": "Mavo: Creating Interactive Data-Driven Web Applications by Authoring HTML"
     },
     {
-      "author": ["Rubiat Habib Kazi"],
-      "institution": ["Autodesk Research"],
-      "country": ["Autodesk Research"],
+      "author": [
+        "Rubiat Habib Kazi"
+      ],
+      "institution": [
+        "Autodesk Research"
+      ],
+      "country": [
+        "Autodesk Research"
+      ],
       "url": "https://doi.org/10.1145/3252749",
       "title": "Session Details: Session 6B: Video &amp; Audio"
     },
@@ -843,18 +1068,26 @@
         "Adobe Systems, San Francisco, CA, USA",
         "Stanford University, Palo Alto, CA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984569",
       "title": "QuickCut: An Interactive Tool for Editing Narrated Video"
     },
     {
-      "author": ["Hijung Valentina Shin", "Wilmot Li", "Frédo Durand"],
+      "author": [
+        "Hijung Valentina Shin",
+        "Wilmot Li",
+        "Frédo Durand"
+      ],
       "institution": [
         "Massachusetts Institute of Technology, Cambridge, MA, USA",
         "Adobe Systems, San Francisco, CA, USA",
         "Massachusetts Institute of Technology, Cambridge, MA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984561",
       "title": "Dynamic Authoring of Audio with Linked Scripts"
     },
@@ -871,14 +1104,22 @@
         "University of California, Berkeley, Berkeley, CA, USA",
         "Stanford University, Stanford, CA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984552",
       "title": "VidCrit: Video-Based Asynchronous Video Review"
     },
     {
-      "author": ["Scott Hudson"],
-      "institution": ["Carnegie Mellon University"],
-      "country": ["Carnegie Mellon University"],
+      "author": [
+        "Scott Hudson"
+      ],
+      "institution": [
+        "Carnegie Mellon University"
+      ],
+      "country": [
+        "Carnegie Mellon University"
+      ],
       "url": "https://doi.org/10.1145/3252750",
       "title": "Session Details: Session 7A: Fab with New Materials"
     },
@@ -905,7 +1146,9 @@
         "Hasso Plattner Institute, Potsdam, Germany",
         "Hasso Plattner Institute, Potsdam, Germany"
       ],
-      "country": ["Germany"],
+      "country": [
+        "Germany"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984540",
       "title": "Metamaterial Mechanisms"
     },
@@ -926,7 +1169,10 @@
         "The Hebrew University of Jerusalem, Jerusalem , Israel",
         "Hebrew University & Bezalel Academy of Arts and Design, Jerusalem, Israel"
       ],
-      "country": ["Israel", "USA"],
+      "country": [
+        "Israel",
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984528",
       "title": "Digital Gastronomy: Methods &amp; Recipes for Hybrid Cooking"
     },
@@ -943,7 +1189,9 @@
         "Disney Research Pittsburgh, Pittsburgh, PA, USA",
         "Carnegie Mellon University, Pittsburgh, PA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984523",
       "title": "A 3D Printer for Interactive Electromagnetic Devices"
     },
@@ -960,14 +1208,22 @@
         "Massachusetts Institute of Technology, Cambridge, MA, USA",
         "Massachusetts Institute of Technology, Cambridge, MA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984516",
       "title": "Foundry: Hierarchical Material Design for Multi-Material Fabrication"
     },
     {
-      "author": ["Koji Yatani"],
-      "institution": ["University of Tokyo"],
-      "country": ["University of Tokyo"],
+      "author": [
+        "Koji Yatani"
+      ],
+      "institution": [
+        "University of Tokyo"
+      ],
+      "country": [
+        "University of Tokyo"
+      ],
       "url": "https://doi.org/10.1145/3252751",
       "title": "Session Details: Session 7B: Text Entry"
     },
@@ -988,18 +1244,27 @@
         "York University, Toronto, ON, Canada",
         "Tufts University, Medford, MA, USA"
       ],
-      "country": ["USA", "Canada"],
+      "country": [
+        "USA",
+        "Canada"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984591",
       "title": "DriftBoard: A Panning-Based Text Entry Technique for Ultra-Small Touchscreens"
     },
     {
-      "author": ["Jessalyn Alvina", "Joseph Malloch", "Wendy E. Mackay"],
+      "author": [
+        "Jessalyn Alvina",
+        "Joseph Malloch",
+        "Wendy E. Mackay"
+      ],
       "institution": [
         "Univ Paris-Saclay, Orsay, Île-de-France, France",
         "Université Paris-Saclay, Orsay, France",
         "Université Paris-Saclay, Orsay, France"
       ],
-      "country": ["France"],
+      "country": [
+        "France"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984560",
       "title": "Expressive Keyboards: Enriching Gesture-Typing on Mobile Devices"
     },
@@ -1020,25 +1285,41 @@
         "Keio University, Yokohama City, Japan",
         "National Taiwan University, Taipei, Taiwan Roc"
       ],
-      "country": ["Taiwan Roc", "USA", "Japan"],
+      "country": [
+        "Taiwan Roc",
+        "USA",
+        "Japan"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984522",
       "title": "EdgeVib: Effective Alphanumeric Character Output Using a Wrist-Worn Tactile Display"
     },
     {
-      "author": ["Kenneth C. Arnold", "Krzysztof Z. Gajos", "Adam T. Kalai"],
+      "author": [
+        "Kenneth C. Arnold",
+        "Krzysztof Z. Gajos",
+        "Adam T. Kalai"
+      ],
       "institution": [
         "Harvard University, Cambridge, MA, USA",
         "Harvard University, Cambridge, MA, USA",
         "Microsoft Research, Cambridge, MA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984584",
       "title": "On Suggesting Phrases vs. Predicting Words for Mobile Text Composition"
     },
     {
-      "author": ["Walter Lasecki"],
-      "institution": ["University of Michigan"],
-      "country": ["University of Michigan"],
+      "author": [
+        "Walter Lasecki"
+      ],
+      "institution": [
+        "University of Michigan"
+      ],
+      "country": [
+        "University of Michigan"
+      ],
       "url": "https://doi.org/10.1145/3252752",
       "title": "Session Details: Session 8A: Crowds"
     },
@@ -1055,7 +1336,9 @@
         "University of California, San Diego, La Jolla, CA, USA",
         "Harvard University, Cambridge, MA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984578",
       "title": "IdeaHound: Improving Large-Scale Collaborative Ideation with Crowd-Powered Real-Time Semantic Modeling"
     },
@@ -1069,35 +1352,7 @@
         "Dilrukshi Gamage",
         "Christopher Diemert",
         "Mathias Burton",
-        "Sharon Zhou",
-        "Mark Whiting",
-        "Karolina Ziulkoski",
-        "Alipta Ballav",
-        "Aaron Gilbee",
-        "Senadhipathige S. Niranga",
-        "Vibhor Sehgal",
-        "Jasmine Lin",
-        "Leonardy Kristianto",
-        "Angela Richmond-Fuller",
-        "Jeff Regino",
-        "Nalin Chhibber",
-        "Dinesh Majeti",
-        "Sachin Sharma",
-        "Kamila Mananova",
-        "Dinesh Dhakal",
-        "William Dai",
-        "Victoria Purynova",
-        "Samarth Sandeep",
-        "Varshine Chandrakanthan",
-        "Tejas Sarma",
-        "Sekandar Matin",
-        "Ahmed Nasser",
-        "Rohit Nistala",
-        "Alexander Stolzoff",
-        "Kristy Milland",
-        "Vinayak Mathur",
-        "Rajan Vaish",
-        "Michael S. Bernstein"
+        "Sharon Zhou"
       ],
       "institution": [
         "Massachusetts Institute of Technology, Cambridge, MA, USA",
@@ -1108,48 +1363,12 @@
         "University of Moratuwa, Katubedda, Sri Lanka",
         "Pentland Firth, Munich, Germany",
         "ProQuest, Seattle, USA",
-        "Stanford University, Stanford, USA",
-        "Carnegie Mellon University, Pittsburgh, USA",
-        "Independent, NYC, USA",
-        "Independent, Bangalore, India",
-        "Independent, Karlsruhe, Germany",
-        "Sri Lanka Institute Of Information Technology, Malabe, Sri Lanka",
-        "Maharaja Agrasen Institute of Technology, New Delhi, India",
-        "University of Washington, Seattle, USA",
-        "Lancaster University, Lancaster, United Kingdom",
-        "Independent, Sofia, Bulgaria",
-        "Independent, Cavite, Philippines",
-        "Compro Technologies, New Delhi, India",
-        "University of Houston, Houston, USA",
-        "Jamia Millia Islamia, New Delhi, India",
-        "EPFL, Lausanne, Switzerland",
-        "Juniper Networks, Bangalore, India",
-        "University of California, Berkeley, Berkeley, CA, USA",
-        "Independent, Seoul, South Korea",
-        "Amador Valley High School, Pleasanton, NJ, USA",
-        "LeadSquared, Bangalore, India",
-        "University of Mumbai, Mumbai, India",
-        "University of Salford, Hamburg, Germany",
-        "Helwan University, Cairo, Egypt",
-        "Carnegie Mellon University, Moffet Field, PA, USA",
-        "University of California, San Diego, San Diego, CA, USA",
-        "Ryerson University, Toronto, ON, Canada",
-        "Manipal University, Manipal, India",
-        "Stanford University, Stanford, CA, USA",
-        "Stanford University, Stanford, CA, USA"
+        "Stanford University, Stanford, USA"
       ],
       "country": [
         "USA",
         "Sri Lanka",
-        "Germany",
-        "India",
-        "United Kingdom",
-        "Bulgaria",
-        "Philippines",
-        "Switzerland",
-        "South Korea",
-        "Egypt",
-        "Canada"
+        "Germany"
       ],
       "url": "https://doi.org/10.1145/2984511.2984542",
       "title": "Boomerang: Rebounding the Consequences of Reputation Feedback on Crowdsourcing Platforms"
@@ -1169,7 +1388,9 @@
         "Northwestern University, Evanston, IL, USA",
         "Northwestern University, Evanston, IL, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984533",
       "title": "Habitsourcing: Sensing the Environment through Immersive, Habit-Building Experiences"
     },
@@ -1192,14 +1413,22 @@
         "Carnegie Mellon University, Pittsburgh, PA, USA",
         "Carnegie Mellon University, Pittsburgh, PA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984518",
       "title": "VizLens: A Robust and Interactive Screen Reader for Interfaces in the Real World"
     },
     {
-      "author": ["Otmar Hilliges"],
-      "institution": ["ETH Zurich"],
-      "country": ["ETH Zurich"],
+      "author": [
+        "Otmar Hilliges"
+      ],
+      "institution": [
+        "ETH Zurich"
+      ],
+      "country": [
+        "ETH Zurich"
+      ],
       "url": "https://doi.org/10.1145/3252753",
       "title": "Session Details: Session 8B: Electronics Printing &amp; Prototyping"
     },
@@ -1224,7 +1453,9 @@
         "Adobe Research, Seattle, WA, USA",
         "University of California, Berkeley, CA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984579",
       "title": "Aesthetic Electronics: Designing, Sketching, and Fabricating Circuits through Digital Exploration"
     },
@@ -1245,7 +1476,9 @@
         "University of California, Berkeley, Berkeley, CA, USA",
         "University of California, Berkeley, Berkeley, CA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984566",
       "title": "The Toastboard: Ubiquitous Instrumentation and Automated Checking of Breadboarded Circuits"
     },
@@ -1270,25 +1503,39 @@
         "National Taiwan University, Taipei, Taiwan Roc",
         "National Taiwan University, Taipei, Taiwan Roc"
       ],
-      "country": ["Taiwan Roc"],
+      "country": [
+        "Taiwan Roc"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984527",
       "title": "CircuitStack: Supporting Rapid Prototyping and Evolution of Electronic Circuits"
     },
     {
-      "author": ["Michael Wessely", "Theophanis Tsandilas", "Wendy E. Mackay"],
+      "author": [
+        "Michael Wessely",
+        "Theophanis Tsandilas",
+        "Wendy E. Mackay"
+      ],
       "institution": [
         "INRIA, Orsay, Ile de France, France",
         "Inria and Univ Paris-Sud & CNRS, Orsay, France",
         "Inria, Université Paris-Saclay, Orsay, France"
       ],
-      "country": ["France"],
+      "country": [
+        "France"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984521",
       "title": "Stretchis: Fabricating Highly Stretchable User Interfaces"
     },
     {
-      "author": ["Yuta Sugiura"],
-      "institution": ["Keio University"],
-      "country": ["Keio University"],
+      "author": [
+        "Yuta Sugiura"
+      ],
+      "institution": [
+        "Keio University"
+      ],
+      "country": [
+        "Keio University"
+      ],
       "url": "https://doi.org/10.1145/3252754",
       "title": "Session Details: Session 9A: Reality"
     },
@@ -1311,7 +1558,9 @@
         "University of Tsukuba, Tsukuba, Ibaraki, Japan",
         "University of Tsukuba, Tsukuba, Japan"
       ],
-      "country": ["Japan"],
+      "country": [
+        "Japan"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984545",
       "title": "Optical Marionette: Graphical Manipulation of Human's Walking Direction"
     },
@@ -1328,7 +1577,9 @@
         "Microsoft Research, Redmond, WA, USA",
         "Microsoft Research, Redmond, WA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984526",
       "title": "NormalTouch and TextureTouch: High-Fidelity 3D Haptic Shape Rendering on Handheld Virtual Reality Controllers"
     },
@@ -1351,7 +1602,9 @@
         "Massachusetts Institute of Technology, Cambridge, MA, USA",
         "Massachusetts Institute of Technology, Cambridge, MA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984519",
       "title": "Immersive Scuba Diving Simulator Using Virtual Reality"
     },
@@ -1366,20 +1619,7 @@
         "David Kim",
         "Philip L. Davidson",
         "Sameh Khamis",
-        "Mingsong Dou",
-        "Vladimir Tankovich",
-        "Charles Loop",
-        "Qin Cai",
-        "Philip A. Chou",
-        "Sarah Mennicken",
-        "Julien Valentin",
-        "Vivek Pradeep",
-        "Shenlong Wang",
-        "Sing Bing Kang",
-        "Pushmeet Kohli",
-        "Yuliya Lutchyn",
-        "Cem Keskin",
-        "Shahram Izadi"
+        "Mingsong Dou"
       ],
       "institution": [
         "Microsoft Research, Redmond, WA, USA",
@@ -1391,29 +1631,24 @@
         "Microsoft Research, Redmond, WA, USA",
         "Microsoft Research, Redmond, WA, USA",
         "Microsoft Research, Redmond, WA, USA",
-        "Microsoft Research, Redmond, WA, USA",
-        "Microsoft Research, Redmond, WA, USA",
-        "Microsoft Research, Redmond, WA, USA",
-        "Microsoft Research, Redmond, WA, USA",
-        "Microsoft Research, Redmond, WA, USA",
-        "Microsoft Research, Redmond, WA, USA",
-        "Microsoft Research, Redmond, WA, USA",
-        "Microsoft Research, Redmond, WA, USA",
-        "Microsoft Research, Redmond, WA, USA",
-        "Microsoft Research, Redmond, WA, USA",
-        "Microsoft Research, Redmond, WA, USA",
-        "Microsoft Research, Redmond, WA, USA",
-        "Microsoft Research, Redmond, WA, USA",
         "Microsoft Research, Redmond, WA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984517",
       "title": "Holoportation: Virtual 3D Teleportation in Real-Time"
     },
     {
-      "author": ["Joel Brandt"],
-      "institution": ["Adobe Research"],
-      "country": ["Adobe Research"],
+      "author": [
+        "Joel Brandt"
+      ],
+      "institution": [
+        "Adobe Research"
+      ],
+      "country": [
+        "Adobe Research"
+      ],
       "url": "https://doi.org/10.1145/3252755",
       "title": "Session Details: Session 9B: Creativity"
     },
@@ -1434,18 +1669,27 @@
         "Autodesk Research, Toronto, ON, Canada",
         "Autodesk Research, Toronto, ON, Canada"
       ],
-      "country": ["Canada", "Hong Kong"],
+      "country": [
+        "Canada",
+        "Hong Kong"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984585",
       "title": "Energy-Brushes: Interactive Tools for Illustrating Stylized Elemental Dynamics"
     },
     {
-      "author": ["Biplab Deka", "Zifeng Huang", "Ranjitha Kumar"],
+      "author": [
+        "Biplab Deka",
+        "Zifeng Huang",
+        "Ranjitha Kumar"
+      ],
       "institution": [
         "University of Illinois at Urbana-Champaign, Champaign, IL, USA",
         "University of Illinois at Urbana-Champaign, Champaign, IL, USA",
         "University of Illinois at Urbana-Champaign, Champaign, IL, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984581",
       "title": "ERICA: Interaction Mining Mobile Apps"
     },
@@ -1464,7 +1708,9 @@
         "University of Illinois at Urbana-Champaign, Urbana, IL, USA",
         "University of Illinois at Urbana-Champaign, Urbana, IL, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984573",
       "title": "The Elements of Fashion Style"
     },
@@ -1483,24 +1729,38 @@
         "University of Toronto, Toronto, ON, Canada",
         "University of Toronto, Toronto, ON, Canada"
       ],
-      "country": ["Canada", "France"],
+      "country": [
+        "Canada",
+        "France"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984539",
       "title": "Multi-Device Storyboards for Cinematic Narratives in VR"
     },
     {
-      "author": ["Justin Matejka"],
-      "institution": ["Autodesk Research"],
-      "country": ["Autodesk Research"],
+      "author": [
+        "Justin Matejka"
+      ],
+      "institution": [
+        "Autodesk Research"
+      ],
+      "country": [
+        "Autodesk Research"
+      ],
       "url": "https://doi.org/10.1145/3252756",
       "title": "Session Details: Session 10A: Innovative Interaction"
     },
     {
-      "author": ["Yongkwan Kim", "Seok-Hyung Bae"],
+      "author": [
+        "Yongkwan Kim",
+        "Seok-Hyung Bae"
+      ],
       "institution": [
         "Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea",
         "Korea Advanced Institute of Science and Technology, Daejeon, Republic of Korea"
       ],
-      "country": ["Republic of Korea"],
+      "country": [
+        "Republic of Korea"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984567",
       "title": "SketchingWithHands: 3D Sketching Handheld Products with First-Person Hand Posture"
     },
@@ -1519,18 +1779,27 @@
         "Adobe Systems, San Francisco, CA, USA",
         "University of California, Berkeley, Berkeley, CA, USA"
       ],
-      "country": ["USA", "Canada"],
+      "country": [
+        "USA",
+        "Canada"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984559",
       "title": "Authoring Illustrations of Human Movements by Iterative Physical Demonstration"
     },
     {
-      "author": ["Yusuke Sugano", "Xucong Zhang", "Andreas Bulling"],
+      "author": [
+        "Yusuke Sugano",
+        "Xucong Zhang",
+        "Andreas Bulling"
+      ],
       "institution": [
         "Max Planck Institute for Informatics, Saarbrücken, Germany",
         "Max Planck Institute for Informatics, Saarbrücken, Germany",
         "Max Planck Institute for Informatics, Saarbrücken, Germany"
       ],
-      "country": ["Germany"],
+      "country": [
+        "Germany"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984536",
       "title": "AggreGaze: Collective Estimation of Audience Attention on Public Displays"
     },
@@ -1549,25 +1818,39 @@
         "University of St Andrews, St Andrews, Fife, United Kingdom",
         "University of St Andrews, St Andrews, Fife, United Kingdom"
       ],
-      "country": ["United Kingdom"],
+      "country": [
+        "United Kingdom"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984515",
       "title": "RadarCat: Radar Categorization for Input &amp; Interaction"
     },
     {
-      "author": ["Meredith Ringel Morris"],
-      "institution": ["Microsoft Research"],
-      "country": ["Microsoft Research"],
+      "author": [
+        "Meredith Ringel Morris"
+      ],
+      "institution": [
+        "Microsoft Research"
+      ],
+      "country": [
+        "Microsoft Research"
+      ],
       "url": "https://doi.org/10.1145/3252757",
       "title": "Session Details: Session 10B: Gesture"
     },
     {
-      "author": ["Yang Zhang", "Robert Xiao", "Chris Harrison"],
+      "author": [
+        "Yang Zhang",
+        "Robert Xiao",
+        "Chris Harrison"
+      ],
       "institution": [
         "Carnegie Mellon University, Pittsburgh, PA, USA",
         "Carnegie Mellon University, Pittsburgh, PA, USA",
         "Carnegie Mellon University, Pittsburgh, PA, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984574",
       "title": "Advancing Hand Gesture Recognition with High Resolution Electrical Impedance Tomography"
     },
@@ -1586,18 +1869,28 @@
         "Google, Inc., Mountain View, CA, USA",
         "ETH Zurich, Zurich, Switzerland"
       ],
-      "country": ["Switzerland", "USA"],
+      "country": [
+        "Switzerland",
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984565",
       "title": "Interacting with Soli: Exploring Fine-Grained Dynamic Gesture Recognition in the Radio-Frequency Spectrum"
     },
     {
-      "author": ["Jun Gong", "Xing-Dong Yang", "Pourang Irani"],
+      "author": [
+        "Jun Gong",
+        "Xing-Dong Yang",
+        "Pourang Irani"
+      ],
       "institution": [
         "Dartmouth College, Hanover, NH, USA",
         "Dartmouth College, Hanover, NH, USA",
         "University of Manitoba, Winnipeg, Manitoba, Canada"
       ],
-      "country": ["USA", "Canada"],
+      "country": [
+        "USA",
+        "Canada"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984563",
       "title": "WristWhirl: One-Handed Continuous Smartwatch Input Using Wrist Gestures"
     },
@@ -1614,14 +1907,22 @@
         "University of Central Florida, Orlando, FL, USA",
         "University of Central Florida, Orlando, FL, USA"
       ],
-      "country": ["USA"],
+      "country": [
+        "USA"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984525",
       "title": "A Rapid Prototyping Approach to Synthetic Data Generation for Improved 2D Gesture Recognition"
     },
     {
-      "author": ["Naoto Fukasawa"],
-      "institution": ["NAOTO FUKASAWA DESIGN, Tokyo, Japan"],
-      "country": ["Japan"],
+      "author": [
+        "Naoto Fukasawa"
+      ],
+      "institution": [
+        "NAOTO FUKASAWA DESIGN, Tokyo, Japan"
+      ],
+      "country": [
+        "Japan"
+      ],
       "url": "https://doi.org/10.1145/2984511.2984595",
       "title": "Ambient"
     }

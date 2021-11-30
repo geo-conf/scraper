@@ -1,0 +1,638 @@
+{
+  "proceedings": "uist21",
+  "papers": [
+    {
+      "author": [
+        "Matthew Conlen",
+        "Megan Vo",
+        "Alan Tan",
+        "Jeffrey Heer"
+      ],
+      "institution": [
+        "University of Washington, United States",
+        "Idyll Collective, United States",
+        "Idyll Collective, United States",
+        "Paul G. Allen School of Computer Science & Engineering University of Washington, United States"
+      ],
+      "country": [
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474731",
+      "title": "Idyll Studio: A Structured Editor for Authoring Interactive &amp; Data-Driven Articles"
+    },
+    {
+      "author": [
+        "Arata Jingu",
+        "Takaaki Kamigaki",
+        "Masahiro Fujiwara",
+        "Yasutoshi Makino",
+        "Hiroyuki Shinoda"
+      ],
+      "institution": [
+        "The University of Tokyo, Japan",
+        "The University of Tokyo, Japan",
+        "The University of Tokyo, Japan",
+        "The University of Tokyo, Japan",
+        "The University of Tokyo, Japan"
+      ],
+      "country": [
+        "Japan"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474732",
+      "title": "LipNotif: Use of Lips as a Non-Contact Tactile Notification Interface Based on Ultrasonic Tactile Presentation"
+    },
+    {
+      "author": [
+        "Mustafa Doga Dogan",
+        "Steven Vidal Acevedo Colon",
+        "Varnika Sinha",
+        "Kaan Akşit",
+        "Stefanie Mueller"
+      ],
+      "institution": [
+        "MIT CSAIL, United States",
+        "MIT CSAIL, United States",
+        "MIT CSAIL, United States",
+        "Computer Science University College London, United Kingdom",
+        "MIT CSAIL, United States"
+      ],
+      "country": [
+        "United States",
+        "United Kingdom"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474733",
+      "title": "SensiCut: Material-Aware Laser Cutting Using Speckle Sensing and Deep Learning"
+    },
+    {
+      "author": [
+        "Jules Françoise",
+        "Baptiste Caramiaux",
+        "Téo Sanchez"
+      ],
+      "institution": [
+        "Université Paris-Saclay, CNRS, Laboratoire Interdisciplinaire des Sciences du Numérique, France",
+        "Sorbonne Université, CNRS, ISIR, France",
+        "Université Paris-Saclay, CNRS, Inria, Laboratoire Interdisciplinaire des Sciences du Numérique, France"
+      ],
+      "country": [
+        "France"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474734",
+      "title": "Marcelle: Composing Interactive Machine Learning Workflows and Interfaces"
+    },
+    {
+      "author": [
+        "Ben Lafreniere",
+        "Tanya R. Jonker",
+        "Stephanie Santosa",
+        "Mark Parent",
+        "Michael Glueck",
+        "Tovi Grossman",
+        "Hrvoje Benko",
+        "Daniel Wigdor"
+      ],
+      "institution": [
+        "Facebook Reality Labs Research, Toronto, ON, Canada",
+        "Facebook Reality Labs Research, Seattle, WA, United States",
+        "Facebook Reality Labs Research, Toronto, ON, Canada",
+        "Facebook Reality Labs Research, Toronto, ON, Canada",
+        "Facebook Reality Labs Research, Toronto, ON, Canada",
+        "University of Toronto, Toronto, ON, Canada",
+        "Facebook Reality Labs Research, Seattle, WA, United States",
+        "Facebook Reality Labs Research, Toronto, ON, Canada and University of Toronto, Toronto, ON, Canada"
+      ],
+      "country": [
+        "Canada",
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474735",
+      "title": "False Positives vs. False Negatives: The Effects of Recovery Time and Cognitive Costs on Input Error Preference"
+    },
+    {
+      "author": [
+        "Will Brackenbury",
+        "Andrew McNutt",
+        "Kyle Chard",
+        "Aaron Elmore",
+        "Blase Ur"
+      ],
+      "institution": [
+        "University of Chicago, United States",
+        "University of Chicago, United States",
+        "University of Chicago, United States",
+        "University of Chicago, United States",
+        "University of Chicago, United States"
+      ],
+      "country": [
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474736",
+      "title": "KondoCloud: Improving Information Management in Cloud Storage via Recommendations Based on File Similarity"
+    },
+    {
+      "author": [
+        "Aaditya Naik",
+        "Jonathan Mendelson",
+        "Nathaniel Sands",
+        "Yuepeng Wang",
+        "Mayur Naik",
+        "Mukund Raghothaman"
+      ],
+      "institution": [
+        "Computer and Information Science University of Pennsylvania, United States",
+        "University of Pennsylvania, United States",
+        "University of Southern California, United States",
+        "Simon Fraser University, Canada",
+        "University of Pennsylvania, United States",
+        "University of Southern California, United States"
+      ],
+      "country": [
+        "United States",
+        "Canada"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474737",
+      "title": "Sporq: An Interactive Environment for Exploring Code Using Query-by-Example"
+    },
+    {
+      "author": [
+        "Isamu Endo",
+        "Kazuki Takashima",
+        "Maakito Inoue",
+        "Kazuyuki Fujita",
+        "Kiyoshi Kiyokawa",
+        "Yoshifumi Kitamura"
+      ],
+      "institution": [
+        "Tohoku University, Japan",
+        "Tohoku University, Japan",
+        "Tohoku University, Japan",
+        "Tohoku University, Japan",
+        "Nara Institute of Science and Technology, Japan",
+        "Tohoku University, Japan"
+      ],
+      "country": [
+        "Japan"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474738",
+      "title": "ModularHMD: A Reconfigurable Mobile Head-Mounted Display Enabling Ad-Hoc Peripheral Interactions with the Real World"
+    },
+    {
+      "author": [
+        "Mohamed Kari",
+        "Tobias Grosse-Puppendahl",
+        "Alexander Jagaciak",
+        "David Bethge",
+        "Reinhard Schütte",
+        "Christian Holz"
+      ],
+      "institution": [
+        "Porsche AG, Germany",
+        "Porsche AG, Germany",
+        "Porsche AG, Germany",
+        "Porsche AG, Germany",
+        "University Duisburg-Essen Institute for Computer Science and Business Information Systems, Germany",
+        "Department of Computer Science ETH Zürich, Switzerland"
+      ],
+      "country": [
+        "Germany",
+        "Switzerland"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474739",
+      "title": "SoundsRide: Affordance-Synchronized Music Mixing for In-Car Audio Augmented Reality"
+    },
+    {
+      "author": [
+        "Jingmei Hu",
+        "Priyan Vaithilingam",
+        "Stephen Chong",
+        "Margo Seltzer",
+        "Elena L. Glassman"
+      ],
+      "institution": [
+        "Harvard University, United States",
+        "Harvard University, United States",
+        "Harvard University, United States",
+        "The University of British Columbia, Canada",
+        "Harvard University, United States"
+      ],
+      "country": [
+        "United States",
+        "Canada"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474740",
+      "title": "Assuage: Assembly Synthesis Using A Guided Exploration"
+    },
+    {
+      "author": [
+        "Ken Pfeuffer",
+        "Abdullatif Dinc",
+        "Jan Obernolte",
+        "Radiah Rivu",
+        "Yasmeen Abdrabou",
+        "Franziska Shelter",
+        "Yomna Abdelrahman",
+        "Florian Alt"
+      ],
+      "institution": [
+        "Bundeswehr University, Germany and Aarhus University, Denmark",
+        "LMU Munich, Germany",
+        "LMU Munich, Germany",
+        "Bundeswehr University Munich, Germany",
+        "Bundeswehr University, Germany",
+        "LMU Munich, Germany",
+        "Bundeswehr University, Germany",
+        "Bundeswehr University, Germany"
+      ],
+      "country": [
+        "Denmark",
+        "Germany"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474741",
+      "title": "Bi-3D: Bi-Manual Pen-and-Touch Interaction for 3D Manipulation on Tablets"
+    },
+    {
+      "author": [
+        "Maozheng Zhao",
+        "Wenzhe Cui",
+        "IV Ramakrishnan",
+        "Shumin Zhai",
+        "Xiaojun Bi"
+      ],
+      "institution": [
+        "Department of Computer Science Stony Brook University, United States",
+        "Department of Computer Science Stony Brook University, United States",
+        "Department of Computer Science Stony Brook University, United States",
+        "Google, United States",
+        "Department of Computer Science Stony Brook University, United States"
+      ],
+      "country": [
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474742",
+      "title": "Voice and Touch Based Error-Tolerant Multimodal Text Editing and Correction for Smartphones"
+    },
+    {
+      "author": [
+        "Liang Wang",
+        "Zhe Huang",
+        "Ziyu Zhou",
+        "Devon McKeon",
+        "Giles Blaney",
+        "Michael C. Hughes",
+        "Robert J. K. Jacob"
+      ],
+      "institution": [
+        "Department of Computer Science Tufts University, United States",
+        "Department of Computer Science Tufts University, United States",
+        "Department of Computer Science Tufts University, United States",
+        "Department of Computer Science Tufts University, United States",
+        "Department of Biomedical Engineering Tufts University, United States",
+        "Department of Computer Science Tufts University, United States",
+        "Department of Computer Science Tufts University, United States"
+      ],
+      "country": [
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474743",
+      "title": "Taming FNIRS-Based BCI Input for Better Calibration and Broader Use"
+    },
+    {
+      "author": [
+        "Nischal Shrestha",
+        "Titus Barik",
+        "Chris Parnin"
+      ],
+      "institution": [
+        "North Carolina State University, United States",
+        "Microsoft, United States",
+        "North Carolina State University, United States"
+      ],
+      "country": [
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474744",
+      "title": "Unravel: A Fluent Code Explorer for Data Wrangling"
+    },
+    {
+      "author": [
+        "Seungjae Oh",
+        "Chaeyong Park",
+        "Yo-Seb Jeon",
+        "Seungmoon Choi"
+      ],
+      "institution": [
+        "Interaction Laboratory Pohang University of Science and Technology (POSTECH), Republic of Korea",
+        "Interaction Laboratory Pohang University of Science and Technology, Republic of Korea",
+        "Electrical Engineering POSTECH, Republic of Korea",
+        "Computer Science and Engineering / Interaction Laboratory Pohang University of Science and Technology (POSTECH), Republic of Korea"
+      ],
+      "country": [
+        "Republic of Korea"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474745",
+      "title": "Identifying Contact Fingers on Touch Sensitive Surfaces by Ring-Based Vibratory Communication"
+    },
+    {
+      "author": [
+        "Jiannan Li",
+        "Jiahe Lyu",
+        "Mauricio Sousa",
+        "Ravin Balakrishnan",
+        "Anthony Tang",
+        "Tovi Grossman"
+      ],
+      "institution": [
+        "Department of Computer Science University of Toronto, Canada",
+        "Department of Computer Science University of Toronto, Canada",
+        "Department of Computer Science University of Toronto, Canada",
+        "Department of Computer Science, University of Toronto, Canada",
+        "Faculty of Information, University of Toronto, Canada",
+        "Department of Computer Science University of Toronto, Canada"
+      ],
+      "country": [
+        "Canada"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474746",
+      "title": "Route Tapestries: Navigating 360° Virtual Tour Videos Using Slit-Scan Visualizations"
+    },
+    {
+      "author": [
+        "Jasmine Lu",
+        "Ziwei Liu",
+        "Jas Brooks",
+        "Pedro Lopes"
+      ],
+      "institution": [
+        "University of Chicago, United States",
+        "University of Chicago, United States",
+        "University of Chicago, United States",
+        "University of Chicago, United States"
+      ],
+      "country": [
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474747",
+      "title": "Chemical Haptics: Rendering Haptic Sensations via Topical Stimulants"
+    },
+    {
+      "author": [
+        "Wode Ni",
+        "Joshua Sunshine",
+        "Vu Le",
+        "Sumit Gulwani",
+        "Titus Barik"
+      ],
+      "institution": [
+        "Carnegie Mellon University, United States",
+        "Carnegie Mellon University, United States",
+        "Microsoft, United States",
+        "Microsoft, United States",
+        "Microsoft, United States"
+      ],
+      "country": [
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474748",
+      "title": "ReCode : A Lightweight Find-and-Replace Interaction in the IDE for Transforming Code by Example"
+    },
+    {
+      "author": [
+        "Rundong Tian",
+        "Eric Paulos"
+      ],
+      "institution": [
+        "Computer Sciences UC Berkeley, United States",
+        "UC Berkeley, United States"
+      ],
+      "country": [
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474749",
+      "title": "Adroid: Augmenting Hands-on Making with a Collaborative Robot"
+    },
+    {
+      "author": [
+        "Yifei Cheng",
+        "Yukang Yan",
+        "Xin Yi",
+        "Yuanchun Shi",
+        "David Lindlbauer"
+      ],
+      "institution": [
+        "Swarthmore College Swarthmore College, Swarthmore, Pennsylvania, United States, United States",
+        "Department of Computer Science and Technology Tsinghua University, China",
+        "Tsinghua University, China",
+        "Department of Computer science and Technology Tsinghua University, China",
+        "Human-Computer Interaction Institute Carnegie Mellon University, United States"
+      ],
+      "country": [
+        "United States",
+        "China"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474750",
+      "title": "SemanticAdapt: Optimization-Based Adaptation of Mixed Reality Layouts Leveraging Virtual-Physical Semantic Connections"
+    },
+    {
+      "author": [
+        "Zeyu Yan",
+        "Huaishu Peng"
+      ],
+      "institution": [
+        "Department of Computer Science University Of Maryland, United States",
+        "Computer Science University of Maryland, United States"
+      ],
+      "country": [
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474751",
+      "title": "FabHydro: Printing Interactive Hydraulic Devices with an Affordable SLA 3D Printer"
+    },
+    {
+      "author": [
+        "Oriana Riva",
+        "Jason Kace"
+      ],
+      "institution": [
+        "Microsoft Research, United States",
+        "Microsoft, United States"
+      ],
+      "country": [
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474752",
+      "title": "Etna: Harvesting Action Graphs from Websites"
+    },
+    {
+      "author": [
+        "Nisal Menuka Gamage",
+        "Deepana Ishtaweera",
+        "Martin Weigel",
+        "Anusha Withana"
+      ],
+      "institution": [
+        "School of Computer Science University of Sydney, Australia",
+        "School of Computer Science University of Sydney, Australia and The Department of Electronic and Telecommunication Engineering, University of Moratuwa Moratuwa, Sri Lanka",
+        "Honda Research Institute Europe, Germany",
+        "School of Computer Science The University of Sydney, Australia"
+      ],
+      "country": [
+        "Australia",
+        "Sri Lanka",
+        "Germany"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474753",
+      "title": "So Predictable! Continuous 3D Hand Trajectory Prediction in Virtual Reality"
+    },
+    {
+      "author": [
+        "Ruei-Che Chang",
+        "Chih-An Tsao",
+        "Fang-Ying Liao",
+        "Seraphina Yong",
+        "Tom Yeh",
+        "Bing-Yu Chen"
+      ],
+      "institution": [
+        "National Taiwan University, Taiwan",
+        "National Taiwan University, Taiwan",
+        "National Taiwan University, Taiwan",
+        "NTU IoX Center National Taiwan University, Taiwan",
+        "University of Colorado Boulder, United States",
+        "National Taiwan University, Taiwan"
+      ],
+      "country": [
+        "Taiwan",
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474754",
+      "title": "Daedalus in the Dark: Designing for Non-Visual Accessible Construction of Laser-Cut Architecture"
+    },
+    {
+      "author": [
+        "Jane L.",
+        "Kevin Y. Zhai",
+        "Jose Echevarria",
+        "Ohad Fried",
+        "Pat Hanrahan",
+        "James A. Landay"
+      ],
+      "institution": [
+        "Stanford University, United States",
+        "Air, Inc, United States",
+        "Adobe Research, United States",
+        "Interdisciplinary Center Herzliya, Israel",
+        "Stanford University, United States",
+        "Computer Science Department Stanford University, United States"
+      ],
+      "country": [
+        "United States",
+        "Israel"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474755",
+      "title": "Dynamic Guidance for Decluttering Photographic Compositions"
+    },
+    {
+      "author": [
+        "Xue Yu",
+        "Stephen DiVerdi",
+        "Akshay Sharma",
+        "Yotam Gingold"
+      ],
+      "institution": [
+        "George Mason University, United States",
+        "Adobe Research, United States",
+        "Virginia Tech and Iowa State University, United States",
+        "Computer Science George Mason University, United States"
+      ],
+      "country": [
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474756",
+      "title": "ScaffoldSketch: Accurate Industrial Design Drawing in VR"
+    },
+    {
+      "author": [
+        "Savvas Petridis",
+        "Hijung Valentina Shin",
+        "Lydia B Chilton"
+      ],
+      "institution": [
+        "Computer Science Department, Columbia University, New York, United States",
+        "Adobe Research, Cambridge, Massachusetts, United States",
+        "Computer Science Department, Columbia University, New York, United States"
+      ],
+      "country": [
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474757",
+      "title": "SymbolFinder: Brainstorming Diverse Symbols Using Local Semantic Networks"
+    },
+    {
+      "author": [
+        "Junyi Zhu",
+        "Jackson C Snowden",
+        "Joshua Verdejo",
+        "Emily Chen",
+        "Paul Zhang",
+        "Hamid Ghaednia",
+        "Joseph H Schwab",
+        "Stefanie Mueller"
+      ],
+      "institution": [
+        "MIT CSAIL, United States",
+        "MIT CSAIL, United States",
+        "MIT CSAIL Massachusetts Institute of Technology, United States",
+        "MIT CSAIL, United States",
+        "MIT CSAIL, United States",
+        "Massachusetts General Hospital, United States",
+        "Massachusetts General Hospital, United States",
+        "MIT CSAIL, United States"
+      ],
+      "country": [
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474758",
+      "title": "EIT-Kit: An Electrical Impedance Tomography Toolkit for Health and Motion Sensing"
+    },
+    {
+      "author": [
+        "Romain Nith",
+        "Shan-Yuan Teng",
+        "Pengyu Li",
+        "Yujie Tao",
+        "Pedro Lopes"
+      ],
+      "institution": [
+        "University of Chicago, United States",
+        "University of Chicago, United States",
+        "University of Chicago, United States",
+        "University of Chicago, United States",
+        "University of Chicago, United States"
+      ],
+      "country": [
+        "United States"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474759",
+      "title": "DextrEMS: Increasing Dexterity in Electrical Muscle Stimulation by Combining It with Brakes"
+    },
+    {
+      "author": [
+        "Yu-Wen Chen",
+        "Wei-Ju Lin",
+        "Yi Chen",
+        "Lung-Pan Cheng"
+      ],
+      "institution": [
+        "National Taiwan University, Taiwan",
+        "National Taiwan University, Taiwan",
+        "National Taiwan University, Taiwan",
+        "National Taiwan University, Taiwan"
+      ],
+      "country": [
+        "Taiwan"
+      ],
+      "url": "https://doi.org/10.1145/3472749.3474760",
+      "title": "PneuSeries: 3D Shape Forming with Modularized Serial-Connected Inflatables"
+    }
+  ]
+}

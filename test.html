@@ -1,0 +1,1281 @@
+<!DOCTYPE html><html lang="en" class="pb-page" data-request-id="ce6b9e11-17b7-4c2d-850f-1e7f38154984"><head data-pb-dropzone="head"><script async="" type="text/javascript" src="//dl.acm.org/templates/jsp/_ux3/_acm/citeproc.min.js" rel="preload"></script><script type="text/javascript" src="https://m.addthis.com/live/red_lojson/300lo.json?si=61a4a3ac184ba835&amp;bkl=0&amp;bl=1&amp;pdt=1740&amp;sid=61a4a3ac184ba835&amp;pub=xa-4faab26f2cff13a7&amp;rev=v8.28.8-wp&amp;ln=en&amp;pc=men&amp;cb=0&amp;ab=-&amp;dp=dl.acm.org&amp;fp=doi%2F10.1145%2F3472749.3474760&amp;fr=&amp;of=0&amp;pd=0&amp;irt=0&amp;vcl=0&amp;md=0&amp;ct=1&amp;tct=0&amp;abt=0&amp;cdn=0&amp;pi=1&amp;rb=0&amp;gen=100&amp;chr=UTF-8&amp;colc=1638179756858&amp;jsl=1&amp;uvs=61a4a3ac95dacab7000&amp;skipb=1&amp;callback=addthis.cbs.jsonp__212054482611061080"></script><script type="text/javascript" src="https://v1.addthisedge.com/live/boost/xa-4faab26f2cff13a7/_ate.track.config_resp"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" src="https://z.moatads.com/addthismoatframe568911941483/moatframe.js"></script><meta name="pbContext" content=";taxonomy:taxonomy:conference-collections;wgroup:string:ACM Publication Websites;groupTopic:topic:acm-pubtype>proceeding;ctype:string:Book Content;issue:issue:doi\:10.1145/3472749;page:string:Article/Chapter View;subPage:string:Abstract;article:article:doi\:10.1145/3472749.3474760;topic:topic:conference-collections>uist;csubtype:string:Conference Proceedings;website:website:dl-site;journal:journal:acmconferences;pageGroup:string:Publication Pages">
+<link rel="schema.DC" href="http://purl.org/DC/elements/1.0/"><meta name="dc.Format" content="text/HTML"><meta name="dc.Language" content="EN"><meta name="dc.Coverage" content="world"><!-- ${citation_fulltext_world_readable:10.1145/3472749.3474760} -->
+
+
+
+
+
+
+<title>PneuSeries: 3D Shape Forming with Modularized Serial-Connected Inflatables | The 34th Annual ACM Symposium on User Interface Software and Technology</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta charset="UTF-8">
+
+
+
+
+
+
+
+
+
+<meta name="robots" content="noarchive">
+<meta name="pb-robots-disabled">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+        <meta property="og:url" content="https://dl.acm.org/doi/abs/10.1145/3472749.3474760">
+    
+
+
+
+
+
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!--link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700,800|Merriweather:300,400,700,900')--><link rel="stylesheet" href="/products/acm/releasedAssets/css/build-619a2054571d7858fac7.css"><link rel="stylesheet" href="/products/acm/releasedAssets/css/print-619a2054571d7858fac7.css" media="print">
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NFGCMX"></script><script type="text/javascript" async="" src="https://cdn.heapanalytics.com/js/heap-1083010732.js"></script><script defer="" src="https://scholar.google.com/scholar_js/casa.js" async=""></script>
+<script type="text/javascript">
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("1083010732");
+</script>
+<link rel="apple-touch-icon" sizes="180x180" href="/pb-assets/head-metadata/apple-touch-icon-1574252172393.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/pb-assets/head-metadata/favicon-32x32-1574252172003.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/pb-assets/head-metadata/favicon-16x16-1574252172937.png">
+<link rel="manifest" href="/pb-assets/head-metadata/site-1574252171130.webmanifest" crossorigin="use-credentials">
+<link rel="mask-icon" href="/pb-assets/head-metadata/safari-pinned-tab-1574252171193.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#00a300">
+<meta name="theme-color" content="#ffffff">
+
+    <!-- Google Tag Manager -->
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NFGCMX');</script>
+    <!-- End Google Tag Manager -->
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<style type="text/css">.at-icon{fill:#fff;border:0}.at-icon-wrapper{display:inline-block;overflow:hidden}a .at-icon-wrapper{cursor:pointer}.at-rounded,.at-rounded-element .at-icon-wrapper{border-radius:12%}.at-circular,.at-circular-element .at-icon-wrapper{border-radius:50%}.addthis_32x32_style .at-icon{width:2pc;height:2pc}.addthis_24x24_style .at-icon{width:24px;height:24px}.addthis_20x20_style .at-icon{width:20px;height:20px}.addthis_16x16_style .at-icon{width:1pc;height:1pc}#at16lb{display:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:1001;background-color:#000;opacity:.001}#at_complete,#at_error,#at_share,#at_success{position:static!important}.at15dn{display:none}#at15s,#at16p,#at16p form input,#at16p label,#at16p textarea,#at_share .at_item{font-family:arial,helvetica,tahoma,verdana,sans-serif!important;font-size:9pt!important;outline-style:none;outline-width:0;line-height:1em}* html #at15s.mmborder{position:absolute!important}#at15s.mmborder{position:fixed!important;width:250px!important}#at15s{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);float:none;line-height:1em;margin:0;overflow:visible;padding:5px;text-align:left;position:absolute}#at15s a,#at15s span{outline:0;direction:ltr;text-transform:none}#at15s .at-label{margin-left:5px}#at15s .at-icon-wrapper{width:1pc;height:1pc;vertical-align:middle}#at15s .at-icon{width:1pc;height:1pc}.at4-icon{display:inline-block;background-repeat:no-repeat;background-position:top left;margin:0;overflow:hidden;cursor:pointer}.addthis_16x16_style .at4-icon,.addthis_default_style .at4-icon,.at4-icon,.at-16x16{width:1pc;height:1pc;line-height:1pc;background-size:1pc!important}.addthis_32x32_style .at4-icon,.at-32x32{width:2pc;height:2pc;line-height:2pc;background-size:2pc!important}.addthis_24x24_style .at4-icon,.at-24x24{width:24px;height:24px;line-height:24px;background-size:24px!important}.addthis_20x20_style .at4-icon,.at-20x20{width:20px;height:20px;line-height:20px;background-size:20px!important}.at4-icon.circular,.circular .at4-icon,.circular.aticon{border-radius:50%}.at4-icon.rounded,.rounded .at4-icon{border-radius:4px}.at4-icon-left{float:left}#at15s .at4-icon{text-indent:20px;padding:0;overflow:visible;white-space:nowrap;background-size:1pc;width:1pc;height:1pc;background-position:top left;display:inline-block;line-height:1pc}.addthis_vertical_style .at4-icon,.at4-follow-container .at4-icon{margin-right:5px}html>body #at15s{width:250px!important}#at15s.atm{background:none!important;padding:0!important;width:10pc!important}#at15s_inner{background:#fff;border:1px solid #fff;margin:0}#at15s_head{position:relative;background:#f2f2f2;padding:4px;cursor:default;border-bottom:1px solid #e5e5e5}.at15s_head_success{background:#cafd99!important;border-bottom:1px solid #a9d582!important}.at15s_head_success a,.at15s_head_success span{color:#000!important;text-decoration:none}#at15s_brand,#at15sptx,#at16_brand{position:absolute}#at15s_brand{top:4px;right:4px}.at15s_brandx{right:20px!important}a#at15sptx{top:4px;right:4px;text-decoration:none;color:#4c4c4c;font-weight:700}#at15sptx:hover{text-decoration:underline}#at16_brand{top:5px;right:30px;cursor:default}#at_hover{padding:4px}#at_hover .at_item,#at_share .at_item{background:#fff!important;float:left!important;color:#4c4c4c!important}#at_share .at_item .at-icon-wrapper{margin-right:5px}#at_hover .at_bold{font-weight:700;color:#000!important}#at_hover .at_item{width:7pc!important;padding:2px 3px!important;margin:1px;text-decoration:none!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover{margin:0!important}#at_hover .at_item.athov,#at_hover .at_item:focus,#at_hover .at_item:hover,#at_share .at_item.athov,#at_share .at_item:hover{background:#f2f2f2!important;border:1px solid #e5e5e5;color:#000!important;text-decoration:none}.ipad #at_hover .at_item:focus{background:#fff!important;border:1px solid #fff}.at15t{display:block!important;height:1pc!important;line-height:1pc!important;padding-left:20px!important;background-position:0 0;text-align:left}.addthis_button,.at15t{cursor:pointer}.addthis_toolbox a.at300b,.addthis_toolbox a.at300m{width:auto}.addthis_toolbox a{margin-bottom:5px;line-height:initial}.addthis_toolbox.addthis_vertical_style{width:200px}.addthis_button_facebook_like .fb_iframe_widget{line-height:100%}.addthis_button_facebook_like iframe.fb_iframe_widget_lift{max-width:none}.addthis_toolbox a.addthis_button_counter,.addthis_toolbox a.addthis_button_facebook_like,.addthis_toolbox a.addthis_button_facebook_send,.addthis_toolbox a.addthis_button_facebook_share,.addthis_toolbox a.addthis_button_foursquare,.addthis_toolbox a.addthis_button_linkedin_counter,.addthis_toolbox a.addthis_button_pinterest_pinit,.addthis_toolbox a.addthis_button_tweet{display:inline-block}.addthis_toolbox span.addthis_follow_label{display:none}.addthis_toolbox.addthis_vertical_style span.addthis_follow_label{display:block;white-space:nowrap}.addthis_toolbox.addthis_vertical_style a{display:block}.addthis_toolbox.addthis_vertical_style.addthis_32x32_style a{line-height:2pc;height:2pc}.addthis_toolbox.addthis_vertical_style .at300bs{margin-right:4px;float:left}.addthis_toolbox.addthis_20x20_style span{line-height:20px}.addthis_toolbox.addthis_32x32_style span{line-height:2pc}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact,.addthis_toolbox.addthis_pill_combo_style a{float:left}.addthis_toolbox.addthis_pill_combo_style a.addthis_button_tweet{margin-top:-2px}.addthis_toolbox.addthis_pill_combo_style .addthis_button_compact .at15t_compact{margin-right:4px}.addthis_default_style .addthis_separator{margin:0 5px;display:inline}div.atclear{clear:both}.addthis_default_style .addthis_separator,.addthis_default_style .at4-icon,.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300bs,.addthis_default_style .at300m{float:left}.at300b img,.at300bo img{border:0}a.at300b .at4-icon,a.at300m .at4-icon{display:block}.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300m{padding:0 2px}.at300b,.at300bo,.at300bs,.at300m{cursor:pointer}.addthis_button_facebook_like.at300b:hover,.addthis_button_facebook_like.at300bs:hover,.addthis_button_facebook_send.at300b:hover,.addthis_button_facebook_send.at300bs:hover{opacity:1}.addthis_20x20_style .at15t,.addthis_20x20_style .at300bs{overflow:hidden;display:block;height:20px!important;width:20px!important;line-height:20px!important}.addthis_32x32_style .at15t,.addthis_32x32_style .at300bs{overflow:hidden;display:block;height:2pc!important;width:2pc!important;line-height:2pc!important}.at300bs{overflow:hidden;display:block;background-position:0 0;height:1pc;width:1pc;line-height:1pc!important}.addthis_default_style .at15t_compact,.addthis_default_style .at15t_expanded{margin-right:4px}#at_share .at_item{width:123px!important;padding:4px;margin-right:2px;border:1px solid #fff}#at16p{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);z-index:10000001;position:absolute;top:50%;left:50%;width:300px;padding:10px;margin:0 auto;margin-top:-185px;margin-left:-155px;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#5e5e5e}#at_share{margin:0;padding:0}#at16pt{position:relative;background:#f2f2f2;height:13px;padding:5px 10px}#at16pt a,#at16pt h4{font-weight:700}#at16pt h4{display:inline;margin:0;padding:0;font-size:9pt;color:#4c4c4c;cursor:default}#at16pt a{position:absolute;top:5px;right:10px;color:#4c4c4c;text-decoration:none;padding:2px}#at15sptx:focus,#at16pt a:focus{outline:thin dotted}#at15s #at16pf a{top:1px}#_atssh{width:1px!important;height:1px!important;border:0!important}.atm{width:10pc!important;padding:0;margin:0;line-height:9pt;letter-spacing:normal;font-family:arial,helvetica,tahoma,verdana,sans-serif;font-size:9pt;color:#444;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABtJREFUeNpiZGBgaGAgAjAxEAlGFVJHIUCAAQDcngCUgqGMqwAAAABJRU5ErkJggg==);padding:4px}.atm-f{text-align:right;border-top:1px solid #ddd;padding:5px 8px}.atm-i{background:#fff;border:1px solid #d5d6d6;padding:0;margin:0;box-shadow:1px 1px 5px rgba(0,0,0,.15)}.atm-s{margin:0!important;padding:0!important}.atm-s a:focus{border:transparent;outline:0;transition:none}#at_hover.atm-s a,.atm-s a{display:block;text-decoration:none;padding:4px 10px;color:#235dab!important;font-weight:400;font-style:normal;transition:none}#at_hover.atm-s .at_bold{color:#235dab!important}#at_hover.atm-s a:hover,.atm-s a:hover{background:#2095f0;text-decoration:none;color:#fff!important}#at_hover.atm-s .at_bold{font-weight:700}#at_hover.atm-s a:hover .at_bold{color:#fff!important}.atm-s a .at-label{vertical-align:middle;margin-left:5px;direction:ltr}.at_PinItButton{display:block;width:40px;height:20px;padding:0;margin:0;background-image:url(//s7.addthis.com/static/t00/pinit00.png);background-repeat:no-repeat}.at_PinItButton:hover{background-position:0 -20px}.addthis_toolbox .addthis_button_pinterest_pinit{position:relative}.at-share-tbx-element .fb_iframe_widget span{vertical-align:baseline!important}#at16pf{height:auto;text-align:right;padding:4px 8px}.at-privacy-info{position:absolute;left:7px;bottom:7px;cursor:pointer;text-decoration:none;font-family:helvetica,arial,sans-serif;font-size:10px;line-height:9pt;letter-spacing:.2px;color:#666}.at-privacy-info:hover{color:#000}.body .wsb-social-share .wsb-social-share-button-vert{padding-top:0;padding-bottom:0}.body .wsb-social-share.addthis_counter_style .addthis_button_tweet.wsb-social-share-button{padding-top:40px}.body .wsb-social-share.addthis_counter_style .addthis_button_facebook_like.wsb-social-share-button{padding-top:21px}@media print{#at4-follow,#at4-share,#at4-thankyou,#at4-whatsnext,#at4m-mobile,#at15s,.at4,.at4-recommended{display:none!important}}@media screen and (max-width:400px){.at4win{width:100%}}@media screen and (max-height:700px) and (max-width:400px){.at4-thankyou-inner .at4-recommended-container{height:122px;overflow:hidden}.at4-thankyou-inner .at4-recommended .at4-recommended-item:first-child{border-bottom:1px solid #c5c5c5}}</style><style type="text/css">.at-branding-logo{font-family:helvetica,arial,sans-serif;text-decoration:none;font-size:10px;display:inline-block;margin:2px 0;letter-spacing:.2px}.at-branding-logo .at-branding-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF////+GlNUkcc1QAAAB1JREFUeNpiYIQDBjQmAwMmkwEM0JnY1WIxFyDAABGeAFEudiZsAAAAAElFTkSuQmCC")}.at-branding-logo .at-branding-icon,.at-branding-logo .at-privacy-icon{display:inline-block;height:10px;width:10px;margin-left:4px;margin-right:3px;margin-bottom:-1px;background-repeat:no-repeat}.at-branding-logo .at-privacy-icon{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAKCAMAAABR24SMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABhQTFRF8fr9ot/xXcfn2/P5AKva////////AKTWodjhjAAAAAd0Uk5T////////ABpLA0YAAAA6SURBVHjaJMzBDQAwCAJAQaj7b9xifV0kUKJ9ciWxlzWEWI5gMF65KUTv0VKkjVeTerqE/x7+9BVgAEXbAWI8QDcfAAAAAElFTkSuQmCC")}.at-branding-logo span{text-decoration:none}.at-branding-logo .at-branding-addthis,.at-branding-logo .at-branding-powered-by{color:#666}.at-branding-logo .at-branding-addthis:hover{color:#333}.at-cv-with-image .at-branding-addthis,.at-cv-with-image .at-branding-addthis:hover{color:#fff}a.at-branding-logo:visited{color:initial}.at-branding-info{display:inline-block;padding:0 5px;color:#666;border:1px solid #666;border-radius:50%;font-size:10px;line-height:9pt;opacity:.7;transition:all .3s ease;text-decoration:none}.at-branding-info span{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.at-branding-info:before{content:'i';font-family:Times New Roman}.at-branding-info:hover{color:#0780df;border-color:#0780df}</style><script src="https://acm-prod.disqus.com/embed.js" data-timestamp="1638179756506"></script><script src="//deploy.mopinion.com/js/pastease.js"></script><script async="" src="https://static.hotjar.com/c/hotjar-1290436.js?sv=6"></script><style></style><script src="https://acm-prod.disqus.com/count-data.js?2=https%3A%2F%2Fdl.acm.org%2Fdoi%2F10.1145%2F3472749.3474760"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.3e33cc45b553fa4f7fd3dfc49dc03ed0.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.2f2f40d40785c9541a90e9086c8770a3.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.2737369a2131ed319d0273590d7dc69d.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"><script async="" id="mopinionFeedbackScript" src="https://collect.mopinion.com/assets/surveys/2.0/js/survey.min.js?d=30032020"></script></head>
+<body class="pb-ui">
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFGCMX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    if(false) {
+        document.getElementById("skipNavigationLink").onclick =function skipElement () {
+            var element = document.getElementById('');
+            if(element == null || element == undefined) {
+                element = document.getElementsByClassName('').item(0);
+            }
+            element.setAttribute('tabindex','0');
+            element.focus();
+
+        }
+
+    }
+
+</script>
+
+
+
+
+
+    <div id="pb-page-content" data-ng-non-bindable="">
+        <div data-pb-dropzone="main" data-pb-dropzone-name="Main">
+
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+        <header data-widget-def="ux3-layout-widget" data-widget-id="88f434fd-b4d9-4f0e-b7b6-cde0fadcc9ef" class="header base uist">
+        
+
+
+
+        
+        <div class="header__fixed-items fixed fixed-element auto-hide-bar">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-layout-widget" data-widget-id="c844bab8-b1d5-4df4-8bea-71f6156459e4" class="container header--first-row">
+        
+
+
+
+        
+        <div class="pull-left">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-general-image" data-widget-id="83eada61-9003-4cb3-99a8-a38fa7692761" class="header__logo1">
+        
+
+
+
+        
+        <a href="/" title="ACM Digital Library home"><img id="" alt="ACM Digital Library home" src="/specs/products/acm/releasedAssets/images/acm-dl-logo-white.png"></a>
+
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-general-image" data-widget-id="5517ee17-e847-46ff-b42e-c5a6754e032d" class="header__logo2">
+        
+
+
+
+        
+        <a href="https://www.acm.org" title="ACM home"><img id="" alt="ACM home" src="specs/products/acm/releasedAssets/images/acm-logo-1.png"></a>
+
+        </div>
+    
+</div><div class="pull-right">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-layout-widget" data-widget-id="ab4ba9a1-6e57-4b90-b9c2-fc7914d9a3a1" class="header__quick-menu text-onDark">
+        
+
+
+
+        
+        <ul class="rlist--inline"><li class="advanced-search-link hidden-lg hidden-md hidden-sm">
+
+
+
+        
+        <a href="/search/advanced">Advanced Search</a>
+</li><li class="show-on-mobile cloned hidden-xs hidden-sm">
+
+
+
+        
+        <a href="/browse/" title="browse by title or publisher">Browse</a>
+</li><li class="show-on-mobile cloned hidden-xs hidden-sm">
+
+
+
+        
+        <a href="/about" title="About the ACM Digital Library">About</a>
+</li><li class="login-list">
+
+
+
+        
+        
+
+
+
+
+    
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="dropBlock loginBar login-open">
+    <ul class="rlist--inline">
+        <li class="login-link">
+            <a href="/action/showLogin?redirectUri=%2Fdoi%2F10.1145%2F3472749.3474760">
+                Sign in
+            </a>
+        </li>
+        <li class="register-link">
+            
+                    <a href="https://accounts.acm.org?redirectUri=%2Fdoi%2F10.1145%2F3472749.3474760" class="btn" title="Register">
+                        Register
+                    </a>
+                
+        </li>
+    </ul>
+</div>
+
+
+
+    
+
+</li></ul>
+
+        </div>
+    
+</div>
+
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="menuWidget" data-widget-id="13da1316-80a7-4370-a291-8968cd9cb35e" class="container header--second-row">
+        
+
+
+
+        
+        <div class="responsive-menu-container clearfix"><div class="left-section pull-left"></div><div class="menu-section"><div class="main-nav responsive-menu-nav" style="display: block;"><a href="#global-menu" data-target="global-menu" data-toggle="nav" title="menu drawer"><span class="drawer__icons-box"><span class="drawer__icons-controls"></span></span></a><nav role="navigation" id="global-menu" data-ctrl-res="screen-sm" class="drawer__nav container gutterless hidden-sm hidden-xs"><ul id="menubar" role="menubar" class="menubar rlist--inline"><li class="hidden-lg hidden-md"><div data-toggle="transplant" data-target-class="hidden-xs hidden-sm" data-target=".header--second-row .quick-search--form" data-direction="from" data-transplant="self" class="quick-search-mobile"><div class="transplanted-clone"><form action="/action/doSearch" name="defaultQuickSearch" method="get" title="Quick Search" class="quick-search--form"><div class="quick-search--input"><div class="input-group option-0"><label for="AllFieldf73847c0-d936-48ec-9bf9-139b3828507fTransplanted" class="sr-only">Search ACM Digital Library</label><input id="AllFieldf73847c0-d936-48ec-9bf9-139b3828507fTransplanted" type="search" name="AllField" placeholder="Search ACM Digital Library" data-auto-complete-max-words="7" data-auto-complete-max-chars="32" data-contributors-conf="3" data-topics-conf="3" data-publication-titles-conf="3" data-history-items-conf="3" data-group-titles-conf="3" value="" class="autocomplete quick-search__input"></div></div><div class="quick-search--button"><button type="submit" title="Search" aria-label="Search" class="btn quick-search__button icon-Icon_Search"><span class="sr-only">Search</span><span>Search</span></button></div></form></div></div></li><li role="menuitem" aria-label="Advanced Search" id="menu-item-global-menu-0" class="menu-item mobile-menu-item"><a href="/search/advanced"><span>Advanced Search</span></a></li><li role="menuitem" aria-label="Journals" id="menu-item-global-menu-1" class="menu-item"><a href="/journals"><span>Journals</span></a></li><li role="menuitem" aria-label="Magazines" id="menu-item-global-menu-2" class="menu-item"><a href="/magazines"><span>Magazines</span></a></li><li role="menuitem" aria-label="Proceedings" id="menu-item-global-menu-3" class="menu-item"><a href="/proceedings"><span>Proceedings</span></a></li><li role="menuitem" aria-label="Books" id="menu-item-global-menu-4" class="menu-item"><a href="/acmbooks"><span>Books</span></a></li><li role="menuitem" aria-label="SIGs" id="menu-item-global-menu-5" class="menu-item"><a href="/sigs"><span>SIGs</span></a></li><li role="menuitem" aria-label="Conferences" id="menu-item-global-menu-6" class="menu-item"><a href="/conferences"><span>Conferences</span></a></li><li role="menuitem" aria-label="People" id="menu-item-global-menu-7" class="menu-item"><a href="/people"><span>People</span></a></li><li class="hidden-lg hidden-md"><div data-toggle="transplant" data-target-class="hidden-xs hidden-sm" data-target=".header__quick-menu .show-on-mobile" data-direction="from" data-transplant="self"><div class="transplanted-clone"><ul class="transplanted-clone__ul"><li class="show-on-mobile">
+
+
+
+        
+        <a href="/browse/" title="browse by title or publisher">Browse</a>
+</li><li class="show-on-mobile">
+
+
+
+        
+        <a href="/about" title="About the ACM Digital Library">About</a>
+</li></ul></div></div></li><li role="menuitem" aria-haspopup="true" aria-label="More" class="dropdown-more hidden dropdown menu-parent"><a href="#" title="More" data-toggle="dropdown" class="dropdown__toggle"><span>More</span><i aria-hidden="true" class="icon-section_arrow_d pull-right hidden-sm hidden-xs"></i></a><ul aria-labelledby="main0-1" aria-hidden="true" role="menu" class="rlist dropdown__menu"></ul></li><li class="menubar__extra-mob-links"></li></ul></nav></div></div><div class="right-section pull-right">
+
+
+
+        
+        <div class="quickSearchFormContainer"><div class="quick-search"><div class="clearfix quick-search__clearfix"><form action="/action/doSearch" name="defaultQuickSearch" method="get" title="Quick Search" class="quick-search--form cloned hidden-xs hidden-sm"><div class="quick-search--input"><div class="input-group option-0"><label for="AllFieldf73847c0-d936-48ec-9bf9-139b3828507f" class="sr-only">Search ACM Digital Library</label><input id="AllFieldf73847c0-d936-48ec-9bf9-139b3828507f" type="search" name="AllField" placeholder="Search ACM Digital Library" data-auto-complete-max-words="7" data-auto-complete-max-chars="32" data-contributors-conf="3" data-topics-conf="3" data-publication-titles-conf="3" data-history-items-conf="3" data-group-titles-conf="3" value="" class="autocomplete quick-search__input ui-autocomplete-input" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span></div></div><div class="quick-search--button"><button type="submit" title="Search" aria-label="Search" class="btn quick-search__button icon-Icon_Search"><span class="sr-only">Search</span><span>Search</span></button></div></form></div>
+
+
+
+        
+        <a class="quick-search__advancedHeader" title="link to Advanced Search form" href="/search/advanced">Advanced Search</a>
+</div></div>
+</div></div><div class="header__dropzone"></div>
+
+        </div>
+    
+
+
+
+
+        
+        <span style="display: none;">10.1145/3472749.3474760</span><span style="display: none;">acmconferences</span><span style="display: none;">Article/Chapter View</span><span style="display: none;">Abstract</span><span style="display: none;">Publication Pages</span><span style="display: none;">uist</span><span style="display: none;">Conference Proceedings</span><span style="display: none;">conference-collections</span><div class="sub-nav fixed-element secondary-bar--sticky" style="top: 124px;"><a href="#" data-db-target-for="sub-nav__items" data-more="false" data-lines="1" style="text-transform: uppercase;" class="sub-nav__toggle hidden-lg truncate-text-css">uist</a><div class="sub-nav__container"><div class="container"><div data-ctrl-res="screen-md" class="responsive-menu-container"><div class="left-section pull-left"></div><div class="menu-section"><div style="display: block" class="responsive-menu-nav"><nav id="sub-nav__items" data-db-target-of="sub-nav__items" class="sub-nav__holder drawer__nav"><ul role="menu" class="rlist--inline menubar"><li role="menuitem"><a href="/conference/uist" class="sub-nav__item">Conference</a></li><li role="menuitem"><a href="/conference/uist/proceedings" class="sub-nav__item">Proceedings</a></li><li role="menuitem"><a href="/conference/uist/upcoming" class="sub-nav__item">Upcoming Events</a></li><li role="menuitem"><a href="/conference/uist/authors" class="sub-nav__item">Authors</a></li><li role="menuitem"><a href="/conference/uist/affiliations" class="sub-nav__item">Affiliations</a></li><li role="menuitem"><a href="/conference/uist/award-winners" class="sub-nav__item">Award Winners</a></li><li role="menuitem" aria-haspopup="true" aria-label="More" class="dropdown-more hidden dropdown menu-parent"><a href="#" title="More" data-toggle="dropdown" class="dropdown__toggle hidden-md hidden-sm hidden-xs"><span>More</span><i aria-hidden="true" class="icon-section_arrow_d"></i></a><ul aria-labelledby="main0-1" aria-hidden="true" role="menu" class="rlist dropdown__menu visible-md visible-sm visible-xs"></ul></li></ul></nav></div></div><div class="right-section hidden-md hidden-sm hidden-xs"></div></div></div></div><div class="hidden-xs hidden-sm"><div class="progress-bar--wrapper"><div style="width: 0.11542%; overflow: hidden;" class="progress-bar"></div></div></div></div>
+</div><div></div><div class="banner conference-landing"></div><div class="header-breadcrumb">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-layout-widget" data-widget-id="f5f275c5-a862-48bf-8119-8528d04615da" class="container">
+        
+
+
+
+        
+        <div>
+
+
+
+        
+        
+
+
+
+        
+        <nav class="article__breadcrumbs separator"><a href="https://dl.acm.org/" class="article__tocHeading">Home</a><a href="/conferences" class="article__tocHeading">Conferences</a><a href="/conference/uist" class="article__tocHeading">UIST</a><a href="/conference/uist/proceedings" class="article__tocHeading">Proceedings</a><a href="/doi/proceedings/10.1145/3472749" class="article__tocHeading">UIST '21</a><a href="/doi/10.1145/3472749.3474760" class="article__tocHeading">PneuSeries: 3D Shape Forming with Modularized Serial-Connected Inflatables</a></nav>
+
+</div>
+
+        </div>
+    
+</div>
+
+        </header>
+    
+
+
+
+
+
+
+        
+        <main class="content uist loi-page no-margin">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3combinedRecommendationsWidget" data-widget-id="bf2b14e9-d9dc-4518-8bb0-d9b157f47c7e" class="recommendations" data-show-id="sec-ref">
+        
+
+
+
+        
+        <div data-ajaxurl="/pb/widgets/lazyLoadRecommended?widgetId=bf2b14e9-d9dc-4518-8bb0-d9b157f47c7e&amp;doi=10.1145%2F3472749.3474760&amp;pbContext=%3Btaxonomy%3Ataxonomy%3Aconference-collections%3Bwgroup%3Astring%3AACM+Publication+Websites%3BgroupTopic%3Atopic%3Aacm-pubtype%26gt%3Bproceeding%3Bctype%3Astring%3ABook+Content%3Bissue%3Aissue%3Adoi%5C%3A10.1145%2F3472749%3Bpage%3Astring%3AArticle%2FChapter+View%3BsubPage%3Astring%3AAbstract%3Barticle%3Aarticle%3Adoi%5C%3A10.1145%2F3472749.3474760%3Btopic%3Atopic%3Aconference-collections%26gt%3Buist%3Bcsubtype%3Astring%3AConference+Proceedings%3Bwebsite%3Awebsite%3Adl-site%3Bjournal%3Ajournal%3Aacmconferences%3BpageGroup%3Astring%3APublication+Pages" class="recommended--lazyLoad"></div>
+
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-publicationContent-widget" data-widget-id="f69d88a8-b404-4aae-83a9-9acea4426d78" class="container">
+        
+
+
+
+        
+        <article data-enable-mathjax="true" data-citationinfo="/action/acmCitationInfo?widgetId=f69d88a8-b404-4aae-83a9-9acea4426d78&amp;ajax=true&amp;doi=10.1145%2F3472749.3474760&amp;pbContext=%3Btaxonomy%3Ataxonomy%3Aconference-collections%3Bwgroup%3Astring%3AACM+Publication+Websites%3BgroupTopic%3Atopic%3Aacm-pubtype%26gt%3Bproceeding%3Bctype%3Astring%3ABook+Content%3Bissue%3Aissue%3Adoi%5C%3A10.1145%2F3472749%3Bpage%3Astring%3AArticle%2FChapter+View%3BsubPage%3Astring%3AAbstract%3Barticle%3Aarticle%3Adoi%5C%3A10.1145%2F3472749.3474760%3Btopic%3Atopic%3Aconference-collections%26gt%3Buist%3Bcsubtype%3Astring%3AConference+Proceedings%3Bwebsite%3Awebsite%3Adl-site%3Bjournal%3Ajournal%3Aacmconferences%3BpageGroup%3Astring%3APublication+Pages" data-proceedinginfo="/action/proceedingArticleMeta?widgetId=f69d88a8-b404-4aae-83a9-9acea4426d78&amp;ajax=true&amp;doi=10.1145%2F3472749.3474760&amp;pbContext=%3Btaxonomy%3Ataxonomy%3Aconference-collections%3Bwgroup%3Astring%3AACM+Publication+Websites%3BgroupTopic%3Atopic%3Aacm-pubtype%26gt%3Bproceeding%3Bctype%3Astring%3ABook+Content%3Bissue%3Aissue%3Adoi%5C%3A10.1145%2F3472749%3Bpage%3Astring%3AArticle%2FChapter+View%3BsubPage%3Astring%3AAbstract%3Barticle%3Aarticle%3Adoi%5C%3A10.1145%2F3472749.3474760%3Btopic%3Atopic%3Aconference-collections%26gt%3Buist%3Bcsubtype%3Astring%3AConference+Proceedings%3Bwebsite%3Awebsite%3Adl-site%3Bjournal%3Ajournal%3Aacmconferences%3BpageGroup%3Astring%3APublication+Pages"><div class="row"><div class="col-md-2 col-sm-3"></div><div class="col-md-8 col-sm-7"><div class="article-citations"><div class="citation"><div class="issue-item__citation"><span class="issue-heading">research-article </span><span class="article__access"><span></span></span></div><div class="border-bottom clearfix"><h1 class="citation__title">PneuSeries: 3D Shape Forming with Modularized Serial-Connected Inflatables</h1>
+
+
+
+        
+        <!-- Go to www.addthis.com/dashboard to customize your tools --><script type="text/javascript" async="async" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-4faab26f2cff13a7"></script><div class="share__block share__inline-links"><div class="pb-dropzone" data-pb-dropzone="shareBlock" title="shareBlock"></div><span class="sr-only">Share on</span><div class="rlist--inline addthis addthis_toolbox addthis_default_style addthis_32x32_style"><a role="link" class="addthis_button_twitter at300b" title="Twitter" href="#"><i aria-hidden="true" class="at-icon-wrapper icon-Icon_Twitter"></i></a><a role="link" class="addthis_button_linkedin at300b" target="_blank" title="LinkedIn" href="#"><i aria-hidden="true" class="at-icon-wrapper icon-linkedin"></i></a><a role="link" class="addthis_button_reddit at300b" target="_blank" title="Reddit" href="#"><i aria-hidden="true" class="at-icon-wrapper icon-riddit-filled"></i></a><a role="link" class="addthis_button_facebook at300b" title="Facebook" href="#"><i aria-hidden="true" class="at-icon-wrapper icon-Icon_Facebook"></i></a><a role="link" class="addthis_button_email at300b" target="_blank" title="Email" href="#"><i aria-hidden="true" class="at-icon-wrapper icon-Icon_mail"></i></a><div class="pb-dropzone" data-pb-dropzone="share-additional-links" title="share-additional-links"></div><div class="atclear"></div></div></div>
+</div><div class="border-bottom clearfix"> <div id="sb-1"> <ul data-lines="2" ariaa-label="authors" class="rlist--inline loa truncate-list trunc-done noTruncation" style="height: auto;"> <li class="label"><b>Authors: </b></li> <li class="loa__item"><a id="arnd_34668741747710410_Ctrl" href="javascript:void(0);" aria-controls="arnd_34668741747710410" aria-haspopup="true" class="author-name" title="Yu-Wen Chen"><span class="loa__author-info"> <div class="author-data"><span class="loa__author-name"><span><img class="author-picture" src="/pb-assets/icons/DOs/default-profile-1543932446943.svg" width="24" height="24" alt="" aria-hidden="true">Yu-Wen Chen</span></span></div><span class="loa_author_inst"> <p data-pill-inst="arnd_34668741747710410" data-doi="10.1145/contrib-99659892691">National Taiwan University, Taiwan</p></span></span></a><div id="arnd_34668741747710410" aria-labelledby="arnd_34668741747710410_Ctrl" class="author-info"> <div class="author-info__header" data-pill="d55947545e98"></div> <div class="author-info__body"> <p data-pill-inst="d55947545e98" data-doi="10.1145/contrib-99659892691">National Taiwan University, Taiwan</p><a href="/profile/99659892691" class="btn blue stretched">View Profile</a></div> </div><span>, </span></li> <li class="loa__item"><a id="arnd_34668741748077387_Ctrl" href="javascript:void(0);" aria-controls="arnd_34668741748077387" aria-haspopup="true" class="author-name" title="Wei-Ju Lin"><span class="loa__author-info"> <div class="author-data"><span class="loa__author-name"><span><img class="author-picture" src="/pb-assets/icons/DOs/default-profile-1543932446943.svg" width="24" height="24" alt="" aria-hidden="true">Wei-Ju Lin</span></span></div><span class="loa_author_inst"> <p data-pill-inst="arnd_34668741748077387" data-doi="10.1145/contrib-99659891754">National Taiwan University, Taiwan</p></span></span></a><div id="arnd_34668741748077387" aria-labelledby="arnd_34668741748077387_Ctrl" class="author-info"> <div class="author-info__header" data-pill="d55947545e120"></div> <div class="author-info__body"> <p data-pill-inst="d55947545e120" data-doi="10.1145/contrib-99659891754">National Taiwan University, Taiwan</p><a href="/profile/99659891754" class="btn blue stretched">View Profile</a></div> </div><span>, </span></li> <li class="loa__item"><a id="arnd_34668741748418525_Ctrl" href="javascript:void(0);" aria-controls="arnd_34668741748418525" aria-haspopup="true" class="author-name" title="Yi Chen"><span class="loa__author-info"> <div class="author-data"><span class="loa__author-name"><span><img class="author-picture" src="/pb-assets/icons/DOs/default-profile-1543932446943.svg" width="24" height="24" alt="" aria-hidden="true">Yi Chen</span></span></div><span class="loa_author_inst"> <p data-pill-inst="arnd_34668741748418525" data-doi="10.1145/contrib-99659892690">National Taiwan University, Taiwan</p></span></span></a><div id="arnd_34668741748418525" aria-labelledby="arnd_34668741748418525_Ctrl" class="author-info"> <div class="author-info__header" data-pill="d55947545e142"></div> <div class="author-info__body"> <p data-pill-inst="d55947545e142" data-doi="10.1145/contrib-99659892690">National Taiwan University, Taiwan</p><a href="/profile/99659892690" class="btn blue stretched">View Profile</a></div> </div><span>, </span></li> <li class="loa__item"><a id="arnd_34668741748730949_Ctrl" href="javascript:void(0);" aria-controls="arnd_34668741748730949" aria-haspopup="true" class="author-name" title="Lung-Pan Cheng"><span class="loa__author-info"> <div class="author-data"><span class="loa__author-name"><span><img class="author-picture" src="/do/10.1145/contrib-81470651683/rel-imgonly/32956970-44d4-41fa-95c3-df5faf94a414_1_201_a.jpeg" width="24" height="24" alt="" aria-hidden="true">Lung-Pan Cheng</span></span></div><span class="loa_author_inst"> <p data-pill-inst="arnd_34668741748730949" data-doi="10.1145/contrib-81470651683">National Taiwan University, Taiwan</p></span></span></a><div id="arnd_34668741748730949" aria-labelledby="arnd_34668741748730949_Ctrl" class="author-info"> <div class="author-info__header" data-pill="d55947545e164"></div> <div class="author-info__body"> <p data-pill-inst="d55947545e164" data-doi="10.1145/contrib-81470651683">National Taiwan University, Taiwan</p><a href="/profile/81470651683" class="btn blue stretched">View Profile</a></div> </div> </li> </ul><a href="#pill-authors__contentcon" data-slide-target="#pill-information" data-full-screen="false" data-ctrl-res="screen-xlg" data-tab="pill-authors__content" data-label="<i class='icon-Icon_Information'></i> Information &amp; Authors" class="loa__link w-slide__btn tab-link slide-active">Authors Info &amp; Claims </a></div> </div> <div class="border-bottom clearfix"><div class="issue-item__detail"><a href="/doi/proceedings/10.1145/3472749" title="UIST '21: The 34th Annual ACM Symposium on User Interface Software and Technology"><span class="epub-section__title">UIST '21: The 34th Annual ACM Symposium on User Interface Software and Technology</span></a><span class="dot-separator"><span class="epub-section__date">October 2021  </span></span><span class="dot-separator"><span class="epub-section__pagerange">Pages   431–440</span></span><span class="dot-separator"><a href="https://doi.org/10.1145/3472749.3474760" class="issue-item__doi">https://doi.org/10.1145/3472749.3474760</a></span></div></div><div class="border-bottom clearfix"><span class="bold label">Published:</span><span class="CitationCoverDate">10 October 2021</span></div>
+
+
+
+        
+        
+<div class="border-bottom clearfix"><div class="issue-item__footer"><div class="issue-item__footer-info pull-left"><div tabindex="0" class="tooltip"><ul class="rlist--inline"><li><span class="citation"><i class="icon-quote"></i><span>0</span><span class="sr-only">citation</span></span></li><li><span class="metric"><i class="icon-metric"></i><span>124</span></span></li><span class="sr-only">Downloads</span></ul><div class="tooltip__body"><span class="arrow"></span><div class="left-bordered-title">Metrics</div><div class="citation">Total Citations<span class="bold">0</span></div><div class="metric">Total Downloads<span class="bold">124</span></div><div class="info">Last 12 Months<span class="bold">124</span></div><div class="info">Last 6 weeks<span class="bold">106</span></div></div></div></div><div class="issue-item__footer-links pull-right"><ul class="rlist--inline">
+
+
+
+        
+        <li role="presentation" class="article-tool"><a id="manageAlert__crtl" href="/action/addCitationAlert?doi=10.1145/3472749.3474760" role="menuitem" data-title="Get Citation Alerts" data-target="#manageAlert" class="btn--icon simple-tooltip__block--b"><i aria-hidden="true" class="icon-Icon_Alerts"></i><span class="visibility-hidden">Get Citation Alerts</span></a></li>
+<li role="presentation" class="article-tool"><a href="javascript:void(0)" role="menuitem" data-title="Save to Binder" data-db-target-for="save-to-binder" data-link="/action/binderList?doi=10.1145/3472749.3474760" class="btn--icon simple-tooltip__block--b saveToBinders"><i aria-hidden="true" class="icon-add-folder"></i><span class="visibility-hidden">Save to Binder</span></a><div data-db-target-of="save-to-binder"><div class="saveToBinders-list"><input type="hidden" name="doiVal" value="10.1145/3472749.3474760"><h5>Save to Binder</h5><div class="binder-list-alerts"></div><div class="saveToBinders-list__container"><ul class="rlist saveToBinders-list__items"><div class="loader"><img src="/specs/products/acm/releasedAssets/images/loader.gif"></div></ul></div><div class="binder__create"><a data-action="show" href="/action/showMyBinders" title="Create a New Binder" class="show-binder-form toggle-binder-form"><i class="icon-plus-light"></i>Create a New Binder</a><div class="binder-create-form binder__create-mini-form"><div class="input-group input-group--gray-bg"><label>Name</label><div class="input-group__field-container--right-icon"><input type="text" placeholder="My new Binder" name="binderName" data-maxchar="256" class="binder-create-form__name charCount__text form-control" maxlength="256"><span class="input-group-addon input-group-addon--right"><span class="charLimit">256</span></span></div></div><div><ul class="rlist--inline binder__create-btns-container"><li><button type="reset" value="Cancel" data-action="hide" class="toggle-binder-form btn btn--border-less btn transparent binder__create-cancel">Cancel</button></li><li class="pull-right"><button type="submit" value="Create Binder" disabled="disabled" data-append-newbinder-link="/action/createBinder" class="btn btn--no-margin blue big binder__create-submit binder-create-form__create"><i aria-hidden="true" class="icon-plus-light"></i>Create</button></li></ul></div></div></div></div></div></li><li role="presentation" class="article-tool"><a href="/" role="menuitem" data-title="Export Citation" data-toggle="modal" data-target="#exportCitation" class="btn--icon simple-tooltip__block--b"><i aria-hidden="true" class="icon-quote"></i><span class="visibility-hidden">Export Citation</span><input type="hidden" name="doiVal" value="10.1145/3472749.3474760"></a></li><li class="publisher-site article-tool"><a href="#" class="btn blue"><span>Publisher Site</span><i aria-hidden="true" class="icon-export"></i></a></li></ul><ul class="rlist--inline right"><input type="hidden" id="formatsCount" value="3"><li><a href="javascript:void(0);" data-slide-target="#pill-access" data-ctrl-res="screen-xlg" data-full-screen="false" data-label="<i class=&quot;icon-get-access&quot;></i>Get Access" title="Get Access" class="get-access w-slide__btn slide-active"><i class="icon-get-access"></i><span>Get Access</span></a></li></ul></div></div></div></div></div></div><div class="col-sm-2"></div></div><div class="row"><div class="col-md-2 col-sm-3 sidebar-section article-sidebar-section" style="top: 30px; transition: none 0s ease 0s;"><div class="article__sections cloned hidden-xs hidden-sm"><div class="sections-box"><div><div class="sections-box__static-items"><div class="parent-item"><h5 class="parent-item__title"><a href="/doi/proceedings/10.1145/3472749" data-lines="2" data-title="UIST '21: The 34th Annual ACM Symposium on User Interface Software and Technology" class="simple-tooltip__inline--r truncate-text-css">UIST '21: The 34th Annual ACM Symposium on User Interface Software and Technology</a></h5><span href="/doi/proceedings/10.1145/3472749" data-lines="2" data-title="PneuSeries: 3D Shape Forming with Modularized Serial-Connected Inflatables" class="parent-item__subtitle simple-tooltip__inline--r truncate-text-css">PneuSeries: 3D Shape Forming with Modularized Serial-Connected Inflatables</span><div class="pageRange">Pages   431–440</div></div>
+
+
+
+        
+        <div class="content-navigation clearfix"><a href="/doi/10.1145/3472749.3474759" title="Previous item in TOC" class="content-navigation__btn--pre"><span><i class="icon-Arrow-Stroke"></i></span><span class="control">Previous</span><span class="type">Chapter</span></a><a href="/doi/10.1145/3472749.3474761" title="Next item in TOC" class="content-navigation__btn--next"><span class="control">Next</span><span class="type">Chapter</span><span><i class="icon-Arrow-Stroke"></i></span></a></div>
+</div><div class="sections-block scroll-to-target"><ul class="rlist sections-navigator custom-scrollbar sb-container sb-container-noscroll"><li class="sb-list"><ul class="sb-scrollbar-container"><li class="sb-scrollbar" style="height: 95px; top: 0px;"></li></ul></li><li class="sb-list"><ul class="sb-content" style="max-height: 105px;"><li><a title="ABSTRACT" href="#d55947575e1">ABSTRACT</a></li><li><a title="
+                    References
+                " href="#sec-ref">
+                    References
+                </a></li><li><a title="Comments" href="#sec-comments">Comments</a></li></ul></li></ul></div></div><div class="logo"><img src="/specs/products/acm/releasedAssets/images/footer-logo1.png" alt="ACM Digital Library" title="ACM Digital Library"></div></div></div></div><div class="col-md-8 col-sm-7 sticko__side-content"><div class="stickybar__original__position"></div><nav class="stickybar coolBar trans visible-xs visible-sm"><div class="stickybar__wrapper coolBar__wrapper clearfix"><div class="coolBar__section"><a id="article_Ctrl" data-db-target-for="article-sec_Pop" role="button" aria-expanded="false" class="coolBar__ctrl" tabindex="0"><i class="icon-burger"></i></a><div id="article_Pop" data-db-target-of="article-sec_Pop" aria-hidden="true" class="coolBar__drop fixed rlist"><div data-target=".article__sections" data-remove="false" data-target-class="hidden-xs hidden-sm" data-toggle="transplant" data-direction="from" data-transplant="self" class="transplant showit"><div class="transplanted-clone"><div class="article__sections"><div class="sections-box"><div><div class="sections-box__static-items"><div class="parent-item"><h5 class="parent-item__title"><a href="/doi/proceedings/10.1145/3472749" data-lines="2" data-title="UIST '21: The 34th Annual ACM Symposium on User Interface Software and Technology" class="simple-tooltip__inline--r truncate-text-css">UIST '21: The 34th Annual ACM Symposium on User Interface Software and Technology</a></h5><span href="/doi/proceedings/10.1145/3472749" data-lines="2" data-title="PneuSeries: 3D Shape Forming with Modularized Serial-Connected Inflatables" class="parent-item__subtitle simple-tooltip__inline--r truncate-text-css">PneuSeries: 3D Shape Forming with Modularized Serial-Connected Inflatables</span><div class="pageRange">Pages   431–440</div></div>
+
+
+
+        
+        <div class="content-navigation clearfix"><a href="/doi/10.1145/3472749.3474759" title="Previous item in TOC" class="content-navigation__btn--pre"><span><i class="icon-Arrow-Stroke"></i></span><span class="control">Previous</span><span class="type">Chapter</span></a><a href="/doi/10.1145/3472749.3474761" title="Next item in TOC" class="content-navigation__btn--next"><span class="control">Next</span><span class="type">Chapter</span><span><i class="icon-Arrow-Stroke"></i></span></a></div>
+</div><div class="sections-block scroll-to-target"><ul class="rlist sections-navigator custom-scrollbar sb-container sb-container-noscroll"><li class="sb-list"><ul class="sb-scrollbar-container"><li class="sb-scrollbar"></li></ul></li><li class="sb-list"><ul class="sb-content" style="max-height: 0px;"><li><a title="ABSTRACT" href="#d55947575e1">ABSTRACT</a></li><li><a title="
+                    References
+                " href="#sec-ref">
+                    References
+                </a></li><li><a title="Comments" href="#sec-comments">Comments</a></li></ul></li></ul></div></div><div class="logo"><img src="/specs/products/acm/releasedAssets/images/footer-logo1.png" alt="ACM Digital Library" title="ACM Digital Library"></div></div></div></div></div></div></div><div data-target=".pill-section .pill-list" data-remove="false" data-target-class="hidden-xs hidden-sm" data-toggle="transplant" data-direction="from" data-transplant="self" class="transplant showit"><div class="transplanted-clone"><ul class="rlist pill-list"><li title="Information &amp; Authors"><a href="javascript:void(0);" data-slide-target="#pill-information" data-ctrl-res="screen-xlg" data-full-screen="false" title="Information and Authors" data-label="<i class=&quot;icon-Icon_Information&quot;></i>Information &amp; Authors" class="w-slide__btn pill-information slide-active"><i aria-hidden="true" class="icon-Icon_Information"></i></a></li><li title="Bibliometrics &amp; Citations"><a href="javascript:void(0);" data-slide-target="#pill-metric" data-ctrl-res="screen-xlg" data-full-screen="false" data-label="<i class=&quot;icon-metric &quot;></i>Bibliometrics &amp; Citations" title="Bibliometrics and Citations" class="w-slide__btn pill-metric slide-active"><i aria-hidden="true" class="icon-metric"></i></a></li><li title="Get Access"><a href="javascript:void(0);" data-slide-target="#pill-access" data-ctrl-res="screen-xlg" data-full-screen="false" title="Get Access" data-label="<i class=&quot;icon-get-access&quot;></i>Get Access" class="w-slide__btn pill-access slide-active"><i class="icon-get-access"></i></a></li><li title="References"><a href="javascript:void(0);" data-slide-target="#pill-references" data-ctrl-res="screen-xlg" data-full-screen="false" title="References" data-label="<i class=&quot;icon-Icon_Links-References&quot;></i>References" class="w-slide__btn pill-references slide-active"><i aria-hidden="true" class="icon-Icon_Links-References"></i><span class="refNum count-bubble">27<span class="sr-only">References</span></span></a></li><li title="Media" class="disable"><a href="javascript:void(0);" data-slide-target="#pill-media" data-ctrl-res="screen-xlg" data-full-screen="false" title="Media" data-label="<i class=&quot;icon-Icon_Images&quot;></i>Media" data-ajaxtarget="#pill-fig__content" data-component="pubAjaxContent" data-action="onResponse" data-ajaxurl="/action/ajaxShowFigures?widgetId=f69d88a8-b404-4aae-83a9-9acea4426d78&amp;ajax=true&amp;doi=10.1145%2F3472749.3474760&amp;pbContext=%3Btaxonomy%3Ataxonomy%3Aconference-collections%3Bwgroup%3Astring%3AACM+Publication+Websites%3BgroupTopic%3Atopic%3Aacm-pubtype%26gt%3Bproceeding%3Bctype%3Astring%3ABook+Content%3Bissue%3Aissue%3Adoi%5C%3A10.1145%2F3472749%3Bpage%3Astring%3AArticle%2FChapter+View%3BsubPage%3Astring%3AAbstract%3Barticle%3Aarticle%3Adoi%5C%3A10.1145%2F3472749.3474760%3Btopic%3Atopic%3Aconference-collections%26gt%3Buist%3Bcsubtype%3Astring%3AConference+Proceedings%3Bwebsite%3Awebsite%3Adl-site%3Bjournal%3Ajournal%3Aacmconferences%3BpageGroup%3Astring%3APublication+Pages" class="w-slide__btn loadAjax-auto pill-media disable slide-active"><i aria-hidden="true" class="icon-Icon_Images"></i></a></li><li title="Tables" class="disable"><a href="javascript:void(0);" data-slide-target="#pill-tables" data-ctrl-res="screen-xlg" title="Tables" data-full-screen="false" data-label="<i class=&quot;icon-table&quot;></i>Tables" data-ajaxtarget=".pill-tables__content" data-component="pubAjaxContent" data-action="onResponse" data-ajaxurl="/action/ajaxShowTables?widgetId=f69d88a8-b404-4aae-83a9-9acea4426d78&amp;ajax=true&amp;doi=10.1145%2F3472749.3474760&amp;pbContext=%3Btaxonomy%3Ataxonomy%3Aconference-collections%3Bwgroup%3Astring%3AACM+Publication+Websites%3BgroupTopic%3Atopic%3Aacm-pubtype%26gt%3Bproceeding%3Bctype%3Astring%3ABook+Content%3Bissue%3Aissue%3Adoi%5C%3A10.1145%2F3472749%3Bpage%3Astring%3AArticle%2FChapter+View%3BsubPage%3Astring%3AAbstract%3Barticle%3Aarticle%3Adoi%5C%3A10.1145%2F3472749.3474760%3Btopic%3Atopic%3Aconference-collections%26gt%3Buist%3Bcsubtype%3Astring%3AConference+Proceedings%3Bwebsite%3Awebsite%3Adl-site%3Bjournal%3Ajournal%3Aacmconferences%3BpageGroup%3Astring%3APublication+Pages" class="w-slide__btn loadAjax-auto pill-tables disable slide-active"><i aria-hidden="true" class="icon-table"></i></a></li><li title="Share"><a href="javascript:void(0);" data-slide-target="#pill-share" data-ctrl-res="screen-xlg" data-full-screen="false" title="Share" data-label="<i class=&quot;icon-Icon_Share&quot;></i>Share" class="w-slide__btn pill-share pill-content slide-active"><i aria-hidden="true" class="icon-Icon_Share"></i></a></li></ul></div></div></div></nav><div class="article__body"><!-- abstract content --><div class="hlFld-Abstract"><div class="article__section article__abstract hlFld-Abstract"><div class="colored-block__title"><h2 id="d55947575e1" class="section__title left-bordered-title">ABSTRACT</h2></div><div class="abstractSection abstractInFull">
+		<p> We present PneuSeries, a series of modularized inflatables where their inflation and deflation are propagated in-between stage by stage to form various shapes. The key component of PneuSeries is the bidirectional check valve that passively regulates the air flowing in/out from/to adjacent inflatables, allowing each of the inflatables to be inflated/deflated one by one through serial propagation. The form of the inflatable series thus is programmed by the sequential operations of a pump that push/pull the air in/out. In this paper, we explored the design of PneuSeries and implemented working prototypes as a proof of concept. In particular, we built PneuSeries with (1) modularized cubical, cuboidal, tetrahedral, prismatic, and custom inflatables to examine their shape forming, (2) fast assembly connectors to allow quick reconfiguration of the series, and (3) folding mechanism to reduce irregularity of the shrunken inflatables. We also evaluated the inflating and deflating time and the flow rate of the valve for simulating the inflating and deflating process and display the steps and time required to transform in our software. Finally, we demonstrate example objects that show the capability of PneuSeries and its potential applications.</p>
+	</div></div></div><!-- /abstract content --><div class="pb-dropzone" data-pb-dropzone="pubContentAccessDenialDropzone"><!-- Empty dropzone --></div><div class="article__section article__references show-more-items js--showMore" data-sectionname="References"><p class="explanation__text"></p><div class="colored-block__title"><h2 id="sec-ref" class="section__title left-bordered-title">
+                    References
+                </h2></div><ol class="rlist references__list references__numeric" data-maxheight="2638" data-minheight="250.328"><li id="ref-00001" class="
+                references__item
+            "><span class="references__note">Jason Alexander, Anne Roudaut, Jürgen Steimle, Kasper Hornbæk, Miguel Bruns&nbsp;Alonso, Sean Follmer, and Timothy Merritt. 2018. Grand Challenges in Shape-Changing Interface Research. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (Montreal QC, Canada) (CHI ’18). Association for Computing Machinery, New York, NY, USA, 1–14. https://doi.org/10.1145/3173574.3173873<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Jason+Alexander%2C+Anne+Roudaut%2C+J%C3%BCrgen+Steimle%2C+Kasper+Hornb%C3%A6k%2C+Miguel+Bruns%C2%A0Alonso%2C+Sean+Follmer%2C+and+Timothy+Merritt.+2018.+Grand+Challenges+in+Shape-Changing+Interface+Research.+In+Proceedings+of+the+2018+CHI+Conference+on+Human+Factors+in+Computing+Systems+%28Montreal+QC%2C+Canada%29+%28CHI+%E2%80%9918%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+1%E2%80%9314.+https%3A%2F%2Fdoi.org%2F10.1145%2F3173574.3173873" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3173574.3173873" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00002" class="
+                references__item
+            "><span class="references__note">Sean Follmer, Daniel Leithinger, Alex Olwal, Nadia Cheng, and Hiroshi Ishii. 2012. Jamming User Interfaces: Programmable Particle Stiffness and Sensing for Malleable and Shape-Changing Devices. In Proceedings of the 25th Annual ACM Symposium on User Interface Software and Technology (Cambridge, Massachusetts, USA) (UIST ’12). Association for Computing Machinery, New York, NY, USA, 519–528. https://doi.org/10.1145/2380116.2380181<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Sean+Follmer%2C+Daniel+Leithinger%2C+Alex+Olwal%2C+Nadia+Cheng%2C+and+Hiroshi+Ishii.+2012.+Jamming+User+Interfaces%3A+Programmable+Particle+Stiffness+and+Sensing+for+Malleable+and+Shape-Changing+Devices.+In+Proceedings+of+the+25th+Annual+ACM+Symposium+on+User+Interface+Software+and+Technology+%28Cambridge%2C+Massachusetts%2C+USA%29+%28UIST+%E2%80%9912%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+519%E2%80%93528.+https%3A%2F%2Fdoi.org%2F10.1145%2F2380116.2380181" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/2380116.2380181" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00003" class="
+                references__item
+            "><span class="references__note">Robert&nbsp;M Gute. 1992. Ball check valve. US Patent 5,107,890.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Robert%C2%A0M+Gute.+1992.+Ball+check+valve.+US+Patent+5%2C107%2C890." target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span></span></li><li id="ref-00004" class="references__item js--toggle visibility-hidden"><span class="references__note">Enrique&nbsp;L Kilayko. 1988. Ball check valve. US Patent 4,781,213.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Enrique%C2%A0L+Kilayko.+1988.+Ball+check+valve.+US+Patent+4%2C781%2C213." target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span></span></li><li id="ref-00005" class="references__item js--toggle visibility-hidden"><span class="references__note">Lawrence&nbsp;H. Kim and Sean Follmer. 2019. SwarmHaptics: Haptic Display with Swarm Robots. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (Glasgow, Scotland Uk) (CHI ’19). Association for Computing Machinery, New York, NY, USA, 1–13. https://doi.org/10.1145/3290605.3300918<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Lawrence%C2%A0H.+Kim+and+Sean+Follmer.+2019.+SwarmHaptics%3A+Haptic+Display+with+Swarm+Robots.+In+Proceedings+of+the+2019+CHI+Conference+on+Human+Factors+in+Computing+Systems+%28Glasgow%2C+Scotland+Uk%29+%28CHI+%E2%80%9919%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+1%E2%80%9313.+https%3A%2F%2Fdoi.org%2F10.1145%2F3290605.3300918" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span></span></li><li id="ref-00006" class="references__item js--toggle visibility-hidden"><span class="references__note">Mathieu Le&nbsp;Goc, Lawrence&nbsp;H. Kim, Ali Parsaei, Jean-Daniel Fekete, Pierre Dragicevic, and Sean Follmer. 2016. Zooids: Building Blocks for Swarm User Interfaces. In Proceedings of the 29th Annual Symposium on User Interface Software and Technology (Tokyo, Japan) (UIST ’16). Association for Computing Machinery, New York, NY, USA, 97–109. https://doi.org/10.1145/2984511.2984547<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Mathieu+Le%C2%A0Goc%2C+Lawrence%C2%A0H.+Kim%2C+Ali+Parsaei%2C+Jean-Daniel+Fekete%2C+Pierre+Dragicevic%2C+and+Sean+Follmer.+2016.+Zooids%3A+Building+Blocks+for+Swarm+User+Interfaces.+In+Proceedings+of+the+29th+Annual+Symposium+on+User+Interface+Software+and+Technology+%28Tokyo%2C+Japan%29+%28UIST+%E2%80%9916%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+97%E2%80%93109.+https%3A%2F%2Fdoi.org%2F10.1145%2F2984511.2984547" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/2984511.2984547" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00007" class="references__item js--toggle visibility-hidden"><span class="references__note">Danny Leen, Raf Ramakers, and Kris Luyten. 2017. StrutModeling: A Low-Fidelity Construction Kit to Iteratively Model, Test, and Adapt 3D Objects. In Proceedings of the 30th Annual ACM Symposium on User Interface Software and Technology (Québec City, QC, Canada) (UIST ’17). Association for Computing Machinery, New York, NY, USA, 471–479. https://doi.org/10.1145/3126594.3126643<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Danny+Leen%2C+Raf+Ramakers%2C+and+Kris+Luyten.+2017.+StrutModeling%3A+A+Low-Fidelity+Construction+Kit+to+Iteratively+Model%2C+Test%2C+and+Adapt+3D+Objects.+In+Proceedings+of+the+30th+Annual+ACM+Symposium+on+User+Interface+Software+and+Technology+%28Qu%C3%A9bec+City%2C+QC%2C+Canada%29+%28UIST+%E2%80%9917%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+471%E2%80%93479.+https%3A%2F%2Fdoi.org%2F10.1145%2F3126594.3126643" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3126594.3126643" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00008" class="references__item js--toggle visibility-hidden"><span class="references__note">Edward&nbsp;P Murphy. 1987. Ball check valve. US Patent 4,700,741.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Edward%C2%A0P+Murphy.+1987.+Ball+check+valve.+US+Patent+4%2C700%2C741." target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span></span></li><li id="ref-00009" class="references__item js--toggle visibility-hidden"><span class="references__note">Ken Nakagaki, Artem Dementyev, Sean Follmer, Joseph&nbsp;A. Paradiso, and Hiroshi Ishii. 2016. ChainFORM: A Linear Integrated Modular Hardware System for Shape Changing Interfaces. In Proceedings of the 29th Annual Symposium on User Interface Software and Technology (Tokyo, Japan) (UIST ’16). Association for Computing Machinery, New York, NY, USA, 87–96. https://doi.org/10.1145/2984511.2984587<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Ken+Nakagaki%2C+Artem+Dementyev%2C+Sean+Follmer%2C+Joseph%C2%A0A.+Paradiso%2C+and+Hiroshi+Ishii.+2016.+ChainFORM%3A+A+Linear+Integrated+Modular+Hardware+System+for+Shape+Changing+Interfaces.+In+Proceedings+of+the+29th+Annual+Symposium+on+User+Interface+Software+and+Technology+%28Tokyo%2C+Japan%29+%28UIST+%E2%80%9916%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+87%E2%80%9396.+https%3A%2F%2Fdoi.org%2F10.1145%2F2984511.2984587" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/2984511.2984587" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00010" class="references__item js--toggle visibility-hidden"><span class="references__note">Ryuma Niiyama, Hiroki Sato, Kazzmasa Tsujimura, Koya Narumi, Young&nbsp;ah Seong, Ryosuke Yamamura, Yasuaki Kakehi, and Yoshihiro Kawahara. 2020. Poimo: Portable and Inflatable Mobility Devices Customizable for Personal Physical Characteristics. Association for Computing Machinery, New York, NY, USA, 912–923. https://doi.org/10.1145/3379337.3415894<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Ryuma+Niiyama%2C+Hiroki+Sato%2C+Kazzmasa+Tsujimura%2C+Koya+Narumi%2C+Young%C2%A0ah+Seong%2C+Ryosuke+Yamamura%2C+Yasuaki+Kakehi%2C+and+Yoshihiro+Kawahara.+2020.+Poimo%3A+Portable+and+Inflatable+Mobility+Devices+Customizable+for+Personal+Physical+Characteristics.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+912%E2%80%93923.+https%3A%2F%2Fdoi.org%2F10.1145%2F3379337.3415894" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3379337.3415894" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00011" class="references__item js--toggle visibility-hidden"><span class="references__note">Jifei Ou, Mélina Skouras, Nikolaos Vlavianos, Felix Heibeck, Chin-Yi Cheng, Jannik Peters, and Hiroshi Ishii. 2016. AeroMorph - Heat-Sealing Inflatable Shape-Change Materials for Interaction Design. In Proceedings of the 29th Annual Symposium on User Interface Software and Technology(Tokyo, Japan) (UIST ’16). Association for Computing Machinery, New York, NY, USA, 121–132. https://doi.org/10.1145/2984511.2984520<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Jifei+Ou%2C+M%C3%A9lina+Skouras%2C+Nikolaos+Vlavianos%2C+Felix+Heibeck%2C+Chin-Yi+Cheng%2C+Jannik+Peters%2C+and+Hiroshi+Ishii.+2016.+AeroMorph+-+Heat-Sealing+Inflatable+Shape-Change+Materials+for+Interaction+Design.+In+Proceedings+of+the+29th+Annual+Symposium+on+User+Interface+Software+and+Technology%28Tokyo%2C+Japan%29+%28UIST+%E2%80%9916%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+121%E2%80%93132.+https%3A%2F%2Fdoi.org%2F10.1145%2F2984511.2984520" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/2984511.2984520" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00012" class="references__item js--toggle visibility-hidden"><span class="references__note">Jifei Ou, Lining Yao, Daniel Tauber, Jürgen Steimle, Ryuma Niiyama, and Hiroshi Ishii. 2014. JamSheets: Thin Interfaces with Tunable Stiffness Enabled by Layer Jamming. In Proceedings of the 8th International Conference on Tangible, Embedded and Embodied Interaction(Munich, Germany) (TEI ’14). Association for Computing Machinery, New York, NY, USA, 65–72. https://doi.org/10.1145/2540930.2540971<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Jifei+Ou%2C+Lining+Yao%2C+Daniel+Tauber%2C+J%C3%BCrgen+Steimle%2C+Ryuma+Niiyama%2C+and+Hiroshi+Ishii.+2014.+JamSheets%3A+Thin+Interfaces+with+Tunable+Stiffness+Enabled+by+Layer+Jamming.+In+Proceedings+of+the+8th+International+Conference+on+Tangible%2C+Embedded+and+Embodied+Interaction%28Munich%2C+Germany%29+%28TEI+%E2%80%9914%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+65%E2%80%9372.+https%3A%2F%2Fdoi.org%2F10.1145%2F2540930.2540971" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span></span></li><li id="ref-00013" class="references__item js--toggle visibility-hidden"><span class="references__note">Diego Paez-Granados, Takehiro Yamamoto, Hideki Kadone, and Kenji Suzuki. 2021. Passive Flow Control for Series Inflatable Actuators: Application on a Wearable Soft-Robot for Posture Assistance. IEEE Robotics and Automation Letters 6, 3 (2021), 4891–4898. https://doi.org/10.1109/LRA.2021.3070297<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Diego+Paez-Granados%2C+Takehiro+Yamamoto%2C+Hideki+Kadone%2C+and+Kenji+Suzuki.+2021.+Passive+Flow+Control+for+Series+Inflatable+Actuators%3A+Application+on+a+Wearable+Soft-Robot+for+Posture+Assistance.+IEEE+Robotics+and+Automation+Letters+6%2C+3+%282021%29%2C+4891%E2%80%934898.+https%3A%2F%2Fdoi.org%2F10.1109%2FLRA.2021.3070297" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/servlet/linkout?suffix=e_1_3_2_1_13_1&amp;dbid=16&amp;doi=10.1145%2F3472749.3474760&amp;key=10.1109%2FLRA.2021.3070297" target="_blank"><span class="visibility-hidden">Cross Ref</span><img class="simple-tooltip__block--b" data-title="Cross Ref" alt="Cross Ref" src="/templates/jsp/_ux3/_acm/images/crossref_icon.svg"></a></span></span></li><li id="ref-00014" class="references__item js--toggle visibility-hidden"><span class="references__note">Amanda&nbsp;J. Parkes, Hayes&nbsp;Solos Raffle, and Hiroshi Ishii. 2008. Topobo in the Wild: Longitudinal Evaluations of Educators Appropriating a Tangible Interface. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (Florence, Italy) (CHI ’08). Association for Computing Machinery, New York, NY, USA, 1129–1138. https://doi.org/10.1145/1357054.1357232<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Amanda%C2%A0J.+Parkes%2C+Hayes%C2%A0Solos+Raffle%2C+and+Hiroshi+Ishii.+2008.+Topobo+in+the+Wild%3A+Longitudinal+Evaluations+of+Educators+Appropriating+a+Tangible+Interface.+In+Proceedings+of+the+SIGCHI+Conference+on+Human+Factors+in+Computing+Systems+%28Florence%2C+Italy%29+%28CHI+%E2%80%9908%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+1129%E2%80%931138.+https%3A%2F%2Fdoi.org%2F10.1145%2F1357054.1357232" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/1357054.1357232" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00015" class="references__item js--toggle visibility-hidden"><span class="references__note">Majken&nbsp;K. Rasmussen, Esben&nbsp;W. Pedersen, Marianne&nbsp;G. Petersen, and Kasper Hornbæk. 2012. Shape-Changing Interfaces: A Review of the Design Space and Open Research Questions. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (Austin, Texas, USA) (CHI ’12). Association for Computing Machinery, New York, NY, USA, 735–744. https://doi.org/10.1145/2207676.2207781<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Majken%C2%A0K.+Rasmussen%2C+Esben%C2%A0W.+Pedersen%2C+Marianne%C2%A0G.+Petersen%2C+and+Kasper+Hornb%C3%A6k.+2012.+Shape-Changing+Interfaces%3A+A+Review+of+the+Design+Space+and+Open+Research+Questions.+In+Proceedings+of+the+SIGCHI+Conference+on+Human+Factors+in+Computing+Systems+%28Austin%2C+Texas%2C+USA%29+%28CHI+%E2%80%9912%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+735%E2%80%93744.+https%3A%2F%2Fdoi.org%2F10.1145%2F2207676.2207781" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/2207676.2207781" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00016" class="references__item js--toggle visibility-hidden"><span class="references__note">A. Roudaut, D. Krusteva, M. McCoy, A. Karnik, K Ramani, and S. Subramanian. 2016. Cubimorph: Designing modular interactive devices. In 2016 IEEE International Conference on Robotics and Automation (ICRA). 3339–3345. https://doi.org/10.1109/ICRA.2016.7487508<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=A.+Roudaut%2C+D.+Krusteva%2C+M.+McCoy%2C+A.+Karnik%2C+K+Ramani%2C+and+S.+Subramanian.+2016.+Cubimorph%3A+Designing+modular+interactive+devices.+In+2016+IEEE+International+Conference+on+Robotics+and+Automation+%28ICRA%29.+3339%E2%80%933345.+https%3A%2F%2Fdoi.org%2F10.1109%2FICRA.2016.7487508" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1109/ICRA.2016.7487508" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00017" class="references__item js--toggle visibility-hidden"><span class="references__note">Anne Roudaut, Rebecca Reed, Tianbo Hao, and Sriram Subramanian. 2014. Changibles: Analyzing and Designing Shape Changing Constructive Assembly. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (Toronto, Ontario, Canada) (CHI ’14). Association for Computing Machinery, New York, NY, USA, 2593–2596. https://doi.org/10.1145/2556288.2557006<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Anne+Roudaut%2C+Rebecca+Reed%2C+Tianbo+Hao%2C+and+Sriram+Subramanian.+2014.+Changibles%3A+Analyzing+and+Designing+Shape+Changing+Constructive+Assembly.+In+Proceedings+of+the+SIGCHI+Conference+on+Human+Factors+in+Computing+Systems+%28Toronto%2C+Ontario%2C+Canada%29+%28CHI+%E2%80%9914%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+2593%E2%80%932596.+https%3A%2F%2Fdoi.org%2F10.1145%2F2556288.2557006" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/2556288.2557006" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00018" class="references__item js--toggle visibility-hidden"><span class="references__note">Harpreet Sareen, Udayan Umapathi, Patrick Shin, Yasuaki Kakehi, Jifei Ou, Hiroshi Ishii, and Pattie Maes. 2017. Printflatables: Printing Human-Scale, Functional and Dynamic Inflatable Objects. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (Denver, Colorado, USA) (CHI ’17). Association for Computing Machinery, New York, NY, USA, 3669–3680. https://doi.org/10.1145/3025453.3025898<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Harpreet+Sareen%2C+Udayan+Umapathi%2C+Patrick+Shin%2C+Yasuaki+Kakehi%2C+Jifei+Ou%2C+Hiroshi+Ishii%2C+and+Pattie+Maes.+2017.+Printflatables%3A+Printing+Human-Scale%2C+Functional+and+Dynamic+Inflatable+Objects.+In+Proceedings+of+the+2017+CHI+Conference+on+Human+Factors+in+Computing+Systems+%28Denver%2C+Colorado%2C+USA%29+%28CHI+%E2%80%9917%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+3669%E2%80%933680.+https%3A%2F%2Fdoi.org%2F10.1145%2F3025453.3025898" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3025453.3025898" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00019" class="references__item js--toggle visibility-hidden"><span class="references__note">Miriam Sturdee and Jason Alexander. 2018. Analysis and Classification of Shape-Changing Interfaces for Design and Application-Based Research. ACM Comput. Surv. 51, 1, Article 2 (Jan. 2018), 32&nbsp;pages. https://doi.org/10.1145/3143559<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Miriam+Sturdee+and+Jason+Alexander.+2018.+Analysis+and+Classification+of+Shape-Changing+Interfaces+for+Design+and+Application-Based+Research.+ACM+Comput.+Surv.+51%2C+1%2C+Article+2+%28Jan.+2018%29%2C+32%C2%A0pages.+https%3A%2F%2Fdoi.org%2F10.1145%2F3143559" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span></span></li><li id="ref-00020" class="references__item js--toggle visibility-hidden"><span class="references__note">Ryo Suzuki, Ryosuke Nakayama, Dan Liu, Yasuaki Kakehi, Mark&nbsp;D. Gross, and Daniel Leithinger. 2020. LiftTiles: Constructive Building Blocks for Prototyping Room-Scale Shape-Changing Interfaces. In Proceedings of the Fourteenth International Conference on Tangible, Embedded, and Embodied Interaction (Sydney NSW, Australia) (TEI ’20). Association for Computing Machinery, New York, NY, USA, 143–151. https://doi.org/10.1145/3374920.3374941<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Ryo+Suzuki%2C+Ryosuke+Nakayama%2C+Dan+Liu%2C+Yasuaki+Kakehi%2C+Mark%C2%A0D.+Gross%2C+and+Daniel+Leithinger.+2020.+LiftTiles%3A+Constructive+Building+Blocks+for+Prototyping+Room-Scale+Shape-Changing+Interfaces.+In+Proceedings+of+the+Fourteenth+International+Conference+on+Tangible%2C+Embedded%2C+and+Embodied+Interaction+%28Sydney+NSW%2C+Australia%29+%28TEI+%E2%80%9920%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+143%E2%80%93151.+https%3A%2F%2Fdoi.org%2F10.1145%2F3374920.3374941" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3374920.3374941" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00021" class="references__item js--toggle visibility-hidden"><span class="references__note">Ryo Suzuki, Clement Zheng, Yasuaki Kakehi, Tom Yeh, Ellen Yi-Luen Do, Mark&nbsp;D. Gross, and Daniel Leithinger. 2019. ShapeBots: Shape-Changing Swarm Robots. In Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology (New Orleans, LA, USA) (UIST ’19). Association for Computing Machinery, New York, NY, USA, 493–505. https://doi.org/10.1145/3332165.3347911<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Ryo+Suzuki%2C+Clement+Zheng%2C+Yasuaki+Kakehi%2C+Tom+Yeh%2C+Ellen+Yi-Luen+Do%2C+Mark%C2%A0D.+Gross%2C+and+Daniel+Leithinger.+2019.+ShapeBots%3A+Shape-Changing+Swarm+Robots.+In+Proceedings+of+the+32nd+Annual+ACM+Symposium+on+User+Interface+Software+and+Technology+%28New+Orleans%2C+LA%2C+USA%29+%28UIST+%E2%80%9919%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+493%E2%80%93505.+https%3A%2F%2Fdoi.org%2F10.1145%2F3332165.3347911" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3332165.3347911" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00022" class="references__item js--toggle visibility-hidden"><span class="references__note">Saiganesh Swaminathan, Michael Rivera, Runchang Kang, Zheng Luo, Kadri&nbsp;Bugra Ozutemiz, and Scott&nbsp;E. Hudson. 2019. Input, Output and Construction Methods for Custom Fabrication of Room-Scale Deployable Pneumatic Structures. Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 3, 2, Article 62 (June 2019), 17&nbsp;pages. https://doi.org/10.1145/3328933<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Saiganesh+Swaminathan%2C+Michael+Rivera%2C+Runchang+Kang%2C+Zheng+Luo%2C+Kadri%C2%A0Bugra+Ozutemiz%2C+and+Scott%C2%A0E.+Hudson.+2019.+Input%2C+Output+and+Construction+Methods+for+Custom+Fabrication+of+Room-Scale+Deployable+Pneumatic+Structures.+Proc.+ACM+Interact.+Mob.+Wearable+Ubiquitous+Technol.+3%2C+2%2C+Article+62+%28June+2019%29%2C+17%C2%A0pages.+https%3A%2F%2Fdoi.org%2F10.1145%2F3328933" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3328933" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00023" class="references__item js--toggle visibility-hidden"><span class="references__note">Shan-Yuan Teng, Tzu-Sheng Kuo, Chi Wang, Chi-huan Chiang, Da-Yuan Huang, Liwei Chan, and Bing-Yu Chen. 2018. PuPoP: Pop-up Prop on Palm for Virtual Reality. In Proceedings of the 31st Annual ACM Symposium on User Interface Software and Technology (Berlin, Germany) (UIST ’18). Association for Computing Machinery, New York, NY, USA, 5–17. https://doi.org/10.1145/3242587.3242628<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Shan-Yuan+Teng%2C+Tzu-Sheng+Kuo%2C+Chi+Wang%2C+Chi-huan+Chiang%2C+Da-Yuan+Huang%2C+Liwei+Chan%2C+and+Bing-Yu+Chen.+2018.+PuPoP%3A+Pop-up+Prop+on+Palm+for+Virtual+Reality.+In+Proceedings+of+the+31st+Annual+ACM+Symposium+on+User+Interface+Software+and+Technology+%28Berlin%2C+Germany%29+%28UIST+%E2%80%9918%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+5%E2%80%9317.+https%3A%2F%2Fdoi.org%2F10.1145%2F3242587.3242628" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3242587.3242628" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00024" class="references__item js--toggle visibility-hidden"><span class="references__note">Shan-Yuan Teng, Cheng-Lung Lin, Chi-huan Chiang, Tzu-Sheng Kuo, Liwei Chan, Da-Yuan Huang, and Bing-Yu Chen. 2019. TilePoP: Tile-Type Pop-up Prop for Virtual Reality. In Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology (New Orleans, LA, USA) (UIST ’19). Association for Computing Machinery, New York, NY, USA, 639–649. https://doi.org/10.1145/3332165.3347958<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Shan-Yuan+Teng%2C+Cheng-Lung+Lin%2C+Chi-huan+Chiang%2C+Tzu-Sheng+Kuo%2C+Liwei+Chan%2C+Da-Yuan+Huang%2C+and+Bing-Yu+Chen.+2019.+TilePoP%3A+Tile-Type+Pop-up+Prop+for+Virtual+Reality.+In+Proceedings+of+the+32nd+Annual+ACM+Symposium+on+User+Interface+Software+and+Technology+%28New+Orleans%2C+LA%2C+USA%29+%28UIST+%E2%80%9919%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+639%E2%80%93649.+https%3A%2F%2Fdoi.org%2F10.1145%2F3332165.3347958" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3332165.3347958" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00025" class="references__item js--toggle visibility-hidden"><span class="references__note">Junichi Yamaoka, Ryuma Niiyama, and Yasuaki Kakehi. 2017. BlowFab: Rapid Prototyping for Rigid and Reusable Objects Using Inflation of Laser-Cut Surfaces. In Proceedings of the 30th Annual ACM Symposium on User Interface Software and Technology (Québec City, QC, Canada) (UIST ’17). Association for Computing Machinery, New York, NY, USA, 461–469. https://doi.org/10.1145/3126594.3126624<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Junichi+Yamaoka%2C+Ryuma+Niiyama%2C+and+Yasuaki+Kakehi.+2017.+BlowFab%3A+Rapid+Prototyping+for+Rigid+and+Reusable+Objects+Using+Inflation+of+Laser-Cut+Surfaces.+In+Proceedings+of+the+30th+Annual+ACM+Symposium+on+User+Interface+Software+and+Technology+%28Qu%C3%A9bec+City%2C+QC%2C+Canada%29+%28UIST+%E2%80%9917%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+461%E2%80%93469.+https%3A%2F%2Fdoi.org%2F10.1145%2F3126594.3126624" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3126594.3126624" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00026" class="references__item js--toggle visibility-hidden"><span class="references__note">Lining Yao, Ryuma Niiyama, Jifei Ou, Sean Follmer, Clark Della&nbsp;Silva, and Hiroshi Ishii. 2013. PneUI: Pneumatically Actuated Soft Composite Materials for Shape Changing Interfaces. In Proceedings of the 26th Annual ACM Symposium on User Interface Software and Technology (St. Andrews, Scotland, United Kingdom) (UIST ’13). Association for Computing Machinery, New York, NY, USA, 13–22. https://doi.org/10.1145/2501988.2502037<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Lining+Yao%2C+Ryuma+Niiyama%2C+Jifei+Ou%2C+Sean+Follmer%2C+Clark+Della%C2%A0Silva%2C+and+Hiroshi+Ishii.+2013.+PneUI%3A+Pneumatically+Actuated+Soft+Composite+Materials+for+Shape+Changing+Interfaces.+In+Proceedings+of+the+26th+Annual+ACM+Symposium+on+User+Interface+Software+and+Technology+%28St.+Andrews%2C+Scotland%2C+United+Kingdom%29+%28UIST+%E2%80%9913%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+13%E2%80%9322.+https%3A%2F%2Fdoi.org%2F10.1145%2F2501988.2502037" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/2501988.2502037" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00027" class="references__item js--toggle visibility-hidden"><span class="references__note">Kening Zhu, Taizhou Chen, Feng Han, and Yi-Shiun Wu. 2019. HapTwist: Creating Interactive Haptic Proxies in Virtual Reality Using Low-Cost Twistable Artefacts. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (Glasgow, Scotland Uk) (CHI ’19). Association for Computing Machinery, New York, NY, USA, 1–13. https://doi.org/10.1145/3290605.3300923<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Kening+Zhu%2C+Taizhou+Chen%2C+Feng+Han%2C+and+Yi-Shiun+Wu.+2019.+HapTwist%3A+Creating+Interactive+Haptic+Proxies+in+Virtual+Reality+Using+Low-Cost+Twistable+Artefacts.+In+Proceedings+of+the+2019+CHI+Conference+on+Human+Factors+in+Computing+Systems+%28Glasgow%2C+Scotland+Uk%29+%28CHI+%E2%80%9919%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+1%E2%80%9313.+https%3A%2F%2Fdoi.org%2F10.1145%2F3290605.3300923" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3290605.3300923" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li></ol><div class="show-more-items__btn-holder separated-block--dashed"><button class="btn btn--inverse">Show All References</button></div></div>
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3TagWidget" data-widget-id="2a75f978-170a-4843-8722-e878a1b77fbc" class="citation article__section article__index-terms">
+        
+
+
+
+        
+        
+
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="graphQueryWidget" data-widget-id="91639479-279a-46e3-b7c7-f902a3fd7945" class="toc__section accordion-tabbed__tab">
+        
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3RelatedDigitalObject" data-widget-id="98838540-5c38-436f-9b98-0e292765fbe4" class="accordion-tabbed__content">
+        
+
+
+
+        
+        
+
+        </div>
+    
+
+
+        </div>
+    
+
+
+
+
+        
+        <div class="article__section article__comments">
+
+
+
+        
+        <div class="colored-block__title"> <h2 id="sec-comments" class="section__title left-bordered-title">Comments</h2> </div>
+
+
+
+
+        
+        <div id="disqus_thread"><iframe id="dsq-app724" name="dsq-app724" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="https://disqus.com/embed/comments/?base=default&amp;f=acm-prod&amp;t_i=10.1145%2F3472749.3474760&amp;t_u=https%3A%2F%2Fdl.acm.org%2Fdoi%2F10.1145%2F3472749.3474760&amp;t_d=PneuSeries%3A%203D%20Shape%20Forming%20with%20Modularized%20Serial-Connected%20Inflatables%20%7C%20The%2034th%20Annual%20ACM%20Symposium%20on%20User%20Interface%20Software%20and%20Technology&amp;t_t=PneuSeries%3A%203D%20Shape%20Forming%20with%20Modularized%20Serial-Connected%20Inflatables%20%7C%20The%2034th%20Annual%20ACM%20Symposium%20on%20User%20Interface%20Software%20and%20Technology&amp;s_o=default#version=19d18907156f056077885e8c891dcf50" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 350px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div><a href="https://dl.acm.org/doi/10.1145/3472749.3474760#disqus_thread" class="disqus-count hidden">0 Comments</a><script>var disqus_config = function () {
+    this.page.url = window.location.href;
+    this.page.identifier = '10.1145/3472749.3474760';
+    this.page.remote_auth_s3 = '';
+    this.page.api_key = 'MmWj4FlWmXk20FJsmWMXbTJoZT7TVzTsc9Rw0yrJp3L1ZNXZuvmxF3F5rFIF8RqQ';
+};
+(function () {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://acm-prod.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();</script><noscript>Please enable JavaScript to view the<a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><script id="dsq-count-scr" src="//acm-prod.disqus.com/count.js" async=""></script>
+</div>
+</div><div class="pill-content hidden"><div id="pill-access"><div class="pill-access__content">
+
+
+
+        
+        <div class="pill-access__content"><div class="section__separator"><h3 class="left-bordered-title">Login options</h3><div class="section__content"><p class="info--text">Check if you have access through your login credentials or your institution to get full access on this article.</p><a href="/action/showLogin?redirectUri=/doi/10.1145/3472749.3474760" title="Sign in" class="btn big btn--inverse">Sign in</a></div></div><div class="section__separator"><h3 class="left-bordered-title">Full Access</h3><div class="section__content"><a href="/action/publisherEcommerceHelper?doi=10.1145/3472749.3474760&amp;redirectUri=https://dl.acm.org/doi/10.1145/3472749.3474760" title="Get this Publication" class="btn blue big">Get this Publication</a></div></div></div>
+</div></div><div id="pill-information"><div class="tab tab--flex"><ul role="tablist" class="rlist tab__nav"><li role="presentation" class="active"><a id="pill-information__contentcon" href="#pill-information__content" aria-controls="pill-information__content" role="tab" data-toggle="tab" title="Information" aria-selected="true" data-simple-tab-id="" tabindex="0" class="">Information</a></li><li role="presentation"><a id="pill-authors__contentcon" href="#pill-authors__content" aria-controls="pill-authors__content" role="tab" data-toggle="tab" title="Authors" aria-selected="false" data-simple-tab-id="" tabindex="-1">Contributors</a></li></ul><ul class="rlist tab__content"><li id="pill-information__content" aria-labelledby="pill-information__contentcon" role="tabpanel" aria-hidden="false" tabindex="0" class="tab__pane active"><div class="pill-information__content"><div class="section__separator"><h3 class="left-bordered-title">Published in</h3><div class="section__content cover-image-proceeding">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3CoverImage" data-widget-id="7b8bd09e-8112-4266-b136-2f71ab2b109c" class="left-side-image">
+        
+
+
+
+        
+        <div class="cover-image"><div class="cover-image__image"><img src="/specs/products/acm/releasedAssets/images/Default_image_lazy.svg" data-src="/cms/asset/f68d8d79-a9ce-4b3d-8a89-d6ea0a039365/3472749.cover.jpg" alt="ACM Conferences cover image" class="lazy"></div><div class="cover-image__details"><div class="book-meta">UIST '21: The 34th Annual ACM Symposium on User Interface Software and Technology</div><div class="cover-date">October 2021</div><div class="cover-pages">1357  pages</div><div class="cover-image__details-extra"><div class="flex-container"><span class="bold">ISBN:</span><span class="space">9781450386357</span></div><div class="flex-container"><span class="bold">DOI:</span><span class="space">10.1145/3472749</span></div><div class="flex-container"><div><ul class="rlist--inline loa truncate-list" title="list of authors" data-lines="2" style="height: auto;">
+   <li class="label"><b>Editors: </b></li>
+   <li><a href="/profile/99659185355" title="Jeffrey Nichols"><img class="author-picture" src="/pb-assets/icons/DOs/default-profile-1543932446943.svg" width="24" height="24" alt="" aria-hidden="true"><span>Jeffrey Nichols</span></a><span class="loa_author_inst hidden">
+         <p data-doi="10.1145/contrib-99659185355">Apple, USA</p></span><span>, </span></li>
+   <li><a href="/profile/99659892585" title="Ranjitha Kumar"><img class="author-picture" src="/pb-assets/icons/DOs/default-profile-1543932446943.svg" width="24" height="24" alt="" aria-hidden="true"><span>Ranjitha Kumar</span></a><span class="loa_author_inst hidden">
+         <p data-doi="10.1145/contrib-99659892585">UIUC, USA</p></span><span>, </span></li>
+   <li><a href="/profile/81484640607" title="Michael Nebeling"><img class="author-picture" src="/pb-assets/icons/DOs/default-profile-1543932446943.svg" width="24" height="24" alt="" aria-hidden="true"><span>Michael Nebeling</span></a><span class="loa_author_inst hidden">
+         <p data-doi="10.1145/contrib-81484640607">University of Michigan, USA</p></span></li>
+</ul>
+</div></div></div><div class="pb-dropzone" data-pb-dropzone="metadataDisplayExtra" title="metadataDisplayExtra"></div></div></div>
+
+        </div>
+    
+<p class="copyrights small">Copyright © 2021 ACM</p></div></div><div class="section__separator proceedingInfo-sponsors hidden" style="display: block;"><h3 class="left-bordered-title">Sponsors</h3><ul class="proceedingInfo-sponsors__list"><li class="proceedingInfo-sponsors__list__item"><a href="/sig/siggraph" title="SIGGRAPH">SIGGRAPH: ACM Special Interest Group on Computer Graphics and Interactive Techniques</a></li><li class="proceedingInfo-sponsors__list__item"><a href="/sig/sigchi" title="SIGCHI">SIGCHI: ACM Special Interest Group on Computer-Human Interaction</a></li></ul></div><div class="section__separator proceedingInfo-inCoop hidden"><h3 class="left-bordered-title">In-Cooperation</h3><ul class="proceedingInfo-inCoop__list"></ul></div><div class="section__separator"><h3 class="left-bordered-title">Publisher</h3><div class="section__content publisher"><div class="inlineBlock"></div><div class="inlineBlock"><p class="publisher__name">Association for Computing Machinery</p><p class="publisher__address">New York, NY, United States</p></div></div></div>
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="contentItemHistory" data-widget-id="6eba30da-4023-4f09-bb08-f98cf09d5aa0" class="section__separator">
+        
+
+
+
+        
+            <h3 class="left-bordered-title">
+                Publication History
+            </h3>
+        
+        <div class="section__content"><ul class="rlist article-chapter-history-list"><li><span class="item_label">Online:</span> 12 October 2021</li><li><span class="item_label">Published:</span> 10 October 2021</li></ul></div>
+
+        </div>
+    
+
+
+
+
+        
+        <!-- rightslink drop zone-->
+
+
+
+        
+        <div class="section__separator"><h3 class="left-bordered-title"> Permissions</h3><div class="section__content"><p class="info--text">Request permissions about this article.</p><a href="/servlet/linkout?type=rightslinkBasic&amp;url=ContentIdType%3Ddoi%26isbn%3D9781450386357%26contentID%3D10.1145%252F3472749.3474760%26bookTitle%3DThe%2B34th%2BAnnual%2BACM%2BSymposium%2Bon%2BUser%2BInterface%2BSoftware%2Band%2BTechnology" rel="noopener" target="_blank" class="btn big stretched blue">Request Permissions</a></div></div>
+
+
+
+<div class="section__separator"><h3 class="left-bordered-title">Author Tags</h3><div class="section__content"><div class="tags-widget"><div class="tags-widget__content"><ul class="rlist--inline"><li><a href="/keyword/multi-inflatable systems?expand=all" title="multi-inflatable systems" class="badge-type">multi-inflatable systems</a></li><li><a href="/keyword/pneumatic devices?expand=all" title="pneumatic devices" class="badge-type">pneumatic devices</a></li><li><a href="/keyword/Shape-changing interface?expand=all" title="Shape-changing interface" class="badge-type">Shape-changing interface</a></li></ul></div></div></div></div><div class="section__separator"><h3 class="left-bordered-title">Qualifiers</h3><ul class="qualifiers__list"><li class="capitalized qualifiers__list__item">research-article</li><li class="qualifiers__list__item">Research</li><li class="qualifiers__list__item">Refereed limited</li></ul></div><div class="section__separator proceedingInfo-conference hidden" style="display: block;"><h3 class="left-bordered-title">Conference</h3><div class="section__content">
+    <div class="event event--inline-info row--event">
+        <div class="event__header clearfix">
+            <div class="left--block gutterless"><span class="event__code"><span class="event__code--text">UIST '21</span></span>
+                <div href="#" class="event__sopnsers">
+                    <ul data-lines="3" class="rlist truncate-list">
+                        <li class="label"><b>Sponsor:</b></li>
+<li><a href="/sig/siggraph" title="SIGGRAPH">SIGGRAPH</a></li><li><a href="/sig/sigchi" title="SIGCHI">SIGCHI</a></li>                    </ul>
+                </div>
+            </div>
+            <div class="right--block"><a href="http://uist.acm.org" class="event__title">UIST '21: The 34th Annual ACM Symposium on User Interface Software and Technology</a>
+                <div class="event__content">
+                    <div class="info calender"><a href="#" target="_blank" class="disabled"><i class="icon-calender3"></i></a><span>October 10 - 14, 2021</span>
+                    </div>
+                    <div class="info map"><i class="icon-navigator"></i><span>Virtual Event, USA</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3AcceptanceRatesWidget" data-widget-id="daac1568-1d03-438e-a4c9-c9df280908b7" class="section__separator">
+        
+
+
+
+        
+        <div class="acceptance-rates__section"><h2 id="acceptance-rates" aria-expanded="true" class="left-bordered-title">Acceptance Rates</h2><div class="accordion-tabbed__content"><div class="acceptance-rates__heading"><h6>Overall Acceptance Rate<span> 1,174 </span>of<span> 5,569 </span>submissions,<span> 21%</span></h6></div></div></div>
+
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3UpcomingConferencesWidget" data-widget-id="452ce022-9919-435e-ab40-1386965a30bd" class="section__separator">
+        
+
+
+
+        
+        
+
+        </div>
+    
+<div class="section__separator funding-sources hidden" style="display: block;"><h3 class="left-bordered-title">Funding Sources</h3><ul class="funding-list"><li class="funding-list__item">Ministry of Science and Technology, Taiwan</li></ul></div></div></li><li id="pill-authors__content" aria-labelledby="pill-authors__contentcon" role="tabpanel" aria-hidden="true" class="tab__pane"><div class="pill-authors__content"><div class="section__separator"><div class="pill-authors-list"><div class="expandable-accordion"><div class="pill-normalized-authors">
+
+
+
+        
+        <div class="publication-contribs-contianer"><input id="ContribsAjax" type="hidden" data-ajax="/pb/widgets/getContribs?widgetId=f6c6c0f3-1b50-42bb-a7bb-1062377c12d4&amp;pbContext=%3Btaxonomy%3Ataxonomy%3Aconference-collections%3Bwgroup%3Astring%3AACM+Publication+Websites%3BgroupTopic%3Atopic%3Aacm-pubtype%26gt%3Bproceeding%3Bctype%3Astring%3ABook+Content%3Bissue%3Aissue%3Adoi%5C%3A10.1145%2F3472749%3Bpage%3Astring%3AArticle%2FChapter+View%3BsubPage%3Astring%3AAbstract%3Barticle%3Aarticle%3Adoi%5C%3A10.1145%2F3472749.3474760%3Btopic%3Atopic%3Aconference-collections%26gt%3Buist%3Bcsubtype%3Astring%3AConference+Proceedings%3Bwebsite%3Awebsite%3Adl-site%3Bjournal%3Ajournal%3Aacmconferences%3BpageGroup%3Astring%3APublication+Pages"><div class="loader"><img src="/specs/products/acm/releasedAssets/images/loader.gif"></div></div>
+</div><!--.pill-all-authors.authors-accordion.disable-truncate.hidden(aria-hidden="true")--><!--    if(data.item && data.item.contribsFull)--><!--        | !{data.item.contribsFull}--></div></div></div><div class="section__separator"><h3 class="left-bordered-title">Other Metrics</h3><div class="section__content badges"><a href="#pill-bibliometrics__contentcon" data-slide-target="#pill-metric" data-tab="pill-bibliometrics__content" data-ctrl-res="screen-xlg" data-full-screen="false" data-label="<i class=&quot;icon-metric &quot;></i>Bibliometrics &amp; Citations" class="btn big stretched btn--inverse w-slide__btn tab-link pill-content slide-active hidden">View Article Metrics</a></div></div></div></li></ul></div></div><div id="pill-metric"><div class="tab tab--flex"><ul role="tablist" class="rlist tab__nav"><li role="presentation" class="active"><a id="pill-bibliometrics__contentcon" href="#pill-bibliometrics__content" aria-controls="pill-bibliometrics__content" role="tab" data-toggle="tab" title="Bibliometrics" aria-selected="true" data-simple-tab-id="" tabindex="0" class="">Bibliometrics</a></li><li role="presentation"><a id="pill-citations__contentcon" href="#pill-citations__content" aria-controls="pill-citations__content" role="tab" data-toggle="tab" title="Citations" aria-selected="false" data-simple-tab-id="" tabindex="-1">Citations<span class="citation-count count-bubble">0</span></a></li></ul><ul class="rlist tab__content"><li id="pill-bibliometrics__content" aria-labelledby="pill-bibliometrics__contentcon" role="tabpanel" aria-hidden="false" tabindex="0" class="tab__pane active"><div class="pill-bibliometrics__content"><div class="section__separator"><h3 class="left-bordered-title">Article Metrics</h3><div class="section__content"><ul class="rlist--inline article-metrics"><li><div class="article-metric citation"><div class="metric-value"><span>0</span></div>Total Citations</div><a href="#pill-citations__contentcon" data-tab="pill-citations__content" data-slide-target="#pill-metric" data-full-screen="false" data-ctrl-res="screen-xlg" class="primary-blue-color w-slide__btn tab-link slide-active pill-content hidden">View Citations</a></li><li><div class="article-metric download"><div class="metric-value"><span>124</span></div>Total Downloads</div></li></ul><ul class="rlist metrics__list"><li><span class="metric-name">Downloads (Last 12 months)</span><span class="metric-value">124</span></li><li><span class="metric-name">Downloads (Last 6 weeks)</span><span class="metric-value">106</span></li></ul></div></div><div class="section__separator"><h3 class="left-bordered-title">Other Metrics</h3><div class="section__content"><a href="#pill-authors__contentcon" data-slide-target="#pill-information" data-ctrl-res="screen-xlg" data-tab="pill-authors__content" data-full-screen="false" data-label="<i class=&quot;icon-Icon_Information &quot;></i>Information &amp; Authors" class="btn big stretched btn--inverse w-slide__btn tab-link pill-content slide-active hidden">View Author Metrics</a></div></div></div></li><li id="pill-citations__content" aria-labelledby="pill-citations__contentcon" role="tabpanel" aria-hidden="true" class="tab__pane"><div class="pill-citations__content"><div class="section__separator"><div class="header-container"><h3 class="left-bordered-title citedBy-label">Cited By</h3><p class="info--text">This publication has not been cited yet</p></div></div></div></li></ul></div></div><div id="pill-formats"><div class="pill-formats__content"><div class="section__separator"><h3 class="left-bordered-title">PDF Format</h3><div class="section__content"><p class="info--text">View or Download as a PDF file.</p><a href="/doi/pdf/10.1145/3472749.3474760" title="View or Download as a PDF file" class="btn big stretched red"><i aria-hidden="true" class="icon-pdf-file"></i>PDF</a></div></div><div class="section__separator"><h3 class="left-bordered-title">eReader</h3><div class="section__content"><p class="info--text">View online with eReader.</p><a href="/doi/epdf/10.1145/3472749.3474760" title="View online with eReader" class="btn big stretched blue no-margin-top w-slide__btn pill-content hidden"><i aria-hidden="true" class="icon-eReader"></i>eReader</a></div></div><div class="section__separator de-format hidden"><h3 class="left-bordered-title">Digital Edition</h3><div class="section__content"><p class="info--text">View this article in digital edition.</p><a href="#" title="View Digital Edition" class="btn big stretched blue"><i aria-hidden="true" class="icon-open-book"></i>View Digital Edition</a></div></div><div class="section__separator"><h3 class="left-bordered-title">HTML Format </h3><div class="section__content"><p class="info--text">View this article in HTML Format .</p><a href="/doi/fullHtml/10.1145/3472749.3474760" title="ViewHTML Format " class="btn big stretched blue"><i aria-hidden="true" class="icon-html"></i>View HTML Format </a></div></div></div></div><div id="pill-references"><div class="pill-references__content"><ol class="rlist references__list references__numeric"><li id="ref-00001_copy" class="
+                references__item
+            "><span class="references__note">Jason Alexander, Anne Roudaut, Jürgen Steimle, Kasper Hornbæk, Miguel Bruns&nbsp;Alonso, Sean Follmer, and Timothy Merritt. 2018. Grand Challenges in Shape-Changing Interface Research. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (Montreal QC, Canada) (CHI ’18). Association for Computing Machinery, New York, NY, USA, 1–14. https://doi.org/10.1145/3173574.3173873<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Jason+Alexander%2C+Anne+Roudaut%2C+J%C3%BCrgen+Steimle%2C+Kasper+Hornb%C3%A6k%2C+Miguel+Bruns%C2%A0Alonso%2C+Sean+Follmer%2C+and+Timothy+Merritt.+2018.+Grand+Challenges+in+Shape-Changing+Interface+Research.+In+Proceedings+of+the+2018+CHI+Conference+on+Human+Factors+in+Computing+Systems+%28Montreal+QC%2C+Canada%29+%28CHI+%E2%80%9918%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+1%E2%80%9314.+https%3A%2F%2Fdoi.org%2F10.1145%2F3173574.3173873" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3173574.3173873" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00002_copy" class="
+                references__item
+            "><span class="references__note">Sean Follmer, Daniel Leithinger, Alex Olwal, Nadia Cheng, and Hiroshi Ishii. 2012. Jamming User Interfaces: Programmable Particle Stiffness and Sensing for Malleable and Shape-Changing Devices. In Proceedings of the 25th Annual ACM Symposium on User Interface Software and Technology (Cambridge, Massachusetts, USA) (UIST ’12). Association for Computing Machinery, New York, NY, USA, 519–528. https://doi.org/10.1145/2380116.2380181<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Sean+Follmer%2C+Daniel+Leithinger%2C+Alex+Olwal%2C+Nadia+Cheng%2C+and+Hiroshi+Ishii.+2012.+Jamming+User+Interfaces%3A+Programmable+Particle+Stiffness+and+Sensing+for+Malleable+and+Shape-Changing+Devices.+In+Proceedings+of+the+25th+Annual+ACM+Symposium+on+User+Interface+Software+and+Technology+%28Cambridge%2C+Massachusetts%2C+USA%29+%28UIST+%E2%80%9912%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+519%E2%80%93528.+https%3A%2F%2Fdoi.org%2F10.1145%2F2380116.2380181" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/2380116.2380181" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00003_copy" class="
+                references__item
+            "><span class="references__note">Robert&nbsp;M Gute. 1992. Ball check valve. US Patent 5,107,890.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Robert%C2%A0M+Gute.+1992.+Ball+check+valve.+US+Patent+5%2C107%2C890." target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span></span></li><li id="ref-00004_copy" class="
+                references__item
+            "><span class="references__note">Enrique&nbsp;L Kilayko. 1988. Ball check valve. US Patent 4,781,213.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Enrique%C2%A0L+Kilayko.+1988.+Ball+check+valve.+US+Patent+4%2C781%2C213." target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span></span></li><li id="ref-00005_copy" class="
+                references__item
+            "><span class="references__note">Lawrence&nbsp;H. Kim and Sean Follmer. 2019. SwarmHaptics: Haptic Display with Swarm Robots. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (Glasgow, Scotland Uk) (CHI ’19). Association for Computing Machinery, New York, NY, USA, 1–13. https://doi.org/10.1145/3290605.3300918<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Lawrence%C2%A0H.+Kim+and+Sean+Follmer.+2019.+SwarmHaptics%3A+Haptic+Display+with+Swarm+Robots.+In+Proceedings+of+the+2019+CHI+Conference+on+Human+Factors+in+Computing+Systems+%28Glasgow%2C+Scotland+Uk%29+%28CHI+%E2%80%9919%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+1%E2%80%9313.+https%3A%2F%2Fdoi.org%2F10.1145%2F3290605.3300918" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span></span></li><li id="ref-00006_copy" class="
+                references__item
+            "><span class="references__note">Mathieu Le&nbsp;Goc, Lawrence&nbsp;H. Kim, Ali Parsaei, Jean-Daniel Fekete, Pierre Dragicevic, and Sean Follmer. 2016. Zooids: Building Blocks for Swarm User Interfaces. In Proceedings of the 29th Annual Symposium on User Interface Software and Technology (Tokyo, Japan) (UIST ’16). Association for Computing Machinery, New York, NY, USA, 97–109. https://doi.org/10.1145/2984511.2984547<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Mathieu+Le%C2%A0Goc%2C+Lawrence%C2%A0H.+Kim%2C+Ali+Parsaei%2C+Jean-Daniel+Fekete%2C+Pierre+Dragicevic%2C+and+Sean+Follmer.+2016.+Zooids%3A+Building+Blocks+for+Swarm+User+Interfaces.+In+Proceedings+of+the+29th+Annual+Symposium+on+User+Interface+Software+and+Technology+%28Tokyo%2C+Japan%29+%28UIST+%E2%80%9916%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+97%E2%80%93109.+https%3A%2F%2Fdoi.org%2F10.1145%2F2984511.2984547" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/2984511.2984547" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00007_copy" class="
+                references__item
+            "><span class="references__note">Danny Leen, Raf Ramakers, and Kris Luyten. 2017. StrutModeling: A Low-Fidelity Construction Kit to Iteratively Model, Test, and Adapt 3D Objects. In Proceedings of the 30th Annual ACM Symposium on User Interface Software and Technology (Québec City, QC, Canada) (UIST ’17). Association for Computing Machinery, New York, NY, USA, 471–479. https://doi.org/10.1145/3126594.3126643<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Danny+Leen%2C+Raf+Ramakers%2C+and+Kris+Luyten.+2017.+StrutModeling%3A+A+Low-Fidelity+Construction+Kit+to+Iteratively+Model%2C+Test%2C+and+Adapt+3D+Objects.+In+Proceedings+of+the+30th+Annual+ACM+Symposium+on+User+Interface+Software+and+Technology+%28Qu%C3%A9bec+City%2C+QC%2C+Canada%29+%28UIST+%E2%80%9917%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+471%E2%80%93479.+https%3A%2F%2Fdoi.org%2F10.1145%2F3126594.3126643" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3126594.3126643" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00008_copy" class="
+                references__item
+            "><span class="references__note">Edward&nbsp;P Murphy. 1987. Ball check valve. US Patent 4,700,741.<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Edward%C2%A0P+Murphy.+1987.+Ball+check+valve.+US+Patent+4%2C700%2C741." target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span></span></li><li id="ref-00009_copy" class="
+                references__item
+            "><span class="references__note">Ken Nakagaki, Artem Dementyev, Sean Follmer, Joseph&nbsp;A. Paradiso, and Hiroshi Ishii. 2016. ChainFORM: A Linear Integrated Modular Hardware System for Shape Changing Interfaces. In Proceedings of the 29th Annual Symposium on User Interface Software and Technology (Tokyo, Japan) (UIST ’16). Association for Computing Machinery, New York, NY, USA, 87–96. https://doi.org/10.1145/2984511.2984587<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Ken+Nakagaki%2C+Artem+Dementyev%2C+Sean+Follmer%2C+Joseph%C2%A0A.+Paradiso%2C+and+Hiroshi+Ishii.+2016.+ChainFORM%3A+A+Linear+Integrated+Modular+Hardware+System+for+Shape+Changing+Interfaces.+In+Proceedings+of+the+29th+Annual+Symposium+on+User+Interface+Software+and+Technology+%28Tokyo%2C+Japan%29+%28UIST+%E2%80%9916%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+87%E2%80%9396.+https%3A%2F%2Fdoi.org%2F10.1145%2F2984511.2984587" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/2984511.2984587" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00010_copy" class="
+                references__item
+            "><span class="references__note">Ryuma Niiyama, Hiroki Sato, Kazzmasa Tsujimura, Koya Narumi, Young&nbsp;ah Seong, Ryosuke Yamamura, Yasuaki Kakehi, and Yoshihiro Kawahara. 2020. Poimo: Portable and Inflatable Mobility Devices Customizable for Personal Physical Characteristics. Association for Computing Machinery, New York, NY, USA, 912–923. https://doi.org/10.1145/3379337.3415894<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Ryuma+Niiyama%2C+Hiroki+Sato%2C+Kazzmasa+Tsujimura%2C+Koya+Narumi%2C+Young%C2%A0ah+Seong%2C+Ryosuke+Yamamura%2C+Yasuaki+Kakehi%2C+and+Yoshihiro+Kawahara.+2020.+Poimo%3A+Portable+and+Inflatable+Mobility+Devices+Customizable+for+Personal+Physical+Characteristics.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+912%E2%80%93923.+https%3A%2F%2Fdoi.org%2F10.1145%2F3379337.3415894" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3379337.3415894" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00011_copy" class="
+                references__item
+            "><span class="references__note">Jifei Ou, Mélina Skouras, Nikolaos Vlavianos, Felix Heibeck, Chin-Yi Cheng, Jannik Peters, and Hiroshi Ishii. 2016. AeroMorph - Heat-Sealing Inflatable Shape-Change Materials for Interaction Design. In Proceedings of the 29th Annual Symposium on User Interface Software and Technology(Tokyo, Japan) (UIST ’16). Association for Computing Machinery, New York, NY, USA, 121–132. https://doi.org/10.1145/2984511.2984520<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Jifei+Ou%2C+M%C3%A9lina+Skouras%2C+Nikolaos+Vlavianos%2C+Felix+Heibeck%2C+Chin-Yi+Cheng%2C+Jannik+Peters%2C+and+Hiroshi+Ishii.+2016.+AeroMorph+-+Heat-Sealing+Inflatable+Shape-Change+Materials+for+Interaction+Design.+In+Proceedings+of+the+29th+Annual+Symposium+on+User+Interface+Software+and+Technology%28Tokyo%2C+Japan%29+%28UIST+%E2%80%9916%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+121%E2%80%93132.+https%3A%2F%2Fdoi.org%2F10.1145%2F2984511.2984520" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/2984511.2984520" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00012_copy" class="
+                references__item
+            "><span class="references__note">Jifei Ou, Lining Yao, Daniel Tauber, Jürgen Steimle, Ryuma Niiyama, and Hiroshi Ishii. 2014. JamSheets: Thin Interfaces with Tunable Stiffness Enabled by Layer Jamming. In Proceedings of the 8th International Conference on Tangible, Embedded and Embodied Interaction(Munich, Germany) (TEI ’14). Association for Computing Machinery, New York, NY, USA, 65–72. https://doi.org/10.1145/2540930.2540971<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Jifei+Ou%2C+Lining+Yao%2C+Daniel+Tauber%2C+J%C3%BCrgen+Steimle%2C+Ryuma+Niiyama%2C+and+Hiroshi+Ishii.+2014.+JamSheets%3A+Thin+Interfaces+with+Tunable+Stiffness+Enabled+by+Layer+Jamming.+In+Proceedings+of+the+8th+International+Conference+on+Tangible%2C+Embedded+and+Embodied+Interaction%28Munich%2C+Germany%29+%28TEI+%E2%80%9914%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+65%E2%80%9372.+https%3A%2F%2Fdoi.org%2F10.1145%2F2540930.2540971" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span></span></li><li id="ref-00013_copy" class="
+                references__item
+            "><span class="references__note">Diego Paez-Granados, Takehiro Yamamoto, Hideki Kadone, and Kenji Suzuki. 2021. Passive Flow Control for Series Inflatable Actuators: Application on a Wearable Soft-Robot for Posture Assistance. IEEE Robotics and Automation Letters 6, 3 (2021), 4891–4898. https://doi.org/10.1109/LRA.2021.3070297<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Diego+Paez-Granados%2C+Takehiro+Yamamoto%2C+Hideki+Kadone%2C+and+Kenji+Suzuki.+2021.+Passive+Flow+Control+for+Series+Inflatable+Actuators%3A+Application+on+a+Wearable+Soft-Robot+for+Posture+Assistance.+IEEE+Robotics+and+Automation+Letters+6%2C+3+%282021%29%2C+4891%E2%80%934898.+https%3A%2F%2Fdoi.org%2F10.1109%2FLRA.2021.3070297" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/servlet/linkout?suffix=e_1_3_2_1_13_1&amp;dbid=16&amp;doi=10.1145%2F3472749.3474760&amp;key=10.1109%2FLRA.2021.3070297" target="_blank"><span class="visibility-hidden">Cross Ref</span><img class="simple-tooltip__block--b" data-title="Cross Ref" alt="Cross Ref" src="/templates/jsp/_ux3/_acm/images/crossref_icon.svg"></a></span></span></li><li id="ref-00014_copy" class="
+                references__item
+            "><span class="references__note">Amanda&nbsp;J. Parkes, Hayes&nbsp;Solos Raffle, and Hiroshi Ishii. 2008. Topobo in the Wild: Longitudinal Evaluations of Educators Appropriating a Tangible Interface. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (Florence, Italy) (CHI ’08). Association for Computing Machinery, New York, NY, USA, 1129–1138. https://doi.org/10.1145/1357054.1357232<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Amanda%C2%A0J.+Parkes%2C+Hayes%C2%A0Solos+Raffle%2C+and+Hiroshi+Ishii.+2008.+Topobo+in+the+Wild%3A+Longitudinal+Evaluations+of+Educators+Appropriating+a+Tangible+Interface.+In+Proceedings+of+the+SIGCHI+Conference+on+Human+Factors+in+Computing+Systems+%28Florence%2C+Italy%29+%28CHI+%E2%80%9908%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+1129%E2%80%931138.+https%3A%2F%2Fdoi.org%2F10.1145%2F1357054.1357232" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/1357054.1357232" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00015_copy" class="
+                references__item
+            "><span class="references__note">Majken&nbsp;K. Rasmussen, Esben&nbsp;W. Pedersen, Marianne&nbsp;G. Petersen, and Kasper Hornbæk. 2012. Shape-Changing Interfaces: A Review of the Design Space and Open Research Questions. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (Austin, Texas, USA) (CHI ’12). Association for Computing Machinery, New York, NY, USA, 735–744. https://doi.org/10.1145/2207676.2207781<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Majken%C2%A0K.+Rasmussen%2C+Esben%C2%A0W.+Pedersen%2C+Marianne%C2%A0G.+Petersen%2C+and+Kasper+Hornb%C3%A6k.+2012.+Shape-Changing+Interfaces%3A+A+Review+of+the+Design+Space+and+Open+Research+Questions.+In+Proceedings+of+the+SIGCHI+Conference+on+Human+Factors+in+Computing+Systems+%28Austin%2C+Texas%2C+USA%29+%28CHI+%E2%80%9912%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+735%E2%80%93744.+https%3A%2F%2Fdoi.org%2F10.1145%2F2207676.2207781" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/2207676.2207781" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00016_copy" class="
+                references__item
+            "><span class="references__note">A. Roudaut, D. Krusteva, M. McCoy, A. Karnik, K Ramani, and S. Subramanian. 2016. Cubimorph: Designing modular interactive devices. In 2016 IEEE International Conference on Robotics and Automation (ICRA). 3339–3345. https://doi.org/10.1109/ICRA.2016.7487508<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=A.+Roudaut%2C+D.+Krusteva%2C+M.+McCoy%2C+A.+Karnik%2C+K+Ramani%2C+and+S.+Subramanian.+2016.+Cubimorph%3A+Designing+modular+interactive+devices.+In+2016+IEEE+International+Conference+on+Robotics+and+Automation+%28ICRA%29.+3339%E2%80%933345.+https%3A%2F%2Fdoi.org%2F10.1109%2FICRA.2016.7487508" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1109/ICRA.2016.7487508" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00017_copy" class="
+                references__item
+            "><span class="references__note">Anne Roudaut, Rebecca Reed, Tianbo Hao, and Sriram Subramanian. 2014. Changibles: Analyzing and Designing Shape Changing Constructive Assembly. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (Toronto, Ontario, Canada) (CHI ’14). Association for Computing Machinery, New York, NY, USA, 2593–2596. https://doi.org/10.1145/2556288.2557006<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Anne+Roudaut%2C+Rebecca+Reed%2C+Tianbo+Hao%2C+and+Sriram+Subramanian.+2014.+Changibles%3A+Analyzing+and+Designing+Shape+Changing+Constructive+Assembly.+In+Proceedings+of+the+SIGCHI+Conference+on+Human+Factors+in+Computing+Systems+%28Toronto%2C+Ontario%2C+Canada%29+%28CHI+%E2%80%9914%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+2593%E2%80%932596.+https%3A%2F%2Fdoi.org%2F10.1145%2F2556288.2557006" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/2556288.2557006" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00018_copy" class="
+                references__item
+            "><span class="references__note">Harpreet Sareen, Udayan Umapathi, Patrick Shin, Yasuaki Kakehi, Jifei Ou, Hiroshi Ishii, and Pattie Maes. 2017. Printflatables: Printing Human-Scale, Functional and Dynamic Inflatable Objects. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (Denver, Colorado, USA) (CHI ’17). Association for Computing Machinery, New York, NY, USA, 3669–3680. https://doi.org/10.1145/3025453.3025898<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Harpreet+Sareen%2C+Udayan+Umapathi%2C+Patrick+Shin%2C+Yasuaki+Kakehi%2C+Jifei+Ou%2C+Hiroshi+Ishii%2C+and+Pattie+Maes.+2017.+Printflatables%3A+Printing+Human-Scale%2C+Functional+and+Dynamic+Inflatable+Objects.+In+Proceedings+of+the+2017+CHI+Conference+on+Human+Factors+in+Computing+Systems+%28Denver%2C+Colorado%2C+USA%29+%28CHI+%E2%80%9917%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+3669%E2%80%933680.+https%3A%2F%2Fdoi.org%2F10.1145%2F3025453.3025898" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3025453.3025898" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00019_copy" class="
+                references__item
+            "><span class="references__note">Miriam Sturdee and Jason Alexander. 2018. Analysis and Classification of Shape-Changing Interfaces for Design and Application-Based Research. ACM Comput. Surv. 51, 1, Article 2 (Jan. 2018), 32&nbsp;pages. https://doi.org/10.1145/3143559<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Miriam+Sturdee+and+Jason+Alexander.+2018.+Analysis+and+Classification+of+Shape-Changing+Interfaces+for+Design+and+Application-Based+Research.+ACM+Comput.+Surv.+51%2C+1%2C+Article+2+%28Jan.+2018%29%2C+32%C2%A0pages.+https%3A%2F%2Fdoi.org%2F10.1145%2F3143559" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span></span></li><li id="ref-00020_copy" class="
+                references__item
+            "><span class="references__note">Ryo Suzuki, Ryosuke Nakayama, Dan Liu, Yasuaki Kakehi, Mark&nbsp;D. Gross, and Daniel Leithinger. 2020. LiftTiles: Constructive Building Blocks for Prototyping Room-Scale Shape-Changing Interfaces. In Proceedings of the Fourteenth International Conference on Tangible, Embedded, and Embodied Interaction (Sydney NSW, Australia) (TEI ’20). Association for Computing Machinery, New York, NY, USA, 143–151. https://doi.org/10.1145/3374920.3374941<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Ryo+Suzuki%2C+Ryosuke+Nakayama%2C+Dan+Liu%2C+Yasuaki+Kakehi%2C+Mark%C2%A0D.+Gross%2C+and+Daniel+Leithinger.+2020.+LiftTiles%3A+Constructive+Building+Blocks+for+Prototyping+Room-Scale+Shape-Changing+Interfaces.+In+Proceedings+of+the+Fourteenth+International+Conference+on+Tangible%2C+Embedded%2C+and+Embodied+Interaction+%28Sydney+NSW%2C+Australia%29+%28TEI+%E2%80%9920%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+143%E2%80%93151.+https%3A%2F%2Fdoi.org%2F10.1145%2F3374920.3374941" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3374920.3374941" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00021_copy" class="
+                references__item
+            "><span class="references__note">Ryo Suzuki, Clement Zheng, Yasuaki Kakehi, Tom Yeh, Ellen Yi-Luen Do, Mark&nbsp;D. Gross, and Daniel Leithinger. 2019. ShapeBots: Shape-Changing Swarm Robots. In Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology (New Orleans, LA, USA) (UIST ’19). Association for Computing Machinery, New York, NY, USA, 493–505. https://doi.org/10.1145/3332165.3347911<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Ryo+Suzuki%2C+Clement+Zheng%2C+Yasuaki+Kakehi%2C+Tom+Yeh%2C+Ellen+Yi-Luen+Do%2C+Mark%C2%A0D.+Gross%2C+and+Daniel+Leithinger.+2019.+ShapeBots%3A+Shape-Changing+Swarm+Robots.+In+Proceedings+of+the+32nd+Annual+ACM+Symposium+on+User+Interface+Software+and+Technology+%28New+Orleans%2C+LA%2C+USA%29+%28UIST+%E2%80%9919%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+493%E2%80%93505.+https%3A%2F%2Fdoi.org%2F10.1145%2F3332165.3347911" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3332165.3347911" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00022_copy" class="
+                references__item
+            "><span class="references__note">Saiganesh Swaminathan, Michael Rivera, Runchang Kang, Zheng Luo, Kadri&nbsp;Bugra Ozutemiz, and Scott&nbsp;E. Hudson. 2019. Input, Output and Construction Methods for Custom Fabrication of Room-Scale Deployable Pneumatic Structures. Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 3, 2, Article 62 (June 2019), 17&nbsp;pages. https://doi.org/10.1145/3328933<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Saiganesh+Swaminathan%2C+Michael+Rivera%2C+Runchang+Kang%2C+Zheng+Luo%2C+Kadri%C2%A0Bugra+Ozutemiz%2C+and+Scott%C2%A0E.+Hudson.+2019.+Input%2C+Output+and+Construction+Methods+for+Custom+Fabrication+of+Room-Scale+Deployable+Pneumatic+Structures.+Proc.+ACM+Interact.+Mob.+Wearable+Ubiquitous+Technol.+3%2C+2%2C+Article+62+%28June+2019%29%2C+17%C2%A0pages.+https%3A%2F%2Fdoi.org%2F10.1145%2F3328933" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3328933" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00023_copy" class="
+                references__item
+            "><span class="references__note">Shan-Yuan Teng, Tzu-Sheng Kuo, Chi Wang, Chi-huan Chiang, Da-Yuan Huang, Liwei Chan, and Bing-Yu Chen. 2018. PuPoP: Pop-up Prop on Palm for Virtual Reality. In Proceedings of the 31st Annual ACM Symposium on User Interface Software and Technology (Berlin, Germany) (UIST ’18). Association for Computing Machinery, New York, NY, USA, 5–17. https://doi.org/10.1145/3242587.3242628<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Shan-Yuan+Teng%2C+Tzu-Sheng+Kuo%2C+Chi+Wang%2C+Chi-huan+Chiang%2C+Da-Yuan+Huang%2C+Liwei+Chan%2C+and+Bing-Yu+Chen.+2018.+PuPoP%3A+Pop-up+Prop+on+Palm+for+Virtual+Reality.+In+Proceedings+of+the+31st+Annual+ACM+Symposium+on+User+Interface+Software+and+Technology+%28Berlin%2C+Germany%29+%28UIST+%E2%80%9918%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+5%E2%80%9317.+https%3A%2F%2Fdoi.org%2F10.1145%2F3242587.3242628" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3242587.3242628" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00024_copy" class="
+                references__item
+            "><span class="references__note">Shan-Yuan Teng, Cheng-Lung Lin, Chi-huan Chiang, Tzu-Sheng Kuo, Liwei Chan, Da-Yuan Huang, and Bing-Yu Chen. 2019. TilePoP: Tile-Type Pop-up Prop for Virtual Reality. In Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology (New Orleans, LA, USA) (UIST ’19). Association for Computing Machinery, New York, NY, USA, 639–649. https://doi.org/10.1145/3332165.3347958<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Shan-Yuan+Teng%2C+Cheng-Lung+Lin%2C+Chi-huan+Chiang%2C+Tzu-Sheng+Kuo%2C+Liwei+Chan%2C+Da-Yuan+Huang%2C+and+Bing-Yu+Chen.+2019.+TilePoP%3A+Tile-Type+Pop-up+Prop+for+Virtual+Reality.+In+Proceedings+of+the+32nd+Annual+ACM+Symposium+on+User+Interface+Software+and+Technology+%28New+Orleans%2C+LA%2C+USA%29+%28UIST+%E2%80%9919%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+639%E2%80%93649.+https%3A%2F%2Fdoi.org%2F10.1145%2F3332165.3347958" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3332165.3347958" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00025_copy" class="
+                references__item
+            "><span class="references__note">Junichi Yamaoka, Ryuma Niiyama, and Yasuaki Kakehi. 2017. BlowFab: Rapid Prototyping for Rigid and Reusable Objects Using Inflation of Laser-Cut Surfaces. In Proceedings of the 30th Annual ACM Symposium on User Interface Software and Technology (Québec City, QC, Canada) (UIST ’17). Association for Computing Machinery, New York, NY, USA, 461–469. https://doi.org/10.1145/3126594.3126624<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Junichi+Yamaoka%2C+Ryuma+Niiyama%2C+and+Yasuaki+Kakehi.+2017.+BlowFab%3A+Rapid+Prototyping+for+Rigid+and+Reusable+Objects+Using+Inflation+of+Laser-Cut+Surfaces.+In+Proceedings+of+the+30th+Annual+ACM+Symposium+on+User+Interface+Software+and+Technology+%28Qu%C3%A9bec+City%2C+QC%2C+Canada%29+%28UIST+%E2%80%9917%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+461%E2%80%93469.+https%3A%2F%2Fdoi.org%2F10.1145%2F3126594.3126624" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3126594.3126624" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00026_copy" class="
+                references__item
+            "><span class="references__note">Lining Yao, Ryuma Niiyama, Jifei Ou, Sean Follmer, Clark Della&nbsp;Silva, and Hiroshi Ishii. 2013. PneUI: Pneumatically Actuated Soft Composite Materials for Shape Changing Interfaces. In Proceedings of the 26th Annual ACM Symposium on User Interface Software and Technology (St. Andrews, Scotland, United Kingdom) (UIST ’13). Association for Computing Machinery, New York, NY, USA, 13–22. https://doi.org/10.1145/2501988.2502037<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Lining+Yao%2C+Ryuma+Niiyama%2C+Jifei+Ou%2C+Sean+Follmer%2C+Clark+Della%C2%A0Silva%2C+and+Hiroshi+Ishii.+2013.+PneUI%3A+Pneumatically+Actuated+Soft+Composite+Materials+for+Shape+Changing+Interfaces.+In+Proceedings+of+the+26th+Annual+ACM+Symposium+on+User+Interface+Software+and+Technology+%28St.+Andrews%2C+Scotland%2C+United+Kingdom%29+%28UIST+%E2%80%9913%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+13%E2%80%9322.+https%3A%2F%2Fdoi.org%2F10.1145%2F2501988.2502037" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/2501988.2502037" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li><li id="ref-00027_copy" class="
+                references__item
+            "><span class="references__note">Kening Zhu, Taizhou Chen, Feng Han, and Yi-Shiun Wu. 2019. HapTwist: Creating Interactive Haptic Proxies in Virtual Reality Using Low-Cost Twistable Artefacts. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (Glasgow, Scotland Uk) (CHI ’19). Association for Computing Machinery, New York, NY, USA, 1–13. https://doi.org/10.1145/3290605.3300923<span class="references__suffix"><a class="google-scholar" href="http://scholar.google.com/scholar?hl=en&amp;q=Kening+Zhu%2C+Taizhou+Chen%2C+Feng+Han%2C+and+Yi-Shiun+Wu.+2019.+HapTwist%3A+Creating+Interactive+Haptic+Proxies+in+Virtual+Reality+Using+Low-Cost+Twistable+Artefacts.+In+Proceedings+of+the+2019+CHI+Conference+on+Human+Factors+in+Computing+Systems+%28Glasgow%2C+Scotland+Uk%29+%28CHI+%E2%80%9919%29.+Association+for+Computing+Machinery%2C+New+York%2C+NY%2C+USA%2C+1%E2%80%9313.+https%3A%2F%2Fdoi.org%2F10.1145%2F3290605.3300923" target="_blank"><span class="visibility-hidden">Google Scholar</span><img src="/specs/products/acm/images/googleScholar.svg" class="simple-tooltip__block--b" alt="Google Scholar"></a></span><span class="references__suffix"><a href="/doi/10.1145/3290605.3300923" target="_blank"><span class="visibility-hidden">Digital Library</span><img class="simple-tooltip__block--b" data-title="Digital Library" alt="Digital Library" src="/templates/jsp/_ux3/_acm/images/DL_icon.svg"></a></span></span></li></ol></div></div><div id="pill-media"><div class="tab tab--flex"><ul role="tablist" class="rlist tab__nav"><li role="presentation" class="active"><a id="pill-fig__contentcon" href="#pill-fig__content" aria-controls="pill-fig__content" role="tab" data-toggle="tab" title="Figures" aria-selected="true" data-simple-tab-id="" tabindex="0" class="empty">Figures</a></li><li role="presentation"><a id="pill-media__contentcon" href="#pill-media__content" aria-controls="pill-media__content" role="tab" data-toggle="tab" title="Other" aria-selected="false" data-simple-tab-id="" tabindex="-1" class="empty">Other</a></li></ul><div class="pill-figures__content"><ul class="rlist tab__content"><li id="pill-fig__content" aria-labelledby="pill-fig__contentcon" role="tabpanel" aria-hidden="false" tabindex="0" class="tab__pane active empty"><div class="NoContentMessage">None</div></li><li id="pill-media__content" aria-labelledby="pill-media__contentcon" role="tabpanel" aria-hidden="true" class="tab__pane empty"><ul class="rlist pill-media__content"></ul></li></ul></div></div></div><div id="pill-tables"><div class="pill-tables__content"><!-- XSLT: PublicationTables.xsl, Revision: 14023336, Interface: urn:atypon.com:nlm:interface:atypon-nlm-book-prime, was cached: Mon Nov 15 06:52:52 PST 2021-->
+
+<!-- END OF XSLT -->
+</div></div><div id="pill-share"><div class="pill-share__content"><div class="section__separator"><h3 class="left-bordered-title">Share this Publication link</h3><div class="section__content copy__text-wrapper"><fieldset><p id="shareable-link__text" class="copy__text">https://dl.acm.org/doi/10.1145/3472749.3474760</p><button type="submit" class="btn big btn--inverse copy__btn"><i aria-hidden="true" class="icon-pages"></i>Copy Link</button></fieldset></div></div><div class="section__separator"><h3 class="left-bordered-title">Share on Social Media</h3><div class="section__content"><div class="visible-service-name">
+
+
+
+        
+        <!-- Go to www.addthis.com/dashboard to customize your tools --><script type="text/javascript" async="async" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-4faab26f2cff13a7"></script><div class="share__block share__inline-links"><div class="pb-dropzone" data-pb-dropzone="shareBlock" title="shareBlock"></div><span class="sr-only">Share on</span><div class="rlist--inline addthis addthis_toolbox addthis_default_style addthis_32x32_style"><a role="link" class="addthis_button_twitter at300b" title="Twitter" href="#"><span class="at-icon-wrapper" style="background-color: rgb(29, 161, 242); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-twitter-1" title="Twitter" alt="Twitter" style="width: 32px; height: 32px;" class="at-icon at-icon-twitter"><title id="at-svg-twitter-1">Twitter</title><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg></span></a><a role="link" class="addthis_button_linkedin at300b" target="_blank" title="LinkedIn" href="#"><span class="at-icon-wrapper" style="background-color: rgb(0, 119, 181); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-linkedin-2" title="LinkedIn" alt="LinkedIn" style="width: 32px; height: 32px;" class="at-icon at-icon-linkedin"><title id="at-svg-linkedin-2">LinkedIn</title><g><path d="M26 25.963h-4.185v-6.55c0-1.56-.027-3.57-2.175-3.57-2.18 0-2.51 1.7-2.51 3.46v6.66h-4.182V12.495h4.012v1.84h.058c.558-1.058 1.924-2.174 3.96-2.174 4.24 0 5.022 2.79 5.022 6.417v7.386zM8.23 10.655a2.426 2.426 0 0 1 0-4.855 2.427 2.427 0 0 1 0 4.855zm-2.098 1.84h4.19v13.468h-4.19V12.495z" fill-rule="evenodd"></path></g></svg></span></a><a role="link" class="addthis_button_reddit at300b" target="_blank" title="Reddit" href="#"><span class="at-icon-wrapper" style="background-color: rgb(255, 87, 0); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-reddit-3" title="Reddit" alt="Reddit" style="width: 32px; height: 32px;" class="at-icon at-icon-reddit"><title id="at-svg-reddit-3">Reddit</title><g><path d="M27 15.5a2.452 2.452 0 0 1-1.338 2.21c.098.38.147.777.147 1.19 0 1.283-.437 2.47-1.308 3.563-.872 1.092-2.06 1.955-3.567 2.588-1.506.634-3.143.95-4.91.95-1.768 0-3.403-.316-4.905-.95-1.502-.632-2.69-1.495-3.56-2.587-.872-1.092-1.308-2.28-1.308-3.562 0-.388.045-.777.135-1.166a2.47 2.47 0 0 1-1.006-.912c-.253-.4-.38-.842-.38-1.322 0-.678.237-1.26.712-1.744a2.334 2.334 0 0 1 1.73-.726c.697 0 1.29.26 1.78.782 1.785-1.258 3.893-1.928 6.324-2.01l1.424-6.467a.42.42 0 0 1 .184-.26.4.4 0 0 1 .32-.063l4.53 1.006c.147-.306.368-.553.662-.74a1.78 1.78 0 0 1 .97-.278c.508 0 .94.18 1.302.54.36.36.54.796.54 1.31 0 .512-.18.95-.54 1.315-.36.364-.794.546-1.302.546-.507 0-.94-.18-1.295-.54a1.793 1.793 0 0 1-.533-1.308l-4.1-.92-1.277 5.86c2.455.074 4.58.736 6.37 1.985a2.315 2.315 0 0 1 1.757-.757c.68 0 1.256.242 1.73.726.476.484.713 1.066.713 1.744zm-16.868 2.47c0 .513.178.95.534 1.315.356.365.787.547 1.295.547.508 0 .942-.182 1.302-.547.36-.364.54-.802.54-1.315 0-.513-.18-.95-.54-1.31-.36-.36-.794-.54-1.3-.54-.5 0-.93.183-1.29.547a1.79 1.79 0 0 0-.54 1.303zm9.944 4.406c.09-.09.135-.2.135-.323a.444.444 0 0 0-.44-.447c-.124 0-.23.042-.32.124-.336.348-.83.605-1.486.77a7.99 7.99 0 0 1-1.964.248 7.99 7.99 0 0 1-1.964-.248c-.655-.165-1.15-.422-1.486-.77a.456.456 0 0 0-.32-.124.414.414 0 0 0-.306.124.41.41 0 0 0-.135.317.45.45 0 0 0 .134.33c.352.355.837.636 1.455.843.617.207 1.118.33 1.503.366a11.6 11.6 0 0 0 1.117.056c.36 0 .733-.02 1.117-.056.385-.037.886-.16 1.504-.366.62-.207 1.104-.488 1.456-.844zm-.037-2.544c.507 0 .938-.182 1.294-.547.356-.364.534-.802.534-1.315 0-.505-.18-.94-.54-1.303a1.75 1.75 0 0 0-1.29-.546c-.506 0-.94.18-1.3.54-.36.36-.54.797-.54 1.31s.18.95.54 1.315c.36.365.794.547 1.3.547z" fill-rule="evenodd"></path></g></svg></span></a><a role="link" class="addthis_button_facebook at300b" title="Facebook" href="#"><span class="at-icon-wrapper" style="background-color: rgb(59, 89, 152); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-4" title="Facebook" alt="Facebook" style="width: 32px; height: 32px;" class="at-icon at-icon-facebook"><title id="at-svg-facebook-4">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg></span></a><a role="link" class="addthis_button_email at300b" target="_blank" title="Email" href="#"><span class="at-icon-wrapper" style="background-color: rgb(132, 132, 132); line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-email-5" title="Email" alt="Email" style="width: 32px; height: 32px;" class="at-icon at-icon-email"><title id="at-svg-email-5">Email</title><g><g fill-rule="evenodd"></g><path d="M27 22.757c0 1.24-.988 2.243-2.19 2.243H7.19C5.98 25 5 23.994 5 22.757V13.67c0-.556.39-.773.855-.496l8.78 5.238c.782.467 1.95.467 2.73 0l8.78-5.238c.472-.28.855-.063.855.495v9.087z"></path><path d="M27 9.243C27 8.006 26.02 7 24.81 7H7.19C5.988 7 5 8.004 5 9.243v.465c0 .554.385 1.232.857 1.514l9.61 5.733c.267.16.8.16 1.067 0l9.61-5.733c.473-.283.856-.96.856-1.514v-.465z"></path></g></svg></span></a><div class="pb-dropzone" data-pb-dropzone="share-additional-links" title="share-additional-links"></div><div class="atclear"></div></div></div>
+</div></div></div></div></div></div></div><div class="col-sm-2 pill-section js--fixed" style="left: 1396.66px; top: 661px; transition: left 0.3s ease 0s;"><div data-stop-on=".more-issue__section" class="pill-icons"><ul class="rlist pill-list cloned hidden-xs hidden-sm"><li title="Information &amp; Authors"><a href="javascript:void(0);" data-slide-target="#pill-information" data-ctrl-res="screen-xlg" data-full-screen="false" title="Information and Authors" data-label="<i class=&quot;icon-Icon_Information&quot;></i>Information &amp; Authors" class="w-slide__btn pill-information slide-active"><i aria-hidden="true" class="icon-Icon_Information"></i></a></li><li title="Bibliometrics &amp; Citations"><a href="javascript:void(0);" data-slide-target="#pill-metric" data-ctrl-res="screen-xlg" data-full-screen="false" data-label="<i class=&quot;icon-metric &quot;></i>Bibliometrics &amp; Citations" title="Bibliometrics and Citations" class="w-slide__btn pill-metric slide-active"><i aria-hidden="true" class="icon-metric"></i></a></li><li title="Get Access"><a href="javascript:void(0);" data-slide-target="#pill-access" data-ctrl-res="screen-xlg" data-full-screen="false" title="Get Access" data-label="<i class=&quot;icon-get-access&quot;></i>Get Access" class="w-slide__btn pill-access slide-active"><i class="icon-get-access"></i></a></li><li title="References"><a href="javascript:void(0);" data-slide-target="#pill-references" data-ctrl-res="screen-xlg" data-full-screen="false" title="References" data-label="<i class=&quot;icon-Icon_Links-References&quot;></i>References" class="w-slide__btn pill-references slide-active"><i aria-hidden="true" class="icon-Icon_Links-References"></i><span class="refNum count-bubble">27<span class="sr-only">References</span></span></a></li><li title="Media" class="disable"><a href="javascript:void(0);" data-slide-target="#pill-media" data-ctrl-res="screen-xlg" data-full-screen="false" title="Media disable" data-label="<i class=&quot;icon-Icon_Images&quot;></i>Media" data-ajaxtarget="#pill-fig__content" data-component="pubAjaxContent" data-action="onResponse" data-ajaxurl="/action/ajaxShowFigures?widgetId=f69d88a8-b404-4aae-83a9-9acea4426d78&amp;ajax=true&amp;doi=10.1145%2F3472749.3474760&amp;pbContext=%3Btaxonomy%3Ataxonomy%3Aconference-collections%3Bwgroup%3Astring%3AACM+Publication+Websites%3BgroupTopic%3Atopic%3Aacm-pubtype%26gt%3Bproceeding%3Bctype%3Astring%3ABook+Content%3Bissue%3Aissue%3Adoi%5C%3A10.1145%2F3472749%3Bpage%3Astring%3AArticle%2FChapter+View%3BsubPage%3Astring%3AAbstract%3Barticle%3Aarticle%3Adoi%5C%3A10.1145%2F3472749.3474760%3Btopic%3Atopic%3Aconference-collections%26gt%3Buist%3Bcsubtype%3Astring%3AConference+Proceedings%3Bwebsite%3Awebsite%3Adl-site%3Bjournal%3Ajournal%3Aacmconferences%3BpageGroup%3Astring%3APublication+Pages" class="w-slide__btn loadAjax-auto pill-media disable slide-active ajax-done"><i aria-hidden="true" class="icon-Icon_Images"></i></a></li><li title="Tables" class="disable"><a href="javascript:void(0);" data-slide-target="#pill-tables" data-ctrl-res="screen-xlg" title="Tables disable" data-full-screen="false" data-label="<i class=&quot;icon-table&quot;></i>Tables" data-ajaxtarget=".pill-tables__content" data-component="pubAjaxContent" data-action="onResponse" data-ajaxurl="/action/ajaxShowTables?widgetId=f69d88a8-b404-4aae-83a9-9acea4426d78&amp;ajax=true&amp;doi=10.1145%2F3472749.3474760&amp;pbContext=%3Btaxonomy%3Ataxonomy%3Aconference-collections%3Bwgroup%3Astring%3AACM+Publication+Websites%3BgroupTopic%3Atopic%3Aacm-pubtype%26gt%3Bproceeding%3Bctype%3Astring%3ABook+Content%3Bissue%3Aissue%3Adoi%5C%3A10.1145%2F3472749%3Bpage%3Astring%3AArticle%2FChapter+View%3BsubPage%3Astring%3AAbstract%3Barticle%3Aarticle%3Adoi%5C%3A10.1145%2F3472749.3474760%3Btopic%3Atopic%3Aconference-collections%26gt%3Buist%3Bcsubtype%3Astring%3AConference+Proceedings%3Bwebsite%3Awebsite%3Adl-site%3Bjournal%3Ajournal%3Aacmconferences%3BpageGroup%3Astring%3APublication+Pages" class="w-slide__btn loadAjax-auto pill-tables disable slide-active ajax-done"><i aria-hidden="true" class="icon-table"></i></a></li><li title="Share"><a href="javascript:void(0);" data-slide-target="#pill-share" data-ctrl-res="screen-xlg" data-full-screen="false" title="Share" data-label="<i class=&quot;icon-Icon_Share&quot;></i>Share" class="w-slide__btn pill-share pill-content slide-active hidden"><i aria-hidden="true" class="icon-Icon_Share"></i></a></li></ul></div></div></div></article><div id="figure-viewer" data-ux3-wrapper="figure-viewer" data-ux3-transformed-by="figureInit" data-ux3-role="parent" role="dialog" class="figure-viewer"><div class="figure-viewer__reg__top clearfix"><div class="figure-viewer__top__right"><a title="Zoom In" href="#" class="figure-viewer__ctrl figure-viewer__ctrl__zoom zoomSetting"><div aria-hidden="true" class="icon-zoom-in zoom-in"></div></a><a title="Zoom Out" href="#" class="figure-viewer__ctrl figure-viewer__label__zoom zoomSetting"><div aria-hidden="true" class="icon-zoom-out zoom-out"></div></a><a title="Open Caption" href="#" class="figure-viewer__ctrl figure-viewer__ctrl__caption"><i aria-hidden="true" class="icon-Icon_Information"></i></a><a data-ux3-role="controller" role="button" title="close" class="figure-viewer__ctrl figure-viewer__ctrl__close" tabindex="0"><i aria-hidden="true" class="icon-cancel-bold"><span class="sr-only">Close Figure Viewer</span></i></a></div><h4 class="figure-viewer__top__center"></h4><div class="figure-viewer__top__left"><a role="button" title="Browse All" class="figure-viewer__ctrl__browse" tabindex="0"><i aria-hidden="true" class="icon-grid-3"><span class="sr-only">Browse All</span></i></a><a role="button" title="Return" class="figure-viewer__ctrl__return is-hidden" tabindex="0"><i aria-hidden="true" class="icon-cancel-bold"><span class="sr-only">Return</span></i></a><span class="zoomSlider js__zoom-slider ui-slider zoomSetting"><label for="figure-viewer__zoom-range" class="sr-only">Change zoom level</label><input type="range" id="figure-viewer__zoom-range" class="zoom-range"></span></div></div><div class="figure-viewer__reg__center" style="height: calc(100vh - 56px);"><div class="figure-viewer__cent__left"><div class="figure-viewer__hold__fig"><div class="holder"></div></div><div class="figure-viewer__hold__list"><h3 class="figure-viewer__browse-title"></h3><div class="flex-grid"></div></div></div><div class="figure-viewer__cent__right"><div class="figure-viewer__caption-header"><h3 class="figure-viewer__caption-label">Caption</h3><a title="Close Caption" href="#" class="pull-right figure-viewer__close-caption figure-viewer__ctrl__caption"><i aria-hidden="true" class="icon-cancel-bold"></i></a></div><div class="figure-viewer__caption-wrapper"><div class="figure-viewer__title"><span class="figure-viewer__title__text"></span></div><div class="figure-viewer__hold__figcap"></div></div></div></div></div>
+
+        </div>
+    
+
+
+
+
+        
+        
+
+
+
+
+        
+        
+<div class="w-slide"><div class="w-slide_head"><a href="#" class="w-slide__back"><i class=" icon-arrow_l" aria-hidden="true"></i>back</a><span class="w-slide__title"></span></div><div class="w-slide__content"></div></div></main><div class="ux-modal-container"><div id="manageAlert" class="modal"><div class="modal__dialog"><div class="modal__dialog--success"><div class="modal__header"><button type="button" data-dismiss="modal" class="close"><i aria-hidden="true" class="icon-close_thin"></i><span class="sr-only">Close modal</span></button><a id="id-hatemile-navigation-6073290063892647-7" name="id-hatemile-navigation-6073290063892647-7" data-headinganchorfor="id-hatemile-navigation-6073290063892647-6" class="heading-anchor"></a><h2 id="id-hatemile-navigation-6073290063892647-6">New Citation Alert added!</h2></div><div class="modal__body"><p>This alert has been successfully added and will be sent to:<span class="email"></span></p><p>You will be notified whenever a record that you have chosen has been cited.</p></div><div class="modal__footer"><p>To manage your alert preferences, click on the button below.</p><a href="/action/showPreferences?menuTab=Alerts" title="Manage my Alerts" id="id-hatemile-display-1019331959102511-5" class="btn blue big stretched manageAlert__btn"><span data-attributetitleof="id-hatemile-display-1019331959102511-5" class="force-read-before">Manage my Alerts</span></a></div></div><div class="modal__dialog--error"><div class="modal__header"><button type="button" data-dismiss="modal" class="close"><i aria-hidden="true" class="icon-close_thin"></i><span class="sr-only">Close modal</span></button><a id="id-hatemile-navigation-6073290063892647-9" name="id-hatemile-navigation-6073290063892647-9" data-headinganchorfor="id-hatemile-navigation-6073290063892647-8" class="heading-anchor"></a><h2 id="id-hatemile-navigation-6073290063892647-8">New Citation Alert!</h2></div><div class="modal__body"><p>Please <a href="/action/showLogin?redirectUri=/doi/10.1145/3472749.3474760" title="Sign In" class="link">log in to your account</a></p></div></div></div></div></div><div class="ux-modal-container"><div id="exportCitation" class="modal"><div class="modal__dialog"><div class="modal__header"><button type="button" data-dismiss="modal" class="close"><i aria-hidden="true" class="icon-close_thin"></i><span class="sr-only">Close modal</span></button><h2>Export Citations</h2></div><div class="modal__body"><div class="exportCitation__tabs"><div class="tab"><ul role="tablist" class="rlist tab__nav"></ul></div><div class="csl-wrapper copy__text-wrapper"><form action="/action/exportCiteProcCitation" method="post" target="_blank"><input type="hidden" name="content" value=""><input type="hidden" name="dois" value=""><input type="hidden" name="format" value=""><fieldset class="input-group"><label for="citation-format" class="visibility-hidden">Select Citation format</label><select id="citation-format" data-csl-doi="10.1145/3472749.3474760"><option value="bibtex" data-format="bibTex">BibTeX</option><option value="endNote" data-format="endNote">EndNote</option><option value="acm" data-format="text">ACM Ref</option></select><span class="select-arrow"><i class="icon-bottom-arrow"></i></span></fieldset><ul class="rlist tab__content"><li id="selectedTab" aria-labelledby="selected" role="tabpanel" class="tab__pane active"><div class="csl-wrapper copy__text-wrapper"><pre class="copy__text csl-response"></pre><div id="export-warning"></div><div class="pull-right"><ul class="rlist--inline separator"><li><a href="javascript:void(0)" role="menuitem" title="Download citation" class="download__btn disabled"><label class="visibility-hidden">Download citation</label><i aria-hidden="true" class="icon-Icon_Download"></i></a></li><li><a href="javascript:void(0)" role="menuitem" title="Copy citation" class="copy__btn disabled"><label class="visibility-hidden">Copy citation</label><i aria-hidden="true" class="icon-pages"></i><input type="hidden" id="doisLimitNumber" value="-1"></a></li></ul></div></div></li><li id="allResultstab" aria-labelledby="allResults" role="tabpanel" class="tab__pane"><div class="all-results-tab-container"><div class="desc-text"><div class="bold">Preview is not available.</div>By clicking download,<b class="ml-1">a new tab</b> will open to start the export process. The process may take<b class="ml-1">a few minutes</b> but once it finishes a file will be downloaded on your browser so<b class="ml-1">please do not close the new tab.</b></div><a href="&amp;format=bibTex&amp;targetFile=custom-bibtex" title="Download" target="_blank" class="btn transparent downloadBtn"><i aria-hidden="true" class="icon-Icon_Download"></i>Download<i aria-hidden="true" class="icon-export"></i></a></div></li></ul></form></div></div></div></div></div></div>
+
+
+
+
+        
+        <footer class="footer">
+
+
+
+        
+        <div class="back-to-top clearfix">
+    <i class="icon-arrow_u_p"></i>
+</div>
+
+
+
+
+        
+        <div class="footer-top">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-layout-widget" data-widget-id="81a18a14-d709-41fd-9bb6-25a7fc1e13df" class="container">
+        
+
+
+
+        
+        <div class="row sitemap">
+
+
+
+        
+        <div class="col-sm-2 col-xs-6 sitemap__column">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3HTMLWidget" data-widget-id="5b00ef28-f63b-4518-bd06-da82035f86ca" class="sitemap__data">
+        
+
+
+
+        
+        <div class="bold" style="margin-bottom: 18px;">Categories</div>
+<ul class="rlist">
+    <li><a href="/journals" title="Browse a listing of ACM’s Journals">Journals</a></li>
+    <li><a href="/magazines" title="Browse ACM's Magazines">Magazines</a></li>
+    <li><a href="/acmbooks" title="Browse new Releases of ACM Books">Books</a></li>
+    <li><a href="/proceedings" title="Browse the ACM Proceedings">Proceedings</a></li>
+    <li><a href="/sigs" title="Browse the Special Interest Groups">SIGs</a></li>
+    <li><a href="/conferences" title="Browse the Conferences">Conferences</a></li>
+    <li><a href="/collections" title="Browse the Special Collections">Collections</a></li>
+    <li><a href="/people" title="Discover ACM’s community of authors">People</a></li>
+</ul>
+
+        </div>
+    
+</div><div class="col-sm-4 col-xs-6 sitemap__column">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3HTMLWidget" data-widget-id="731f98d3-e996-490d-a071-e9b966b32e2d" class="sitemap__data">
+        
+
+
+
+        
+        <div class="bold" style="margin-bottom: 18px;">About</div>
+<ul class="rlist">
+    <li><a href="/about">About ACM Digital Library</a></li>
+    <li><a href="/about/access" title="Accessing the DL">Subscription Information</a></li>
+    <li><a href="https://www.acm.org/publications/authors/information-for-authors" title="Information for Authors">Author Guidelines</a></li>
+    <li><a href="/about/access" title="Accessing the DL">Using ACM Digital Library</a></li>
+    <li><a href="/about/content#sec2">All Holdings within the ACM Digital Library</a></li>
+    <li><a href="/ccs" title="Classify publications using ACM's Computing Classification System">ACM Computing Classification System</a></li>
+</ul>
+
+        </div>
+    
+</div><div class="col-sm-3 col-xs-6 sitemap__column">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3HTMLWidget" data-widget-id="d4ed040d-22e8-481c-a7ef-0cac141f5246" class="sitemap__data">
+        
+
+
+
+        
+        <div class="bold" style="margin-bottom: 18px;">Join</div>
+<ul class="rlist">
+    <li><a href="https://www.acm.org/membership/join">Join ACM</a></li>
+    <li><a href="https://www.acm.org/special-interest-groups/join">Join SIGs</a></li>
+    <li><a href="https://www.acm.org/publications/subscribe">Subscribe to Publications</a></li>
+    <li><a href="https://libraries.acm.org/">Institutions and Libraries</a></li>
+</ul>
+
+        </div>
+    
+</div><div class="col-sm-3 col-xs-6 sitemap__column">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="UX3HTMLWidget" data-widget-id="4a649bf1-cf3f-472c-b764-dc3ab0cf4310" class="sitemap__data">
+        
+
+
+
+        
+        <b>Connect</b>
+<ul class="rlist social-media__connect">
+    <li><a href="mailto:dl-team@hq.acm.org" title="email dl team"><i class="icon-Icon_mail" aria-hidden="true"></i><span>Contact</span></a></li>
+    <li><a href="https://www.facebook.com/AssociationForComputingMachinery/" title="ACM on facebook"><i class="icon-facebook" aria-hidden="true"></i><span>Facebook</span></a></li>
+    <li><a href="https://twitter.com/acmdl" title="Tweets from ACM DL"><i class="icon-twitter" aria-hidden="true"></i><span>Twitter</span></a></li>
+    <li><a href="https://www.linkedin.com/company/association-for-computing-machinery/" title="acm  linkedin"><i class="icon-linkedin" aria-hidden="true"></i><span>Linkedin</span></a></li>
+    <!--li><a href="#" title="icon-Rss"><i class="icon-Rss" aria-hidden="true"></i><span>RSS</span></a></li-->
+</ul>
+
+        </div>
+    
+</div>
+</div>
+
+        </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-layout-widget" data-widget-id="6e6da9b7-371e-4ea0-827e-8de5915b8cd5" class="footer-bottom text-onDark">
+        
+
+
+
+        
+        <div class="container"><div class="row"><div class="col-md-8 col-sm-6 footer__copyright-wrapper">
+
+
+
+        
+        <div class="copyright">The ACM Digital Library is published by the Association for Computing Machinery. Copyright © 2021 ACM, Inc.</div>
+<ul class="rlist--inline">
+    <li><a href="https://libraries.acm.org/digital-library/policies#anchor3">Terms of Usage</a></li>
+    <li><a href="https://www.acm.org/about-acm/privacy-policy">Privacy Policy</a></li>
+    <li><a href="https://www.acm.org/code-of-ethics">Code of Ethics</a></li>
+</ul>
+</div><div class="col-md-4 col-sm-6 footer__logos-wrapper">
+
+
+
+        
+        <div class="logos">
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-general-image" data-widget-id="42d543b3-ff9d-4f92-bf03-6d1fa00da8c6" class="footer__logo1">
+        
+
+
+
+        
+        <a href="/" title="ACM Digital Library home"><img id="" alt="ACM Digital Library home" src="/specs/products/acm/releasedAssets/images/acm-logo-dl.png"></a>
+
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+        <div data-widget-def="ux3-general-image" data-widget-id="5a0bc5df-cd95-408f-8ae5-8b1f40746519" class="footer__logo2">
+        
+
+
+
+        
+        <a href="https://www.acm.org" title="ACM home"><img id="" alt="ACM home" src="/specs/products/acm/releasedAssets/images/acm-logo-3.png"></a>
+
+        </div>
+    
+</div>
+</div></div></div>
+
+        </div>
+    
+
+
+
+
+        
+        <!-- Mopinion Pastea.se  start --><script type="text/javascript">(function(){var id="7zt4vp6rxi2bbpxuy9yzabob4fy2enwmumr";var js=document.createElement("script");var pbBtn=document.querySelector('.admin-bar-disclosure');if(!window.PB){js.setAttribute("src","//deploy.mopinion.com/js/pastease.js");document.getElementsByTagName("head")[0].appendChild(js);var t=setInterval(function(){try{new Pastease.load(id);clearInterval(t)}catch(e){}},50)}})();
+    </script><!-- Mopinion Pastea.se end -->
+</footer>
+
+
+
+
+        
+        <script type="text/javascript">
+(function(h,o,t,j,a,r){
+    h.hj=h.hj||function()
+    
+    {(h.hj.q=h.hj.q||[]).push(arguments)}
+    ;
+    h._hjSettings={hjid:1290436,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+
+
+        
+        <script type="text/javascript">
+    (function (w, d) {
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script");
+    var v = !("IntersectionObserver" in w) ? "8.17.0" : "10.19.0";
+    s.async = true; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
+    s.src = "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" + v + "/dist/lazyload.min.js";
+    w.lazyLoadOptions = {elements_selector: ".lazy", "class_loaded": "image-lazy-loaded"};
+    b.appendChild(s);
+}(window, document));
+</script>
+
+
+
+
+        
+        
+
+
+
+
+        
+        <div class="cookiePolicy-popup fadeInUp"><div class="cookiePolicy-popup__header"><i aria-hidden="true" class="icon-cookie"></i><h5 class="cookiePolicy-popup__title">About Cookies On This Site</h5></div><div class="cookiePolicy-popup__body clearfix"><p></p><p>We use cookies to ensure that we give you the best experience on our website.</p>
+<p><a href="https://www.acm.org/privacy-policy" class="blue link">Learn more</a></p><p></p><a href="#" class="btn blue cookiePolicy-popup__close pull-right">Got it!</a></div></div>
+
+
+
+
+        
+        
+
+
+
+        
+    
+
+        </div>
+    </div><div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; top: -9999px; z-index: 100000;"><iframe id="_atssh507" title="AddThis utility frame" style="height: 1px; width: 1px; position: absolute; top: 0px; z-index: 100000; border: 0px; left: 0px;" src="https://s7.addthis.com/static/sh.f48a1a04fe8dbf021b4cda1d.html#rand=0.13786552719871037&amp;iit=1638179756854&amp;tmr=load%3D1638179756464%26core%3D1638179756492%26main%3D1638179756850%26ifr%3D1638179756856&amp;cb=0&amp;cdn=0&amp;md=0&amp;kw=&amp;ab=-&amp;dh=dl.acm.org&amp;dr=&amp;du=https%3A%2F%2Fdl.acm.org%2Fdoi%2F10.1145%2F3472749.3474760&amp;href=https%3A%2F%2Fdl.acm.org%2Fdoi%2F10.1145%2F3472749.3474760&amp;dt=PneuSeries%3A%203D%20Shape%20Forming%20with%20Modularized%20Serial-Connected%20Inflatables%20%7C%20The%2034th%20Annual%20ACM%20Symposium%20on%20User%20Interface%20Software%20and%20Technology&amp;dbg=0&amp;cap=tc%3D0%26ab%3D0&amp;inst=1&amp;jsl=1&amp;prod=undefined&amp;lng=en&amp;ogt=url&amp;pc=men&amp;pub=xa-4faab26f2cff13a7&amp;ssl=1&amp;sid=61a4a3ac184ba835&amp;srf=0.01&amp;ver=300&amp;xck=0&amp;xtr=0&amp;og=url%3Dhttps%253A%252F%252Fdl.acm.org%252Fdoi%252Fabs%252F10.1145%252F3472749.3474760&amp;csi=undefined&amp;rev=v8.28.8-wp&amp;ct=1&amp;xld=1&amp;xd=1"></iframe></div><style id="service-icons-0"></style><script async="" src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
+
+
+	
+
+    <script>if (typeof define !== 'undefined' && define.amd)
+    define.amd = false</script><script src="/products/acm/releasedAssets/js/main.bundle-d0ce8ec621a64760fab7.js"></script><script>(function (w, d) {
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script");
+    var v = !("IntersectionObserver" in w) ? "8.17.0" : "10.19.0";
+    s.async = true; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
+    s.src = "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" + v + "/dist/lazyload.min.js";
+    w.lazyLoadOptions = {elements_selector: ".lazy", "class_loaded": "image-lazy-loaded"};
+    b.appendChild(s);
+}(window, document));</script><script async="" src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
+
+<script type="text/javascript" src="/wro/krkb~product.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597" integrity="sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==" data-cf-beacon="{&quot;rayId&quot;:&quot;6b5af68e5b7c1f37&quot;,&quot;token&quot;:&quot;b7f168b3cd354a55a4dd51b513830799&quot;,&quot;version&quot;:&quot;2021.11.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+
+<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all quickSearchAutocomplete" id="ui-id-1" tabindex="0" style="display: none;"></ul><iframe style="display: none;"></iframe><div id="surveyContent"></div><div><div></div></div></body></html>

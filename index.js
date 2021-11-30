@@ -11,7 +11,7 @@ const inDir = 'in_bib';
 // You can use a single file or an array of files as input
 
 // Single file
-const year = 8;
+const year = 21; // uist21
 const name = `uist${year}`;
 const files = [path.join(inDir, `${name}.bib`)];
 
@@ -58,7 +58,15 @@ async function parse(filename) {
 function getPaperData(url) {
   return new Promise((resolve) => {
     // starting Puppeteer
-    puppeteer.launch().then(async (browser) => {
+    puppeteer.launch({
+      headless: true,
+      ignoreHTTPSErrors: true,
+      args: ['--window-size=1920,1080'], // tricky bug... in mobile version not all authors are included
+      defaultViewport: {
+        width: 1920,
+        height: 1080,
+      },
+    }).then(async (browser) => {
       // opening a new page and navigating to Reddit
       const page = await browser.newPage();
       await page.goto(url, {
@@ -66,19 +74,21 @@ function getPaperData(url) {
         // Remove the timeout
         timeout: 0,
       });
+
       await page.waitForSelector('body');
 
-      // manipulating the page's contenit
+      // manipulating the page's content
       const dataPaper = await page.evaluate(() => {
-        const author = document.body.querySelectorAll('.loa__author-name');
-        const institution = document.body.querySelectorAll('.auth-institution');
-
         const result = { author: [], institution: [] };
+        const author = document.body.querySelectorAll('.loa__author-name');
+        const institution = document.body.querySelectorAll('.loa_author_inst:not(.hidden)'); // before 2021 was '.auth-institution'
+
         author.forEach((element) => {
-          result.author.push(element.innerText);
+          result.author.push(element.outerText);
         });
         institution.forEach((element) => {
-          result.institution.push(element.innerText);
+          const cleanedText = element.innerText.replace('\n', '').replace(' ', '').trim();
+          result.institution.push(cleanedText);
         });
 
         result.author = [...new Set(result.author)];
